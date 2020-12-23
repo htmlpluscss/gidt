@@ -1,0 +1,38 @@
+.social {
+
+	display: flex;
+	margin: -8px;
+
+	&__item {
+
+		margin: 8px;
+
+	}
+
+	&__link {
+
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		display: block;
+
+		@media ($desktop) {
+
+			&:hover svg {
+
+				fill: #524BE0;
+
+			}
+
+		}
+
+		svg {
+
+			fill: var(--blue);
+			border-radius: 50%;
+
+		}
+
+	}
+
+}

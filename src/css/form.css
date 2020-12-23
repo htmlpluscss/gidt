@@ -1,0 +1,230 @@
+.btn,
+.button {
+
+	border: 0;
+	border-radius: 0;
+	font-family: inherit;
+	background-color: transparent;
+	transition: var(--transitionDefault);
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+	font-size: 0;
+	color: transparent;
+	text-align: center;
+	white-space: nowrap;
+	display: block;
+	flex-shrink: 0;
+
+	&:focus {
+
+		outline: none;
+
+	}
+
+	&:hover {
+
+		cursor: pointer;
+
+	}
+
+	&:disabled {
+
+		pointer-events: none;
+		opacity: .3;
+
+	}
+
+}
+
+.btn {
+
+	padding: 0 24px;
+	height: 48px;
+	font-size: 15px;
+	line-height: 48px;
+	font-weight: 500;
+	color: #fff;
+	border-radius: 8px;
+
+	@media ($desktop) {
+
+		&:hover {
+
+
+		}
+
+	}
+
+	&--blue {
+
+		background-color: var(--blue);
+
+		@media ($desktop) {
+
+			&:hover {
+
+				background-color: #524BE0;
+
+			}
+
+		}
+
+	}
+
+	&--green {
+
+		background-color: var(--green);
+
+		@media ($desktop) {
+
+			&:hover {
+
+				background-color: #36C76E;
+
+			}
+
+		}
+
+	}
+
+	&--outline {
+
+		color: var(--blue);
+		box-shadow: inset 0 0 0 1px var(--blue);
+		border-radius: 6px;
+
+		@media ($desktop) {
+
+			&:hover {
+
+				box-shadow: inset 0 0 0 1px #9995ed;
+
+			}
+
+		}
+
+	}
+
+	&--big {
+
+		padding: 0 36px;
+		height: 72px;
+		font-size: 18px;
+		line-height: 72px;
+
+		@media ($mdWidth) {
+
+			font-size: 18px;
+			line-height: 64px;
+			padding: 0 24px;
+			height: 64px;
+
+		}
+
+	}
+
+	&--small {
+
+		padding: 0 22px;
+		height: 52px;
+		font-size: 16px;
+		line-height: 52px;
+
+	}
+
+}
+
+
+.input {
+
+	height: 60px;
+	line-height: 20px;
+
+	padding: 20px;
+
+	font-size: 16px;
+	color: var(--color);
+	font-weight: 400;
+
+	width: 100%;
+	font-family: inherit;
+	position: relative;
+	appearance: none;
+	display: block;
+	filter: none;
+	-webkit-transform: translateZ(0px); /* FIX for iOS safari https://forum.ionicframework.com/t/ion-input-shows-only-the-first-entered-character-on-ios/73107/5 */
+
+	border-radius: 8px;
+
+	border: 0;
+	background-color: #fff;
+
+	textarea& {
+
+		height: 120px;
+		overflow: hidden;
+		resize: none;
+
+	}
+
+	&::placeholder {
+
+		color: var(--text);
+		opacity: 1;
+
+	}
+
+	&::-ms-clear {
+
+		display: none;
+
+	}
+
+	@media ($desktop) {
+
+		&:hover {
+
+			/* border-color: var(--bg); */
+
+		}
+
+	}
+
+	&:focus {
+
+		outline: none;
+		/* border-color: var(--color) !important; */
+
+	}
+
+	&:disabled {
+
+		pointer-events: none;
+
+	}
+
+	&--error {
+
+		border-color: var(--error) !important;
+
+	}
+
+	&:invalid {
+
+		box-shadow: none;
+
+	}
+
+}
+
+@keyframes autofill {
+
+	to {
+
+		color: var(--color);
+		background-color: #fff;
+
+	}
+
+}

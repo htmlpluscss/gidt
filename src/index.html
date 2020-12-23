@@ -1,0 +1,18 @@
+{% set title = "Магазин подарков-впечатлений" %}
+
+{% set description = "Чудесный выбор новейших подарков к празднику. И специалисты, готовые помочь с покупкой подарка-впечатления." %}
+
+{% set preloadImage = [
+	{
+		media: "(min-width: 768px)",
+		img : "/img/cloud-space/img.svg"
+	}
+] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "main/first-screen.html" %}
+
+{% endblock %}

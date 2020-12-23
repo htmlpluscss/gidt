@@ -1,0 +1,104 @@
+.why {
+
+	background-color: color(var(--bg) a(50%));
+	padding: 60px 0;
+	margin: 96px 0 72px;
+	text-align: center;
+
+	@media ($mdWidth) {
+
+		margin: 72px 0 20px;
+
+	}
+
+	@media ($smWidth) {
+
+		margin: 40px 0 20px;
+
+	}
+
+	&__title {
+
+		margin: 72px 0;
+
+		@media ($mdWidth) {
+
+			margin: 20px 0 60px;
+
+		}
+
+	}
+
+	&__list  {
+
+		display: flex;
+		justify-content: center;
+		margin: 0 -20px 72px;
+
+		@media ($mdWidth) {
+
+			margin-bottom: 20px;
+
+		}
+
+		@media ($smWidth) {
+
+			display: block;
+			margin: 0;
+
+		}
+
+	}
+
+	&__item {
+
+		width: 300px;
+		margin: 0 20px;
+
+		@media ($smWidth) {
+
+			width: auto;
+			margin: 40px 0 20px;
+
+		}
+
+		.h4 {
+
+			color: var(--blue);
+			margin: 24px 0 6px;
+
+		}
+
+		p {
+
+			b {
+
+				color: var(--green);
+				font-weight: 400;
+
+			}
+
+		}
+
+	}
+
+	&__ico {
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 80px;
+		width: 80px;
+		background-color: #fff;
+		border-radius: 50%;
+		margin: auto;
+
+		svg {
+
+			fill: var(--blue);
+
+		}
+
+	}
+
+}
