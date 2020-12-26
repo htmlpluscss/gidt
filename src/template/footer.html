@@ -2,59 +2,154 @@
 
 		<div class="center">
 
-			<div class="footer__box">
+			<div class="footer__top">
 
 				<div class="footer__left">
 
-					<img class="footer__logo" src="/img/logo.svg" alt="{{ site }}" loading="lazy" width="209" height="42">
+					<a href="/" class="footer__logo">
 
-					<p class="copyright">
-						Copyright © 2020 Cloudzilla Network. All Rights Reserved.
-					</p>
+						<img src="/img/logo-footer.svg" alt="{{ site }}" loading="lazy" width="256" height="58">
 
-				</div>
+					</a>
 
-				<div class="footer__center">
-
-					<ul class="footer__menu">
-
-						<li>
-							<a href="/demo">Live Demo</a>
-						</li>
-
-						<li>
-							<a href="/terms-and-conditions">Terms & Conditions</a>
-						</li>
-
-						<li>
-							<a href="/#about">About</a>
-						</li>
-
-						<li>
-							<a href="/privacy-policy">Privacy Policy</a>
-						</li>
-
-						<li>
-							<a href="/#prices">Prices</a>
-						</li>
-
-						<li>
-							<a href="/cookies-policy">Cookies Policy</a>
-						</li>
-
-					</ul>
-
-				</div>
-
-				<div class="footer__right">
-
-					<p class="footer__right-head">
-						Social:
-					</p>
+					<div class="footer__social">
 
 {% include "template/social.html" %}
 
+					</div>
+
+					<div class="footer__phone">
+
+						<a href="tel:+78121234567">
+							+7 (812) 123-45-67
+						</a>
+
+					</div>
+
+					<div class="footer__address">
+
+						<p>
+							125040, г. Москва, 3-я улица Ямского Поля, д.2, корп. 26, подъезд №1, этаж 1.
+						</p>
+
+					</div>
+
 				</div>
+
+				<div class="footer__box">
+{% set menu = [
+
+	{
+		head : "Виды подарков",
+		list : [
+			'Экстрим',
+			'Хобби',
+			'Полеты',
+			'Красота',
+			'Романтика',
+			'Наборы',
+			'Собрать свой подарок'
+		]
+	},
+
+	{
+		head : "Подарок по поводу",
+		list : [
+			'На День рождение',
+			'На Новый год',
+			'На 14 февраля',
+			'на 23 февраля',
+			'На 8 марта',
+			'На свадьбу'
+		]
+	},
+
+	{
+		head : "Для кого подарок",
+		list : [
+			'Для двоих',
+			'Для нее',
+			'Для него',
+			'Для коллег',
+			'Для руководителя',
+			'Для учителей',
+			'Для семьи',
+			'Для детей',
+			'Короративные подарки'
+		]
+	},
+
+	{
+		head : "О компании",
+		list : [
+			'Доставка и оплата',
+			'Адреса магазинов',
+			'Контакты',
+			'Отзывы',
+			'Акции',
+			'Наши рекомендации',
+			'Упаковка'
+		]
+	}
+
+] %}
+
+{% for item in menu %}
+
+					<div class="footer__menu">
+
+						<h3 class="footer__menu-head">
+							{{ item.head }}
+						</h3>
+
+						<ul>
+
+{% for link in item.list %}
+
+							<li{% if link == 'Собрать свой подарок' %} class="footer__menu-spec"{% endif %}>
+								<a href="/">{{ link }}</a>
+							</li>
+{% endfor %}
+
+						</ul>
+
+					</div>
+
+{% endfor %}
+
+				</div>
+
+			</div>
+
+			<hr>
+
+			<div class="footer__bottom">
+
+				<p class="footer__copyright">
+					© Впечатления. 2020.  Все права защищены.
+				</p>
+
+				<ul class="footer__bottom-menu">
+
+					<li>
+						<a href="/">
+							Политика конфедициальности
+						</a>
+					</li>
+
+					<li>
+						<a href="/">
+							Использование cookies
+						</a>
+					</li>
+
+					<li>
+						<a href="/">
+							Карта сайта
+						</a>
+					</li>
+
+				</ul>
 
 			</div>
 

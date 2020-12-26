@@ -2,149 +2,103 @@
 
 	position: relative;
 	z-index: 9;
-	width: 1440px;
-	max-width: 100%;
-	display: flex;
-	align-items: center;
-	position: relative;
-	padding: 36px;
-	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+	background-color: #fff;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
 
-	@media ($mdWidth) {
+	&__flex {
 
-		padding: 24px;
-		flex-direction: column;
-
-	}
-
-	@media ($smWidth) {
-
-		padding: 20px;
+		display: flex;
 
 	}
 
 	&__logo {
 
-		position: relative;
+		width: 300px;
 		flex-shrink: 0;
-		transition: none;
+		display: flex;
+		align-items: center;
 
-		@media ($mdWidth) {
+	}
 
-			display: flex;
-			justify-content: center;
+	&__box {
 
-			.menu-show & {
+		flex-grow: 1;
 
-				opacity: 0;
-				pointer-events: none;
+		hr {
 
-			}
-
-		}
-
-		@media ($smWidth) {
-
-			img {
-
-				width: 170px;
-				height: 34px;
-
-			}
+			background-color: #e1e1e1;
 
 		}
 
 	}
 
-	&__menu {
+	&__top {
 
 		display: flex;
 		align-items: center;
-		justify-content: center;
-		flex-grow: 1;
+		justify-content: space-between;
+		padding: 7px 0;
 
-		@media ($mdWidth) {
+		&-menu {
 
-			display: none;
-			align-items: center;
+			flex-grow: 1;
+			max-width: 354px;
+
+		}
+
+		&-phone {
+
+			flex-shrink: 0;
+			margin-left: auto;
+
+			a {
+
+				font-family: Roboto;
+				font-size: 16px;
+				color: #545454;
+
+			}
+
+		}
+
+		&-btn {
+
+			flex-shrink: 0;
+			margin-left: 36px;
 
 		}
 
 	}
 
-	&__btn {
+	&__bottom {
 
-		margin-left: 64px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 9px 0 10px;
+
+		&-menu {
+
+			flex-grow: 1;
+			margin-right: 68px;
+
+		}
+
+	}
+
+	&__search {
+
 		flex-shrink: 0;
+		margin-left: 36px;
 
-		.btn {
+	}
 
-			transition: none;
+	&__cart {
 
-			svg {
-
-				display: none;
-
-			}
-
-		}
-
-		@media ($mdWidth) {
-
-			margin: 0;
-			position: absolute;
-			top: 24px;
-			right: 24px;
-
-			.btn {
-
-				height: 40px;
-				line-height: 40px;
-				padding: 0 16px;
-
-				svg {
-
-					position: absolute;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					margin: auto;
-					fill: var(--blue);
-
-				}
-
-			}
-
-			body:not(.menu-show) & {
-
-				.btn {
-
-					width: 40px;
-					height: 40px;
-					border-radius: 6px;
-					font-size: 0;
-					padding: 0;
-					color: transparent;
-
-					svg {
-
-						display: block;
-
-					}
-
-				}
-
-			}
-
-		}
-
-		@media ($smWidth) {
-
-			top: 20px;
-			right: 20px;
-
-		}
+		flex-shrink: 0;
+		margin-right: -5px;
+		margin-left: 44px;
 
 	}
 

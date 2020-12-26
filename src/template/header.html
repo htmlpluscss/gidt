@@ -1,25 +1,78 @@
 	<header class="header">
 
-		<a href="/" class="header__logo" title="{{ site }}">
+		<div class="center">
 
-			<img src="/img/logo.svg" alt="{{ site }}" loading="lazy" width="209" height="42">
+			<div class="header__flex">
 
-		</a>
+				<div class="header__logo">
 
-		<div class="header__menu">
+					<a href="/" title="{{ site }}">
 
-{% include "template/menu.html" %}
+						<img src="/img/logo.svg" alt="{{ site }}" width="243" height="55">
 
-		</div>
+					</a>
 
-		<div class="header__btn">
+				</div>
 
-			<button type="button" class="btn btn--outline" data-modal="select-wallet">
-				<svg width="20" height="20" viewBox="0 0 20 20">
-					<path d="M16 6H3.5v-.5l11-.88v.88H16V4c0-1.1-.9-1.87-1.98-1.72L3.98 3.72A2.38 2.38 0 002 6v10c0 1.1.9 2 2 2h12a2 2 0 002-2V8a2 2 0 00-2-2zm-1.5 7a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/>
-				</svg>
-				Unlock Wallet
-			</button>
+				<div class="header__box">
+
+					<div class="header__top">
+
+						<div class="header__top-menu">
+
+{% include "template/menu-company.html" %}
+
+						</div>
+
+						<div class="header__top-phone">
+
+							<a href="tel:+78121234567">
+								+7 (812) 123-45-67
+							</a>
+
+						</div>
+
+						<div class="header__top-btn">
+
+							<button class="btn btn--red btn--small" type="button" data-modal="activation">
+								Активация
+							</button>
+
+						</div>
+
+					</div>
+
+					<hr>
+
+					<div class="header__bottom">
+
+						<div class="header__bottom-menu">
+
+{% include "template/menu-main.html" %}
+
+						</div>
+
+						<div class="header__search">
+
+							<button class="button" type="button" aria-label="открыть поиск по сайту">
+								<svg width="33" height="32" viewBox="0 0 33 32"><path d="M24.66 21.35l-.29.36.33.31 7.48 7.18c.43.41.43 1.07 0 1.48-.22.21-.5.32-.8.32-.3 0-.59-.1-.8-.32h0l-7.45-7.15-.31-.3-.34.26a13.78 13.78 0 01-8.49 2.9C6.53 26.38.5 20.55.5 13.43.5 6.32 6.53.5 14 .5h0c7.45 0 13.48 5.82 13.48 12.94 0 2.98-1.05 5.72-2.82 7.9zM14 2.62c-6.18 0-11.25 4.83-11.25 10.82S7.81 24.27 14 24.27c6.19 0 11.25-4.84 11.25-10.83S20.18 2.62 14 2.62z" fill="#3C3C3C" stroke="#fff"/></svg>
+							</button>
+
+						</div>
+
+						<div class="header__cart">
+
+							<a href="/cart" class="button" title="Корзина">
+								<svg width="33" height="32" viewBox="0 0 33 32"><path d="M10.23 8.27S10.23 2 16.5 2s6.27 6.27 6.27 6.27M5 8.27v20.91h23V8.28H5z" fill="none" stroke="#404040" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
 
 		</div>
 
