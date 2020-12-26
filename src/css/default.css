@@ -119,6 +119,45 @@ hr {
 
 }
 
+.h3 {
+
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 700;
+
+}
+
+.text-intro {
+
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 29px;
+	color: #000;
+	letter-spacing: 0.05em;
+	text-align: center;
+
+}
+
+.link-all {
+
+	display: flex;
+	align-items: center;
+	font-size: 17px;
+	line-height: 21px;
+	color: var(--blue);
+
+	&::after {
+
+		width: 8px;
+		height: 14px;
+		content: '';
+		margin-left: 16px;
+		background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.24 1.96L1.05.34 7.72 7l-6.67 6.66-.8-1.62 4.9-4.9.13-.14-.14-.14-4.9-4.9z' fill='%23344ABA' stroke='%23fff' stroke-width='.4'/%3E%3C/svg%3E");
+
+	}
+
+}
+
 
 main,
 header,

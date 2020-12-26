@@ -12,8 +12,9 @@
 /* @import url(cookie.css); */
 
 @import url(first-screen.css);
-/* @import url(subscribe.css);
-@import url(decentralized.css);
+@import url(special-offers.css);
+
+/*
 @import url(about.css);
 @import url(how-works.css);
 @import url(why.css);
@@ -23,7 +24,7 @@
 @import url(road-map.css);
 @import url(team.css);
 @import url(demo.css);
-
+ @import url(subscribe.css);
 @import url(rotate.css);
 @import url(social.css);
 @import url(article.css);
