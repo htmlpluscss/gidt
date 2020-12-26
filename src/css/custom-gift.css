@@ -1,0 +1,47 @@
+.custom-gift {
+
+	margin-bottom: 54px;
+
+	@media ($smWidth) {
+
+
+	}
+
+	&__content {
+
+		width: 620px;
+		padding: 107px 0;
+
+		.text-intro {
+
+			text-align: left;
+			max-width: 500px;
+
+			p {
+
+				margin: 30px 0;
+
+			}
+
+		}
+
+	}
+
+	&__title {
+
+		margin-bottom: 60px;
+
+	}
+
+	&__swiper {
+
+		position: absolute;
+		top: 0;
+		left: 50%;
+		right: 0;
+		bottom: 0;
+		outline:1px solid red;
+
+	}
+
+}
