@@ -72,7 +72,7 @@
 
 			&:hover {
 
-				/* background-color: #36C76E; */
+				background-color: var(--yellowHover);
 
 			}
 

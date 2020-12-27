@@ -1,7 +1,6 @@
 .about {
 
-	padding: 60px 0;
-	min-height: 830px;
+	padding: 60px 0 90px;
 	background-image: url("data:image/svg+xml,%3Csvg width='1510' height='830' viewBox='0 0 1510 830' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M88.5 266.5C498-315 1682 239.5 1682 239.5L1510 830H0s-97.9-298.8 88.5-563.5z' fill='%23FF4D6A' fill-opacity='.07'/%3E%3C/svg%3E");
 	background-position: top;
 	background-repeat: no-repeat;

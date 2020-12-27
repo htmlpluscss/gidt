@@ -10,6 +10,7 @@
 @import url(menu.css);
 @import url(footer.css);
 /* @import url(cookie.css); */
+@import url(social.css);
 
 @import url(first-screen.css);
 @import url(special-offers.css);
@@ -27,7 +28,7 @@
 @import url(demo.css);
  @import url(subscribe.css);
 @import url(rotate.css);
-@import url(social.css);
+
 @import url(article.css);
 @import url(tooltip.css);
  */

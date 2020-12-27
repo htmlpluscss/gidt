@@ -1,26 +1,24 @@
 .social {
 
 	display: flex;
-	margin: -8px;
+	margin: -12px;
 
 	&__item {
 
-		margin: 8px;
+		margin: 12px;
 
 	}
 
 	&__link {
 
-		width: 30px;
-		height: 30px;
-		border-radius: 50%;
+		opacity: .8;
 		display: block;
 
 		@media ($desktop) {
 
-			&:hover svg {
+			&:hover {
 
-				fill: #524BE0;
+				opacity: 1;
 
 			}
 
@@ -28,8 +26,7 @@
 
 		svg {
 
-			fill: var(--blue);
-			border-radius: 50%;
+			fill: #fff;
 
 		}
 

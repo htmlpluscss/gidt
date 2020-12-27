@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-color: red !important;
+/* color: red !important; */
 }
 
 html {
@@ -38,7 +38,7 @@ body {
 	position: relative;
 	-webkit-font-smoothing: antialiased;
 
-background-image: url(/css/1.png);
+/* background-image: url(/css/1.png); */
 background-position: center 0px;
 }
 
@@ -146,13 +146,24 @@ hr {
 	line-height: 21px;
 	color: var(--blue);
 
-	&::after {
+	svg {
 
-		width: 8px;
-		height: 14px;
-		content: '';
 		margin-left: 16px;
-		background-image: url("data:image/svg+xml,%3Csvg width='8' height='14' viewBox='0 0 8 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.24 1.96L1.05.34 7.72 7l-6.67 6.66-.8-1.62 4.9-4.9.13-.14-.14-.14-4.9-4.9z' fill='%23344ABA' stroke='%23fff' stroke-width='.4'/%3E%3C/svg%3E");
+		fill: var(--blue);
+		stroke: #fff;
+		stroke-width: .4
+
+	}
+
+	&:hover {
+
+		color: var(--blueHover);
+
+		svg {
+
+			fill: var(--blueHover);
+
+		}
 
 	}
 
@@ -179,6 +190,20 @@ nav {
 	flex-grow: 1;
 	display: flex;
 	flex-direction: column;
+
+	body.overlay &::after {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		opacity: 0.19;
+		z-index: 8;
+		background-color: #111;
+
+	}
 
 }
 
