@@ -1,0 +1,142 @@
+.search-modal {
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--blue);
+	z-index: 20;
+
+	body:not(.header-search-show) & {
+
+		display: none;
+
+	}
+
+	.center {
+
+		width: 770px;
+
+	}
+
+	&__inner {
+
+		position: relative;
+		padding: 10px 70px;
+
+	}
+
+	&__input {
+
+		width: 100%;
+		background-color: transparent;
+		color: #fff;
+		font-size: 24px;
+		padding: 0;
+		font-weight: 700;
+		height: 32px;
+		border-radius: 0;
+
+		&::placeholder {
+
+			color: #fff;
+			opacity: .8;
+			font-size: 14px;
+			font-weight: 400;
+
+		}
+
+	}
+
+	&__ico {
+
+		position: absolute;
+		top: 0;
+		left: 10px;
+		bottom: 0;
+		margin: auto;
+		fill: #fff;
+
+	}
+
+	&__reset {
+
+		position: absolute;
+		top: 0;
+		right: 10px;
+		bottom: 0;
+		margin: auto;
+
+		svg {
+
+			fill: #fff;
+
+		}
+
+	}
+
+	&__result {
+
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #fff;
+		border-radius: 0 0 27px 27px;
+		padding: 30px 10px;
+
+		&-head {
+
+			font-size: 14px;
+			line-height: 17px;
+			color: var(--grey);
+			text-transform: uppercase;
+			font-weight: 400;
+			padding-left: 60px;
+			margin-bottom: 10px;
+
+		}
+
+		&-item {
+
+			font-size: 14px;
+			line-height: 17px;
+			position: relative;
+
+			svg {
+
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				top: 8px;
+				left: 60px;
+				pointer-events: none;
+
+			}
+
+			a {
+
+				color: #000;
+				display: block;
+				padding: 6px 88px;
+
+				&:hover {
+
+					background-color: #f5f5f5;
+					color: var(--blueText);
+
+					& + svg {
+
+						fill: var(--blueText);
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

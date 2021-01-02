@@ -15,7 +15,7 @@
 
 	const hideModal = () => {
 
-		document.body.classList.remove('modal-show');
+		document.body.classList.remove('modal-show','modal-overlay');
 		wrapper.style.top = 0;
 		window.scrollTo(0,windowScroll);
 
@@ -42,7 +42,7 @@
 		setTimeout( () => {
 
 			wrapper.style.top = -windowScroll + 'px';
-			document.body.classList.add('modal-show');
+			document.body.classList.add('modal-show','modal-overlay');
 			window.scrollTo(0,0);
 
 			activeModal.focus();

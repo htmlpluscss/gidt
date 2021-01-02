@@ -8,8 +8,8 @@
 
 	Array.from(elems, el => {
 
-		el.addEventListener('mouseenter', () => document.body.classList.add('modal-show'));
-		el.addEventListener('mouseleave', () => document.body.classList.remove('modal-show'));
+		el.addEventListener('mouseenter', () => document.body.classList.add('overlay'));
+		el.addEventListener('mouseleave', () => document.body.classList.remove('overlay'));
 
 	});
 

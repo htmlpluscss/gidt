@@ -2,14 +2,14 @@
 
 	if(btn) {
 
-		const form = document.querySelector('form'),
-			  result = form.querySelector('.result');
+		const form = document.querySelector('.search-modal'),
+			  result = form.querySelector('.search-modal__result');
 
 		btn.addEventListener('click', () =>
-			document.body.classList.add('modal-show', 'header-search-show'));
+			document.body.classList.add('overlay', 'header-search-show'));
 
 		form.addEventListener('reset', () =>
-			document.body.classList.remove('modal-show', 'header-search-show'));
+			document.body.classList.remove('overlay', 'header-search-show'));
 
 	}
 
