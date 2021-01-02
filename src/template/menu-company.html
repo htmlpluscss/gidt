@@ -1,30 +1,68 @@
+{% set menu = [
+
+	{
+		name : "О нас",
+		sub  : [
+			'Контакты',
+			'Отзывы'
+		]
+	},
+
+	{
+		name : "О подарках",
+		sub  : [
+			'Упаковка',
+			'FAQ',
+			'Поставщикам услуг'
+		]
+	},
+
+	{
+		name : "Сервис",
+		sub  : [
+			'Доставка и оплата',
+			'Возврат',
+			'Публичная оферта'
+		]
+	}
+
+] %}
+
 		<nav class="menu-company">
 
 			<ul class="menu-company__list">
 
-				<li class="menu-company__item">
-
-					<a class="menu-company__link" href="/">
-						О нас
-					</a>
-
-				</li>
+{% for item in menu %}
 
 				<li class="menu-company__item">
 
 					<a class="menu-company__link" href="/">
-						О подарках
+						{{ item.name }}
 					</a>
+
+					<div class="menu-company__sub">
+
+						<ul class="menu-company__sub-list">
+
+	{% for link in item.sub %}
+
+							<li class="menu-company__sub-item">
+
+								<a class="menu-company__sub-link" href="/">
+									{{ link }}
+								</a>
+
+							</li>
+
+	{% endfor %}
+
+						</ul>
+
+					</div>
 
 				</li>
 
-				<li class="menu-company__item">
-
-					<a class="menu-company__link" href="/">
-						Сервис
-					</a>
-
-				</li>
+{% endfor %}
 
 			</ul>
 
