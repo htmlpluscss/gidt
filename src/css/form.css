@@ -46,6 +46,23 @@
 	 */
 	font-weight: 700;
 
+	&--blue {
+
+		color: #fff;
+		background-color: var(--blue);
+
+		@media ($desktop) {
+
+			&:hover {
+
+				background-color: var(--blueText);
+
+			}
+
+		}
+
+	}
+
 	&--red {
 
 		color: #fff;
