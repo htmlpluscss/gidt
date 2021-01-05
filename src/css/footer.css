@@ -109,7 +109,7 @@
 
 		font-family: Roboto;
 		display: flex;
-		padding-bottom: 21px;
+		margin: 22px 0;
 
 		&-menu {
 
@@ -184,7 +184,7 @@
 
 	hr {
 
-		margin: 45px 0 15px;
+		margin: 40px 0 20px;
 		background-color: rgba(191, 191, 191, 0.5);
 
 	}

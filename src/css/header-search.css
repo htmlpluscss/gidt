@@ -1,15 +1,17 @@
-.search-modal {
+.header-search {
 
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
+	bottom: -1px;
 	background-color: var(--blue);
-	z-index: 20;
+	z-index: 6;
+	display: none;
 
-	body:not(.header-search-show) & {
+	.header-search-show & {
 
-		display: none;
+		display: flex;
 
 	}
 
@@ -22,7 +24,16 @@
 	&__inner {
 
 		position: relative;
-		padding: 10px 70px;
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+
+	}
+
+	&__fieldset {
+
+		position: relative;
+		padding: 0 70px;
 
 	}
 
@@ -81,9 +92,15 @@
 		top: 100%;
 		left: 0;
 		right: 0;
-		background-color: #fff;
-		border-radius: 0 0 27px 27px;
-		padding: 30px 10px;
+
+		&-inner {
+
+			background-color: #fff;
+			border-radius: 0 0 27px 27px;
+			padding: 30px 10px;
+			position: relative;
+
+		}
 
 		&-head {
 
