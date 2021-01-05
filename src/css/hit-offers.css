@@ -1,7 +1,7 @@
 .hit-offers {
 
 	position: relative;
-	padding: 70px 0 128px;
+	padding: 72px 0;
 
 	@media ($mdWidth) {
 
@@ -25,7 +25,16 @@
 
 	&__swiper {
 
-		margin-top: 46px;
+		margin: 32px -15px 0;
+		overflow: hidden;
+		position: relative;
+		padding: 15px 15px 100px;
+
+		.swiper-container {
+
+			overflow: visible !important;
+
+		}
 
 		&-list {
 

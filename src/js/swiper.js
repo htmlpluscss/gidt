@@ -21,7 +21,8 @@
 			  swipePrev = document.createElement('button'),
 			  items = swipe.querySelectorAll('.swiper-slide'),
 			  count = items.length,
-			  firstScreen = swipe.classList.contains('swiper-container--first-screen');
+			  group3 = swipe.classList.contains('swiper-container--group3'),
+			  customGift = swipe.classList.contains('swiper-container--custom-gift');
 
 		swipeNav.className = 'swiper-pagination';
 		swipeControls.className = 'swiper-controls';
@@ -38,12 +39,6 @@
 		swipeControls.appendChild(swipeBtns);
 		swipeControls.appendChild(swipeNav);
 		swipe.parentNode.appendChild(swipeControls);
-
-		// eager
-		Array.from(swipe.querySelectorAll('[loading="lazy"]'), img => img.setAttribute('loading','eager'));
-
-		// hide
-		Array.from(items, el => el.classList.remove('hide'));
 
 		resetSwipe = () => {
 
@@ -62,7 +57,7 @@
 
 		resetSwipe();
 
-		if (firstScreen) {
+		if (group3) {
 
 			toggleSwipe = () => {
 
@@ -77,7 +72,36 @@
 					loop: true,
 					slidesPerView: 3,
 					slidesPerGroup: 3,
-					spaceBetween: 27,
+					spaceBetween: 30,
+					pagination: {
+						el: swipeNav,
+						bulletClass: 'button',
+						bulletActiveClass: 'is-active'
+					},
+					navigation: {
+						nextEl: swipeNext,
+						prevEl: swipePrev
+					}
+				});
+
+			}
+
+		}
+
+		if (customGift) {
+
+			toggleSwipe = () => {
+
+				toggleSwipe = null;
+
+				swipeNav.classList.remove('hide');
+				swipeBtns.classList.remove('hide');
+				swipeControls.classList.remove('hide');
+				swipe.parentNode.classList.add('swiper-container-style');
+
+				new Swiper(swipe, {
+					loop: true,
+					effect: 'fade',
 					pagination: {
 						el: swipeNav,
 						bulletClass: 'button',
@@ -110,7 +134,17 @@
 		}
 		else {
 
-			PubSub.subscribe('swiperJsLoad', toggleSwipe);
+			PubSub.subscribe('swiperJsLoad', () => {
+
+				// eager
+				Array.from(swipe.querySelectorAll('[loading="lazy"]'), img => img.setAttribute('loading','eager'));
+
+				// hide
+				Array.from(items, el => el.classList.remove('hide'));
+
+				toggleSwipe();
+
+			});
 
 		}
 

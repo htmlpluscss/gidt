@@ -43,7 +43,16 @@
 
 	&__swiper {
 
-		margin-top: 72px;
+		margin: 72px -15px 0;
+		position: relative;
+		overflow: hidden;
+		padding: 15px 15px 100px;
+
+		.swiper-container {
+
+			overflow: visible !important;
+
+		}
 
 		&-list {
 

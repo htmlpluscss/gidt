@@ -1,7 +1,7 @@
 .special-offers {
 
 	position: relative;
-	padding: 77px 0 152px;
+	padding: 72px 0;
 	background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='2474' height='826' viewBox='0 0 2474 826' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='1237' cy='413' rx='1237' ry='413' fill='%23F8F8F8'/%3E%3C/svg%3E");
 	background-size: 2474px 100%;
 	background-position: center;
@@ -29,7 +29,15 @@
 
 	&__swiper {
 
-		margin-top: 56px;
+		margin: 36px -15px 0;
+		padding: 15px 15px 100px;
+		overflow: hidden;
+
+		.swiper-container {
+
+			overflow: visible !important;
+
+		}
 
 		&-list {
 
