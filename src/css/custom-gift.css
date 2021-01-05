@@ -1,6 +1,8 @@
 .custom-gift {
 
 	margin-bottom: 54px;
+	position: relative;
+	overflow: hidden;
 
 	@media ($smWidth) {
 
@@ -41,6 +43,33 @@
 		right: 0;
 		bottom: 0;
 		outline:1px solid red;
+
+	}
+
+	&__bg {
+
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		pointer-events: none;
+
+		&-1 {
+
+			position: absolute;
+			top: 40px;
+			right: -240px;
+
+		}
+
+		&-2 {
+
+			position: absolute;
+			top: 30px;
+			right: -640px;
+
+		}
 
 	}
 
