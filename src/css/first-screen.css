@@ -11,7 +11,6 @@
 
 		display: flex;
 		flex-direction: column;
-		padding-bottom: 128px;
 		position: relative;
 
 	}
@@ -47,7 +46,7 @@
 	&__content {
 
 		padding: 130px 0;
-		min-height: 580px;
+		min-height: 570px;
 		max-width: 810px;
 		color: #000;
 
@@ -76,21 +75,38 @@
 
 	&__swiper {
 
-		margin-top: auto;
+		margin: auto -13px 0;
+		overflow: hidden;
+		padding: 13px;
+		height: 256px;
+
+		.swiper-container {
+
+			overflow: visible !important;
+
+		}
+
+		.swiper-controls {
+
+			position: relative !important;
+			top: 0 !important;
+
+		}
 
 	}
 
 	&-swiper {
 
 		display: flex;
-		justify-content: space-between;
 
 		&__item {
 
 			width: 372px;
+			flex-shrink: 0;
+			margin-right: 27px;
 			display: flex;
 			background-color: #fff;
-			box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+			box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.1);
 
 		}
 
