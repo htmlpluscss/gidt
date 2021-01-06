@@ -86,6 +86,12 @@
 
 	}
 
+	.swiper-container-style .swiper-container {
+
+		overflow: visible;
+
+	}
+
 	&__img {
 
 		flex-grow: 1;
@@ -98,14 +104,16 @@
 		.swiper-slide-duplicate-active & img {
 
 			transform: translate3d(0, 0, 0) scale(1);
+			box-shadow: 0 0 20px rgba(0,0,0,.1);
 
 		}
 
 		img {
 
 			background-color: #fff;
-			transform: translate3d(200px, 0, 0) scale(.2);
+			transform: translate3d(500px, 0, 0) scale(.88);
 			transition: var(--transitionDefault);
+			transform-origin: left;
 
 		}
 
