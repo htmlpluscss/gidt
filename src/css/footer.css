@@ -7,15 +7,17 @@
 	line-height: 15px;
 	color: #cacaca;
 
+	@media ($mdWidth) {
+
+		display: none;
+
+	}
+
 	&__top {
 
 		display: flex;
 		justify-content: space-between;
 		padding-top: 34px;
-
-		@media ($mdWidth) {
-
-		}
 
 	}
 

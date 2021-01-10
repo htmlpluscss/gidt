@@ -6,6 +6,12 @@
 	background-position: top;
 	background-repeat: no-repeat;
 
+
+	@media ($mdWidth) {
+
+		display: none;
+
+	}
 	&__bg-1 {
 
 		position: absolute;

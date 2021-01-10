@@ -5,6 +5,12 @@
 
 	@media ($mdWidth) {
 
+		display: none;
+
+	}
+
+	@media ($mdWidth) {
+
 
 	}
 

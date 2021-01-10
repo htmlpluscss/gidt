@@ -3,6 +3,12 @@
 	position: relative;
 	overflow: hidden;
 
+
+	@media ($mdWidth) {
+
+		display: none;
+
+	}
 	@media ($smWidth) {
 
 
