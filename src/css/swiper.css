@@ -65,6 +65,14 @@
 		right: 15px;
 		bottom: 0;
 
+		@media ($mdWidth) {
+
+			height: 60px;
+			left: 0;
+			right: 0;
+
+		}
+
 	}
 
 	.swiper-navigation {
@@ -159,6 +167,13 @@
 			width: 70px;
 			transition: var(--transitionDefault);
 			margin: 0 10px;
+
+			@media ($mdWidth) {
+
+				width: 20px;
+				margin: 0 5px;
+
+			}
 
 			&.is-active {
 

@@ -117,6 +117,13 @@ hr {
 	line-height: 61px;
 	font-weight: 700;
 
+	@media ($mdWidth) {
+
+		font-size: 24px;
+		line-height: 29px;
+
+	}
+
 }
 
 .h3 {
@@ -131,10 +138,16 @@ hr {
 
 	font-size: 22px;
 	font-weight: 300;
-	line-height: 29px;
+	line-height: 1.33;
 	color: #000;
 	letter-spacing: 0.05em;
 	text-align: center;
+
+	@media ($mdWidth) {
+
+		font-size: 14px;
+
+	}
 
 }
 
@@ -146,12 +159,25 @@ hr {
 	line-height: 21px;
 	color: var(--blue);
 
+	@media ($mdWidth) {
+
+		font-size: 14px;
+
+		svg {
+
+			width: 6px;
+			height: 10px;
+
+		}
+
+	}
+
 	svg {
 
 		margin-left: 16px;
 		fill: var(--blue);
 		stroke: #fff;
-		stroke-width: .4
+		stroke-width: .4;
 
 	}
 
