@@ -1,6 +1,5 @@
 .custom-gift {
 
-	margin-bottom: 54px;
 	position: relative;
 	overflow: hidden;
 
@@ -98,6 +97,7 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+		padding-top: 60px;
 
 		.custom-gift__swiper:not(.swiper-container-style) .custom-gift__swiper-item:nth-child(1) & img,
 		.swiper-slide-active & img,

@@ -1,7 +1,7 @@
 .hit-offers {
 
 	position: relative;
-	padding: 72px 0;
+	padding: 72px 0 0;
 
 	@media ($mdWidth) {
 
