@@ -80,6 +80,7 @@
 
 			width: 370px;
 			display: flex;
+			flex-shrink: 0;
 
 			@media ($mdWidth) {
 

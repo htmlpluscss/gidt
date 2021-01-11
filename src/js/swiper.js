@@ -200,7 +200,7 @@
 
 			script.onload = () => PubSub.publish('swiperJsLoad');
 
-			setTimeout( () => document.head.appendChild(script), 1);
+			setTimeout( () => document.head.appendChild(script), window.pageYOffset > 0 ? 0 : 5000);
 
 		}
 

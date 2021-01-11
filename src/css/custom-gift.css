@@ -36,6 +36,16 @@
 
 			}
 
+			&:not(.swiper-container-style) .custom-gift__swiper-item {
+
+				&:nth-child(2) {
+
+					display: none;
+
+				}
+
+			}
+
 		}
 
 		@media ($xsdWidth) {
@@ -54,6 +64,7 @@
 
 			display: flex;
 			width: 100%;
+			flex-shrink: 0;
 
 			@media ($mdWidth) {
 

@@ -7,6 +7,16 @@
 	line-height: 15px;
 	color: #cacaca;
 
+	@media ($mdWidth) {
+
+		.center {
+
+			width: 100%;
+
+		}
+
+	}
+
 	&__scroll-up {
 
 		display: none;
