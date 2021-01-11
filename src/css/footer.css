@@ -218,8 +218,14 @@
 
 		@media ($mdWidth) {
 
-			width: 50%;
+			width: 25%;
 			margin: 20px 0;
+
+		}
+
+		@media ($smWidth) {
+
+			width: 50%;
 
 		}
 
