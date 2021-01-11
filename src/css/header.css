@@ -251,6 +251,28 @@
 
 	}
 
+	@media (max-width: 1400px) and (min-width: 1200px) {
+
+		&__box {
+
+			margin-left: -222px !important;
+
+			&-inner {
+
+				&::after,
+				&::before {
+
+					left: 100% !important;
+					margin-left: -38px !important;
+
+				}
+
+			}
+
+		}
+
+	}
+
 	@media ($desktop) {
 
 		.header-cart-show &__box {

@@ -3,6 +3,12 @@
 	display: flex;
 	margin: -12px;
 
+	@media ($xsWidth) {
+
+		margin: -10px;
+
+	}
+
 	&__item {
 
 		margin: 12px;

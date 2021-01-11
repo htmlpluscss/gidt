@@ -7,9 +7,29 @@
 	line-height: 15px;
 	color: #cacaca;
 
-	@media ($mdWidth) {
+	&__scroll-up {
 
 		display: none;
+
+		@media ($mdWidth) {
+
+			display: flex;
+			justify-content: center;
+			padding: 8px;
+
+			.scroll-up {
+
+				padding: 10px;
+
+			}
+
+			svg {
+
+				fill: rgba(255,255,255,.8);
+
+			}
+
+		}
 
 	}
 
@@ -19,11 +39,31 @@
 		justify-content: space-between;
 		padding-top: 34px;
 
+		@media ($mdWidth) {
+
+			display: block;
+			padding: 0;
+
+		}
+
 	}
 
 	&__logo {
 
 		margin-bottom: 28px;
+
+		@media ($mdWidth) {
+
+			img {
+
+				width: 215px;
+				height: 49px;
+				object-fit: contain;
+				object-position: left;
+
+			}
+
+		}
 
 	}
 
@@ -72,6 +112,12 @@
 
 		display: flex;
 
+		@media ($mdWidth) {
+
+			flex-wrap: wrap;
+
+		}
+
 	}
 
 	&__right {
@@ -113,11 +159,29 @@
 		display: flex;
 		margin: 22px 0;
 
+		@media ($mdWidth) {
+
+			display: block;
+
+		}
+
 		&-menu {
 
 			display: flex;
 			flex-grow: 1;
 			justify-content: space-around;
+
+			@media ($mdWidth) {
+
+				display: block;
+
+				li {
+
+					margin-top: 10px;
+
+				}
+
+			}
 
 			a {
 
@@ -141,6 +205,13 @@
 
 		margin-left: 60px;
 		min-width: 140px;
+
+		@media ($mdWidth) {
+
+			width: 50%;
+			margin: 20px 0;
+
+		}
 
 		&-head {
 
@@ -188,6 +259,12 @@
 
 		margin: 40px 0 20px;
 		background-color: rgba(191, 191, 191, 0.5);
+
+		@media ($mdWidth) {
+
+			margin: 20px 0;
+
+		}
 
 	}
 

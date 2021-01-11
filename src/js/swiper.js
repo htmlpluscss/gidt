@@ -112,26 +112,47 @@
 
 			toggleSwipe = () => {
 
-				toggleSwipe = null;
+				resetSwipe();
 
-				swipeNav.classList.remove('hide');
-				swipeBtns.classList.remove('hide');
-				swipeControls.classList.remove('hide');
 				swipe.parentNode.classList.add('swiper-container-style');
 
-				new Swiper(swipe, {
-					loop: true,
-					effect: 'fade',
-					pagination: {
-						el: swipeNav,
-						bulletClass: 'button',
-						bulletActiveClass: 'is-active'
-					},
-					navigation: {
-						nextEl: swipeNext,
-						prevEl: swipePrev
-					}
-				});
+				if (window.innerWidth < 1200) {
+
+					swipeNav.classList.remove('hide');
+					swipeControls.classList.remove('hide');
+
+					mySwipe = new Swiper(swipe, {
+						loop: true,
+						autoHeight: true,
+						pagination: {
+							el: swipeNav,
+							bulletClass: 'button',
+							bulletActiveClass: 'is-active'
+						}
+					});
+
+				}
+				else {
+
+					swipeNav.classList.remove('hide');
+					swipeBtns.classList.remove('hide');
+					swipeControls.classList.remove('hide');
+
+					mySwipe = new Swiper(swipe, {
+						loop: true,
+						effect: 'fade',
+						pagination: {
+							el: swipeNav,
+							bulletClass: 'button',
+							bulletActiveClass: 'is-active'
+						},
+						navigation: {
+							nextEl: swipeNext,
+							prevEl: swipePrev
+						}
+					});
+
+				}
 
 			}
 

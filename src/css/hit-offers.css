@@ -5,7 +5,7 @@
 
 	@media ($mdWidth) {
 
-		display: none;
+		padding: 30px 0 0;
 
 	}
 
@@ -53,6 +53,32 @@
 
 			width: 370px;
 			display: flex;
+
+			@media ($mdWidth) {
+
+				width: 100%;
+				padding: 20px;
+
+			}
+
+			@media ($xsWidth) {
+
+				padding: 10px;
+
+			}
+
+		}
+
+		@media ($mdWidth) {
+
+			margin: 0 -20px 20px;
+			padding: 0 0 40px;
+
+		}
+
+		@media ($xsWidth) {
+
+			margin: 0 -10px 20px;
 
 		}
 

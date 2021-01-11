@@ -2,19 +2,47 @@
 
 	position: relative;
 	overflow: hidden;
-
+	padding: 100px 0 0;
 
 	@media ($mdWidth) {
 
-		display: none;
+		padding: 60px 0 0;
 
 	}
-	@media ($smWidth) {
 
+	&__title {
+
+		@media ($mdWidth) {
+
+			text-align: center;
+			position: relative;
+
+		}
 
 	}
 
 	&__swiper {
+
+		padding-bottom: 100px;
+
+		@media ($mdWidth) {
+
+			margin: 0 -20px;
+			padding: 0;
+
+			.swiper-controls {
+
+				bottom: 10px;
+
+			}
+
+		}
+
+		@media ($xsdWidth) {
+
+			margin: 0 -10px;
+
+		}
 
 		&-list {
 
@@ -27,19 +55,32 @@
 			display: flex;
 			width: 100%;
 
-		}
+			@media ($mdWidth) {
 
-		&:not(.swiper-container-style) .custom-gift__swiper-item {
-
-			&:nth-child(1) {
-
-				z-index: 1;
+				flex-direction: column-reverse;
+				justify-content: flex-end;
+				text-align: center;
+				padding: 30px 20px;
 
 			}
 
-			&:nth-child(2) {
+		}
 
-				margin-left: -100%;
+		@media ($desktop) {
+
+			&:not(.swiper-container-style) .custom-gift__swiper-item {
+
+				&:nth-child(1) {
+
+					z-index: 1;
+
+				}
+
+				&:nth-child(2) {
+
+					margin-left: -100%;
+
+				}
 
 			}
 
@@ -47,79 +88,116 @@
 
 	}
 
-	&__content {
+	@media ($desktop) {
 
-		width: 620px;
-		padding: 100px 0;
-		flex-shrink: 0;
-		transition: var(--transitionDefault);
-		opacity: 0;
+		&__content {
 
-		.custom-gift__swiper:not(.swiper-container-style) .custom-gift__swiper-item:nth-child(1) &,
-		.swiper-slide-active &,
-		.swiper-slide-duplicate-active & {
+			width: 620px;
+			flex-shrink: 0;
+			padding-top: 30px;
+			transition: var(--transitionDefault);
+			opacity: 0;
 
-			opacity: 1 !important;
+			.custom-gift__swiper:not(.swiper-container-style) .custom-gift__swiper-item:nth-child(1) &,
+			.swiper-slide-active &,
+			.swiper-slide-duplicate-active & {
+
+				opacity: 1 !important;
+
+			}
+
+			.text-intro {
+
+				text-align: left;
+				max-width: 500px;
+
+				p {
+
+					margin: 30px 0;
+
+				}
+
+			}
 
 		}
 
-		.text-intro {
+		.swiper-container-style .swiper-controls {
 
-			text-align: left;
-			max-width: 500px;
+			left: 0;
+			right: 0;
+
+		}
+
+		.swiper-container-style .swiper-container {
+
+			overflow: visible;
+
+		}
+
+		&__img {
+
+			flex-grow: 1;
+			display: flex;
+			align-items: center;
+			position: relative;
+			padding: 20px 0 80px;
+
+			.custom-gift__swiper:not(.swiper-container-style) .custom-gift__swiper-item:nth-child(1) & img,
+			.swiper-slide-active & img,
+			.swiper-slide-duplicate-active & img {
+
+				transform: translate3d(0, 0, 0) scale(1);
+				box-shadow: 0 0 20px rgba(0,0,0,.1);
+
+			}
+
+			img {
+
+				background-color: #fff;
+				transform: translate3d(500px, 0, 0) scale(.88);
+				transition: var(--transitionDefault);
+				transform-origin: left;
+
+			}
+
+		}
+
+	}
+
+	@media ($mdWidth) {
+
+		.link-all {
+
+			display: none;
+
+		}
+
+		&__img {
+
+			img {
+
+				width: 100%;
+				height: auto;
+
+			}
+
+		}
+
+		&__content {
+
+			margin: 20px;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 133%;
+			text-align: center;
+			letter-spacing: 0.05em;
+			color: #000;
 
 			p {
 
-				margin: 30px 0;
+				margin: 1.3em 0;
 
 			}
-
-		}
-
-	}
-
-	&__title {
-
-		margin-bottom: 60px;
-
-	}
-
-	.swiper-container-style .swiper-controls {
-
-		left: 0;
-		right: 0;
-
-	}
-
-	.swiper-container-style .swiper-container {
-
-		overflow: visible;
-
-	}
-
-	&__img {
-
-		flex-grow: 1;
-		display: flex;
-		align-items: center;
-		position: relative;
-		padding-top: 60px;
-
-		.custom-gift__swiper:not(.swiper-container-style) .custom-gift__swiper-item:nth-child(1) & img,
-		.swiper-slide-active & img,
-		.swiper-slide-duplicate-active & img {
-
-			transform: translate3d(0, 0, 0) scale(1);
-			box-shadow: 0 0 20px rgba(0,0,0,.1);
-
-		}
-
-		img {
-
-			background-color: #fff;
-			transform: translate3d(500px, 0, 0) scale(.88);
-			transition: var(--transitionDefault);
-			transform-origin: left;
 
 		}
 
@@ -140,6 +218,12 @@
 			top: 40px;
 			right: -240px;
 
+			@media ($mdWidth) {
+
+				display: none;
+
+			}
+
 		}
 
 		&-2 {
@@ -147,6 +231,31 @@
 			position: absolute;
 			top: 30px;
 			right: -640px;
+
+			@media ($mdWidth) {
+
+				display: none;
+
+			}
+
+		}
+
+		&-mobile {
+
+			display: none;
+
+			@media ($mdWidth) {
+
+				display: block;
+				position: absolute;
+				width: 100%;
+				height: 256px;
+				top: 40px;
+				left: 0;
+				right: 0;
+				object-fit: cover;
+
+			}
 
 		}
 

@@ -8,13 +8,23 @@
 
 	@media ($mdWidth) {
 
-		display: none;
+		padding: 40px 0 20px;
 
 	}
 
 	&__title {
 
 		text-align: center;
+
+		@media ($xsWidth) {
+
+			br {
+
+				display: none;
+
+			}
+
+		}
 
 	}
 
@@ -23,6 +33,12 @@
 		display: flex;
 		justify-content: center;
 		margin-top: 34px;
+
+		@media ($mdWidth) {
+
+			display: block;
+
+		}
 
 	}
 
@@ -37,6 +53,16 @@
 		line-height: 21px;
 		color: #000;
 
+		@media ($mdWidth) {
+
+			width: 100%;
+			margin: 30px 0;
+			padding: 24px;
+			font-size: 14px;
+			line-height: 17px;
+
+		}
+
 	}
 
 	&__ico {
@@ -44,6 +70,19 @@
 		height: 110px;
 		display: flex;
 		align-items: center;
+
+		@media ($mdWidth) {
+
+			height: auto;
+
+			img {
+
+				height: 50px;
+				width: auto;
+
+			}
+
+		}
 
 	}
 
@@ -54,12 +93,26 @@
 		line-height: 49px;
 		margin-bottom: 20px;
 
+		@media ($mdWidth) {
+
+			font-size: 24px;
+			line-height: 29px;
+			margin: 20px 0;
+
+		}
+
 	}
 
 	&__text {
 
 		margin-bottom: 40px;
 		max-width: 440px;
+
+		@media ($mdWidth) {
+
+			margin-bottom: 20px;
+
+		}
 
 	}
 
