@@ -74,6 +74,7 @@
 						loop: true,
 						pagination: {
 							el: swipeNav,
+							clickable: true,
 							bulletClass: 'button',
 							bulletActiveClass: 'is-active'
 						}
@@ -93,6 +94,7 @@
 						spaceBetween: 30,
 						pagination: {
 							el: swipeNav,
+							clickable: true,
 							bulletClass: 'button',
 							bulletActiveClass: 'is-active'
 						},
@@ -126,6 +128,7 @@
 						autoHeight: true,
 						pagination: {
 							el: swipeNav,
+							clickable: true,
 							bulletClass: 'button',
 							bulletActiveClass: 'is-active'
 						}
@@ -143,6 +146,7 @@
 						effect: 'fade',
 						pagination: {
 							el: swipeNav,
+							clickable: true,
 							bulletClass: 'button',
 							bulletActiveClass: 'is-active'
 						},
@@ -200,7 +204,9 @@
 
 			script.onload = () => PubSub.publish('swiperJsLoad');
 
-			setTimeout( () => document.head.appendChild(script), window.pageYOffset > 0 ? 0 : 5000);
+			document.head.appendChild(script);
+
+//			setTimeout( () => document.head.appendChild(script), window.pageYOffset > 0 ? 0 : 5000);
 
 		}
 

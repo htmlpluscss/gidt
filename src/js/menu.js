@@ -6,6 +6,13 @@ document.querySelector('.btn-menu-toggle').addEventListener('click', event => {
 	document.body.classList.remove('overlay', 'header-cart-show');
 	document.body.classList.toggle('menu-show');
 
+	if(document.body.classList.contains('header-search-show')){
+
+		document.body.classList.remove('header-search-show');
+		document.querySelector('.header-search').reset();
+
+	}
+
 });
 
 // показать меню каталог

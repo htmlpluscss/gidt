@@ -1,8 +1,8 @@
 .about {
 
 	padding: 80px 0;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1708' height='830' viewBox='0 0 1708 830' preserveAspectRatio='none'%3E%3Cpath d='M114.2 265.63c409.5-581.5 1593.5-27 1593.5-27l-172 590.5H25.7s-97.9-298.8 88.5-563.5z' fill='%23FF4D6A' fill-opacity='.07'/%3E%3C/svg%3E");
-	background-size: 1708px 100%;
+	background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='1510' height='850' viewBox='0 0 1510 850' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-4 304.5c495.5-572.5 1514-228 1832.5 144 192.39 224.7 240.71 279.47 335 400.5h-2628S-222.92 557.44-4 304.5z' fill='%23FF4D6A' fill-opacity='.07'/%3E%3C/svg%3E");
+	background-size: 1510px 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 

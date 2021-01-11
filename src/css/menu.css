@@ -304,6 +304,12 @@
 
 	}
 
+	.header-search-show & {
+
+		display: none !important;
+
+	}
+
 	&__head {
 
 		display: flex;

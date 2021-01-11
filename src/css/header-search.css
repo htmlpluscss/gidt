@@ -165,21 +165,120 @@
 		margin: 20px 0;
 		display: none;
 
+		&__fieldset {
+
+			position: relative;
+
+		}
+
 		&__ico {
 
-			display: none;
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			top: 0;
+			left: 14px;
+			bottom: 0;
+			fill: #fff;
+			opacity: .5;
+			margin: auto;
+			pointer-events: none;
 
 		}
 
 		&__reset {
 
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			top: 0;
+			right: 10px;
+			bottom: 0;
+			margin: auto;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, .5);
 			display: none;
+
+			.header-search-show & {
+
+				display: block;
+
+			}
+
+			svg {
+
+				width: 8px;
+				height: 8px;
+				fill: var(--blue);
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+
+			}
 
 		}
 
 		&__result {
 
 			display: none;
+			border-top: 1px solid rgba(255, 255, 255, .2);
+			padding: 20px 0;
+			margin: 20px 0;
+
+			&-inner {
+
+				padding-left: 40px;
+
+			}
+
+			&-head {
+
+				font-size: 14px;
+				line-height: 17px;
+				font-weight: 400;
+				text-transform: uppercase;
+				color: rgba(255, 255, 255, 0.8);
+				margin-bottom: 12px;
+
+			}
+
+			&-item {
+
+				border-bottom: 1px solid rgba(255, 255, 255, .2);
+				padding: 6px 0;
+				display: flex;
+
+				svg {
+
+					margin: 8px 8px 8px 0;
+					fill: #fff;
+					opacity: .8;
+					width: 14px;
+					height: 14px;
+					order: -1;
+					flex-shrink: 0;
+
+				}
+
+				a {
+
+					font-size: 14px;
+					line-height: 18px;
+					color: #fff;
+					padding: 6px 0;
+
+				}
+
+			}
+
+			.header-search-show & {
+
+				display: block;
+
+			}
 
 		}
 
@@ -189,12 +288,9 @@
 			color: #fff;
 			font-size: 16px;
 			height: 38px;
-			padding: 0 20px 0 42px;
+			padding: 0 42px;
 			background: rgba(255, 255, 255, 0.15);
 			border-radius: 5px;
-			background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.49 13.73l-3.56-3.41a6.2 6.2 0 001.4-3.92c0-3.53-3-6.4-6.67-6.4A6.54 6.54 0 000 6.4c0 3.53 2.99 6.4 6.66 6.4a6.8 6.8 0 004.19-1.42l3.55 3.4a.79.79 0 001.1 0c.29-.29.29-.76-.01-1.05zM1.54 6.4c0-2.71 2.3-4.92 5.12-4.92 2.83 0 5.12 2.21 5.12 4.92s-2.3 4.92-5.12 4.92A5.03 5.03 0 011.54 6.4z' fill='%23fff' fill-opacity='.5'/%3E%3C/svg%3E");
-			background-repeat: no-repeat;
-			background-position: 14px center;
 
 			&::placeholder {
 

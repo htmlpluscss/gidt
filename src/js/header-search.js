@@ -14,9 +14,15 @@
 
 		});
 
-		form.addEventListener('reset', () =>
-			document.body.classList.remove('overlay', 'header-search-show'));
+		form.addEventListener('reset', () => {
 
+			result.innerHTML = '';
+			document.body.classList.remove('overlay', 'header-search-show');
+
+		});
+
+		input.addEventListener('focus', event =>
+			document.body.classList.add('header-search-show'));
 
 		input.addEventListener('keyup', event => {
 
@@ -53,7 +59,7 @@
 
 						<div class="header-search__result-item">
 
-							<a href="/">Смотровая площадка для двоих</a>
+							<a href="/"><b>Корпо</b>ративные подарки</a>
 
 							<svg><use xlink:href="#ico-search"/></svg>
 
@@ -61,7 +67,7 @@
 
 						<div class="header-search__result-item">
 
-							<a href="/">Смена пароля</a>
+							<a href="/"><b>Корпо</b>ративный бокс</a>
 
 							<svg><use xlink:href="#ico-search"/></svg>
 
@@ -69,7 +75,7 @@
 
 						<div class="header-search__result-item">
 
-							<a href="/">Романтический ужин а двоих на смотровой площадке</a>
+							<a href="/"><b>Корпо</b>ративные посиделки</a>
 
 							<svg><use xlink:href="#ico-search"/></svg>
 
