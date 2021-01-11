@@ -1,0 +1,202 @@
+{% set menuCatalog = [
+
+	{
+		name : "Для кого",
+		list : [
+			'Для мужчин',
+			'Для женщин',
+			'Для двоих',
+			'Для коллег',
+			'Для руководителя',
+			'Для детей',
+			'Для семьи',
+			'Для учителей'
+		]
+	},
+
+	{
+		name : "Тематика",
+		list : [
+			'СПА',
+			'Красота',
+			'Экстрим',
+			'Хобби',
+			'Полеты'
+		]
+	},
+
+	{
+		name : "Повод",
+		list : [
+			'День рождение',
+			'Свадьба',
+			'Новый год',
+			'День влюбленных',
+			'23 февраля',
+			'8 марта',
+			'На юбилей'
+		]
+	},
+
+	{
+		name : "На открытом воздухе",
+		list : [
+			'Зимой',
+			'Весной',
+			'Летом',
+			'Осенью'
+		]
+	},
+
+	{
+		name : "Тип",
+		list : [
+			'1 впечатление',
+			'Набор впечатлений'
+		]
+	}
+
+] %}
+
+	<nav class="menu-mobile">
+
+		<div class="center">
+
+			<p class="menu-mobile__head is-arrow">
+				<svg width="12" height="12" viewBox="0 0 12 12">
+					<path d="M6.42 1.1a1 1 0 00-.84 0L1.22 3.14a.4.4 0 000 .72l4.44 2.08c.22.1.46.1.68 0l4.44-2.08a.4.4 0 000-.72L6.42 1.1z"/>
+					<path d="M2.05 5.25l-.83.39a.4.4 0 000 .72l4.44 2.08c.22.1.46.1.68 0l4.44-2.08a.4.4 0 000-.72l-.83-.39-3.61 1.7a.8.8 0 01-.68 0l-3.6-1.7z"/>
+					<path d="M2.05 7.75l-.83.39a.4.4 0 000 .72l4.44 2.08c.22.1.46.1.68 0l4.44-2.08a.4.4 0 000-.72l-.83-.39-3.61 1.7a.8.8 0 01-.68 0l-3.6-1.7z"/>
+				</svg>
+				Весь каталог
+			</p>
+
+			<div class="menu-mobile__catalog">
+
+{% for item in menuCatalog %}
+
+				<p class="menu-mobile__catalog-head">
+					{{ item.name }}
+				</p>
+
+				<ul>
+
+	{% for link in item.list %}
+
+					<li>
+
+						<a href="/">
+							{{ link }}
+						</a>
+
+					</li>
+
+	{% endfor %}
+
+				</ul>
+
+{% endfor %}
+
+				<a class="menu-mobile__catalog-all" href="/">
+					Все наборы
+				</a>
+
+			</div>
+
+			<ul class="menu-mobile__main">
+				<li><a href="/">Корпоративным клиентам</a></li>
+				<li><a href="/">Собрать подарок</a></li>
+				<li><a href="/">Активировать</a></li>
+			</ul>
+
+{% set menuCompany = [
+
+	{
+		name : "Доставка и оплата"
+	},
+
+	{
+		name : "Акции"
+	},
+
+	{
+		name : "Сервис",
+		sub  : [
+			'Доставка и оплата',
+			'Возврат',
+			'Публичная оферта'
+		]
+	},
+
+	{
+		name : "О подарках",
+		sub  : [
+			'Упаковка',
+			'FAQ',
+			'Поставщикам услуг'
+		]
+	},
+
+	{
+		name : "О нас",
+		sub  : [
+			'Контакты',
+			'Отзывы'
+		]
+	}
+
+] %}
+
+			<ul class="menu-mobile__company">
+
+{% for item in menuCompany %}
+
+				<li>
+
+					<a href="/"{% if item.sub %} class="is-arrow"{% endif %}>
+						{{ item.name }}
+					</a>
+
+	{% if item.sub %}
+
+					<ul>
+
+		{% for link in item.sub %}
+
+						<li>
+							<a href="/">
+								{{ link }}
+							</a>
+						</li>
+
+		{% endfor %}
+
+					</ul>
+
+	{% endif %}
+
+				</li>
+
+{% endfor %}
+
+			</ul>
+
+			<div class="menu-mobile__phone">
+
+				<a href="tel:+78121234567">
+					+7 (812) 123-45-67
+				</a>
+				<br>
+				справочная служба 24/7
+
+			</div>
+
+			<div class="menu-mobile__social">
+
+	{% include "template/social.html" %}
+
+			</div>
+
+		</div>
+
+	</nav>

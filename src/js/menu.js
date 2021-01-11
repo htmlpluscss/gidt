@@ -1,27 +1,10 @@
 
 // btn header
 
-document.addEventListener('click', event => {
+document.querySelector('.btn-menu-toggle').addEventListener('click', event => {
 
-	if(event.target.closest('.btn-menu-toggle')) {
-
-		document.body.classList.toggle('menu-show');
-
-	}
-/*
-	if(event.target.closest('.menu__link')) {
-
-		let href = event.target.closest('.menu__link').getAttribute('href');
-
-		href = href.split('#');
-
-		if(document.querySelector('#'+href[1])) {
-
-			document.body.classList.remove('menu-show');
-
-		}
-
-	}*/
+	document.body.classList.remove('overlay', 'header-cart-show');
+	document.body.classList.toggle('menu-show');
 
 });
 
@@ -52,3 +35,27 @@ document.addEventListener('click', event => {
 	}
 
 })(document.querySelector('.menu-catalog'));
+
+
+// развернуть в мобильном меню
+
+( menu => {
+
+	if(menu) {
+
+		menu.addEventListener('click', event => {
+
+			const target = event.target;
+
+			if(target.closest('.is-arrow')) {
+
+				event.preventDefault();
+				target.closest('.is-arrow').classList.toggle('is-open');
+
+			}
+
+		});
+
+	}
+
+})(document.querySelector('.menu-mobile'));

@@ -1,154 +1,206 @@
 .header-search {
 
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: -1px;
-	background-color: var(--blue);
-	z-index: 6;
-	display: none;
+	@media ($desktop) {
 
-	.header-search-show & {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: -1px;
+		background-color: var(--blue);
+		z-index: 6;
+		display: none;
 
-		display: flex;
+		.header-search-show & {
 
-	}
-
-	.center {
-
-		width: 770px;
-
-	}
-
-	&__inner {
-
-		position: relative;
-		display: flex;
-		align-items: center;
-		flex-grow: 1;
-
-	}
-
-	&__fieldset {
-
-		position: relative;
-		padding: 0 70px;
-
-	}
-
-	&__input {
-
-		width: 100%;
-		background-color: transparent;
-		color: #fff;
-		font-size: 24px;
-		padding: 0;
-		font-weight: 700;
-		height: 32px;
-		border-radius: 0;
-
-		&::placeholder {
-
-			color: #fff;
-			opacity: .8;
-			font-size: 14px;
-			font-weight: 400;
+			display: flex;
 
 		}
 
-	}
+		.center {
 
-	&__ico {
+			width: 770px;
 
-		position: absolute;
-		top: 0;
-		left: 10px;
-		bottom: 0;
-		margin: auto;
-		fill: #fff;
+		}
 
-	}
+		&__inner {
 
-	&__reset {
+			position: relative;
+			display: flex;
+			align-items: center;
+			flex-grow: 1;
 
-		position: absolute;
-		top: 0;
-		right: 10px;
-		bottom: 0;
-		margin: auto;
+		}
 
-		svg {
+		&__fieldset {
 
+			position: relative;
+			padding: 0 70px;
+
+		}
+
+		&__input {
+
+			width: 100%;
+			background-color: transparent;
+			color: #fff;
+			font-size: 24px;
+			padding: 0;
+			font-weight: 700;
+			height: 32px;
+			border-radius: 0;
+
+			&::placeholder {
+
+				color: #fff;
+				opacity: .8;
+				font-size: 14px;
+				font-weight: 400;
+
+			}
+
+		}
+
+		&__ico {
+
+			position: absolute;
+			top: 0;
+			left: 10px;
+			bottom: 0;
+			margin: auto;
 			fill: #fff;
 
 		}
 
-	}
+		&__reset {
 
-	&__result {
-
-		position: absolute;
-		top: 100%;
-		left: 0;
-		right: 0;
-
-		&-inner {
-
-			background-color: #fff;
-			border-radius: 0 0 27px 27px;
-			padding: 30px 10px;
-			position: relative;
-
-		}
-
-		&-head {
-
-			font-size: 14px;
-			line-height: 17px;
-			color: var(--grey);
-			text-transform: uppercase;
-			font-weight: 400;
-			padding-left: 60px;
-			margin-bottom: 10px;
-
-		}
-
-		&-item {
-
-			font-size: 14px;
-			line-height: 17px;
-			position: relative;
+			position: absolute;
+			top: 0;
+			right: 10px;
+			bottom: 0;
+			margin: auto;
 
 			svg {
 
-				position: absolute;
-				width: 14px;
-				height: 14px;
-				top: 8px;
-				left: 60px;
-				pointer-events: none;
+				fill: #fff;
 
 			}
 
-			a {
+		}
 
-				color: #000;
-				display: block;
-				padding: 6px 88px;
+		&__result {
 
-				&:hover {
+			position: absolute;
+			top: 100%;
+			left: 0;
+			right: 0;
 
-					background-color: #f5f5f5;
-					color: var(--blueText);
+			&-inner {
 
-					& + svg {
+				background-color: #fff;
+				border-radius: 0 0 27px 27px;
+				padding: 30px 10px;
+				position: relative;
 
-						fill: var(--blueText);
+			}
+
+			&-head {
+
+				font-size: 14px;
+				line-height: 17px;
+				color: var(--grey);
+				text-transform: uppercase;
+				font-weight: 400;
+				padding-left: 60px;
+				margin-bottom: 10px;
+
+			}
+
+			&-item {
+
+				font-size: 14px;
+				line-height: 17px;
+				position: relative;
+
+				svg {
+
+					position: absolute;
+					width: 14px;
+					height: 14px;
+					top: 8px;
+					left: 60px;
+					pointer-events: none;
+
+				}
+
+				a {
+
+					color: #000;
+					display: block;
+					padding: 6px 88px;
+
+					&:hover {
+
+						background-color: #f5f5f5;
+						color: var(--blueText);
+
+						& + svg {
+
+							fill: var(--blueText);
+
+						}
 
 					}
 
 				}
+
+			}
+
+		}
+
+	}
+
+	@media ($mdWidth) {
+
+		margin: 20px 0;
+		display: none;
+
+		&__ico {
+
+			display: none;
+
+		}
+
+		&__reset {
+
+			display: none;
+
+		}
+
+		&__result {
+
+			display: none;
+
+		}
+
+		&__input {
+
+			width: 100%;
+			color: #fff;
+			font-size: 16px;
+			height: 38px;
+			padding: 0 20px 0 42px;
+			background: rgba(255, 255, 255, 0.15);
+			border-radius: 5px;
+			background-image: url("data:image/svg+xml,%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.49 13.73l-3.56-3.41a6.2 6.2 0 001.4-3.92c0-3.53-3-6.4-6.67-6.4A6.54 6.54 0 000 6.4c0 3.53 2.99 6.4 6.66 6.4a6.8 6.8 0 004.19-1.42l3.55 3.4a.79.79 0 001.1 0c.29-.29.29-.76-.01-1.05zM1.54 6.4c0-2.71 2.3-4.92 5.12-4.92 2.83 0 5.12 2.21 5.12 4.92s-2.3 4.92-5.12 4.92A5.03 5.03 0 011.54 6.4z' fill='%23fff' fill-opacity='.5'/%3E%3C/svg%3E");
+			background-repeat: no-repeat;
+			background-position: 14px center;
+
+			&::placeholder {
+
+				color: #fff;
+				opacity: .6;
+				font-size: 14px;
 
 			}
 
