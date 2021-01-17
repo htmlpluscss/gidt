@@ -146,10 +146,10 @@
 
 .input {
 
-	height: 60px;
+	height: 50px;
 	line-height: 20px;
 
-	padding: 20px;
+	padding: 14px 20px;
 
 	font-size: 16px;
 	color: var(--color);
@@ -163,9 +163,9 @@
 	filter: none;
 	-webkit-transform: translateZ(0px); /* FIX for iOS safari https://forum.ionicframework.com/t/ion-input-shows-only-the-first-entered-character-on-ios/73107/5 */
 
-	border-radius: 8px;
+	border-radius: 2px;
 
-	border: 0;
+	border: 1px solid var(--border);
 	background-color: #fff;
 
 	textarea& {
@@ -178,8 +178,10 @@
 
 	&::placeholder {
 
-		color: var(--text);
+		color: #939393;
 		opacity: 1;
+		font-size: 14px;
+		font-weight: 300;
 
 	}
 
@@ -202,7 +204,7 @@
 	&:focus {
 
 		outline: none;
-		/* border-color: var(--color) !important; */
+		border-color: var(--color);
 
 	}
 
@@ -214,7 +216,7 @@
 
 	&--error {
 
-		border-color: var(--error) !important;
+		border-color: var(--error);
 
 	}
 

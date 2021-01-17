@@ -52,7 +52,7 @@
 
 </head>
 
-<body>
+<body{% if modal == "activation" %} class="modal-show modal-show--activation"{% endif %}>
 
 <div class="wrapper">
 
@@ -63,6 +63,12 @@
 {% include "template/menu-mobile.html" %}
 
 	<main class="main">
+
+{% if breadcrumbs %}
+
+{% include "template/breadcrumbs.html" %}
+
+{% endif %}
 
 {% block content %}{% endblock %}
 

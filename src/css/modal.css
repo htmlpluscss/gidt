@@ -63,6 +63,18 @@
 
 	}
 
+	&--activation .modal {
+
+		pointer-events: none;
+
+		&__box {
+
+			pointer-events: auto;
+
+		}
+
+	}
+
 	.wrapper {
 
 		position: fixed;

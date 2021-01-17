@@ -1,0 +1,91 @@
+{% set title = "Активация сертификата" %}
+
+{% set description = "Информация по активации приобретенного сертификата" %}
+
+{% set modal = "activation" %}
+
+{% set breadcrumbs = ['Активация'] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="page-activation">
+
+	<div class="center">
+
+		<h1 class="page-activation__title h1">
+			{{ title }}
+		</h1>
+
+		<p class="page-activation__text">
+			Запись на впечатление производится в соответствии с <a href="/activation/rules">правилами активации</a>
+		</p>
+
+		<form class="page-activation__form" action="/">
+
+			<div class="page-activation__form-left">
+
+				<div class="page-activation__form-inputbox">
+
+					<label for="page-activation-number">
+						Введите уникальный номер
+					</label>
+
+					<input type="tel" class="input" id="page-activation-number">
+
+				</div>
+
+				<div class="page-activation__form-inputbox">
+
+					<label for="page-activation-captcha">
+						Введите код с картинки
+					</label>
+
+					<div class="page-activation__form-captcha">
+
+						<button type="button" class="btn page-activation__form-captcha-btn">
+							<img src="/img/activation/captcha.png" srcset="/img/activation/captcha@2x.png 2x" alt="captcha">
+						</button>
+
+						<input class="input" id="page-activation-captcha" placeholder="Код с картинки">
+
+					</div>
+
+				</div>
+
+				<button class="btn btn--outline page-activation__form-submit">
+					Найти сертификат
+				</button>
+
+			</div>
+
+			<div class="page-activation__form-right">
+
+				<picture>
+
+					<source srcset="/img/activation/demo.webp 1x, /img/activation/demo@2x.webp 2x" type="image/webp">
+					<source srcset="/img/activation/demo.png 1x, /img/activation/demo@2x.png 2x">
+					<img src="/img/activation/demo.png" loading="lazy" width="450" height="285" alt="{{ title }}">
+
+				</picture>
+
+			</div>
+
+		</form>
+
+	</div>
+
+	<hr>
+
+	<div class="page-activation__after">
+
+		<p class="center">
+			Нужна дополнительная помощь? Пообщайтесь со специалистом в чате или позвоните по номеру <a href="tel:88003335173">8-800-333-51-73</a>.
+		</p>
+
+	</div>
+
+</article>
+
+{% endblock %}
