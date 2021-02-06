@@ -26,15 +26,21 @@
 @import url(accordion.css);
 
 @import url(page-activation.css);
+@import url(page-about.css);
+@import url(page-review.css);
+@import url(pagination.css);
+
+
+
 /*
 
 
 
-@import url(team.css);
+
 @import url(demo.css);
 @import url(subscribe.css);
 @import url(rotate.css);
 
-@import url(article.css);
-@import url(tooltip.css);
+
+
  */

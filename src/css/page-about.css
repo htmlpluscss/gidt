@@ -1,0 +1,338 @@
+.page-about {
+
+	&__title {
+
+		margin: 56px 0 32px;
+
+		@media ($smWidth) {
+
+			margin: 18px 0;
+
+		}
+
+	}
+
+	&__intro {
+
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 1.4;
+		margin: 50px 0 124px;
+
+		h2 {
+
+			font-size: 24px;
+			margin-top: 38px;
+
+		}
+
+	}
+
+	&__head {
+
+		text-align: center;
+		margin: 56px 0;
+
+		@media ($smWidth) {
+
+			margin: 18px 0;
+
+		}
+
+	}
+
+	&__advantages {
+
+		margin-bottom: 124px;
+
+		&-list {
+
+			display: flex;
+			justify-content: space-between;
+
+		}
+
+		&-item {
+
+			width: 366px;
+			box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+			padding: 18px 14px 120px;
+
+			h3 {
+
+				font-weight: 500;
+				font-size: 32px;
+				line-height: 39px;
+				margin: 14px 0;
+
+			}
+
+			p {
+
+				font-weight: 300;
+				font-size: 24px;
+				line-height: 1.4;
+				letter-spacing: 0.07em;
+
+			}
+
+			img {
+
+				position: absolute;
+				right: 30px;
+				bottom: 0;
+
+			}
+
+		}
+
+	}
+
+	&__offers {
+
+		margin-bottom: 124px;
+
+		ol {
+
+			counter-reset: headings 0;
+
+		}
+
+		li {
+
+			counter-increment: headings 1;
+			margin: 46px 0;
+			padding: 14px 50px 14px 96px;
+			background-color: #FFF5F7;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+			font-weight: 300;
+			font-size: 24px;
+			line-height: 1.4;
+			letter-spacing: 0.07em;
+			min-height: 160px;
+
+			h3 {
+
+				font-weight: 500;
+				font-size: 24px;
+
+			}
+
+			&::before {
+
+				content: counter(headings, decimal);
+				font: 72px/84px Roboto;
+				color: var(--red);
+				position: absolute;
+				width: 96px;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+
+			}
+
+		}
+
+	}
+
+	&__contact {
+
+		margin-bottom: 124px;
+
+		&-title {
+
+			text-transform: uppercase;
+			max-width: 360px;
+			padding: 30px 0;
+
+		}
+
+		&-phone {
+
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 1.33;
+			letter-spacing: 0.05em;
+			color: var(--blueText);
+
+			@media ($smWidth) {
+
+				font-size: 14px;
+				margin-bottom: 10px;
+
+			}
+
+			a {
+
+				color: inherit;
+
+			}
+
+		}
+
+		&-email {
+
+			font-weight: 300;
+			font-size: 22px;
+			line-height: 1.33;
+			letter-spacing: 0.05em;
+
+			@media ($smWidth) {
+
+				font-size: 14px;
+				line-height: 17px;
+
+			}
+
+			a {
+
+				color: inherit;
+
+			}
+
+		}
+
+		&-social {
+
+			font-size: 17px;
+			line-height: 21px;
+			color: var(--text);
+			margin: 50px 0;
+
+			@media ($smWidth) {
+
+				margin: 24px 0;
+				font-size: 14px;
+				line-height: 17px;
+
+			}
+
+			&-links {
+
+				display: flex;
+				margin-bottom: 12px;
+
+				a {
+
+					margin-right: 18px;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&__more {
+
+		margin-bottom: 124px;
+		display: flex;
+
+		@media ($smWidth) {
+
+			margin-bottom: 36px;
+
+		}
+
+		.btn {
+
+			width: 300px;
+
+			@media ($smWidth) {
+
+				width: 100%;
+
+			}
+
+		}
+
+	}
+
+	&__map {
+
+		height: 414px;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+
+		@media ($smWidth) {
+
+			height: 234px;
+
+		}
+
+	}
+
+	&__address {
+
+		position: relative;
+		padding: 34px;
+		max-width: 495px;
+		margin: -256px 0 48px;
+		z-index: 1;
+
+		background-color: #fff;
+		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+
+		@media ($smWidth) {
+
+			padding: 24px;
+			margin: -40px 0 10px;
+
+		}
+
+		&-title {
+
+			text-transform: uppercase;
+			font-size: 24px;
+			line-height: 133%;
+			letter-spacing: 0.05em;
+
+			@media ($smWidth) {
+
+				font-size: 18px;
+
+			}
+
+		}
+
+		p {
+
+			margin-top: 32px;
+			font-size: 17px;
+			line-height: 21px;
+			color: var(--text);
+
+			@media ($smWidth) {
+
+				font-size: 14px;
+				line-height: 17px;
+				margin-top: 20px;
+
+			}
+
+			a {
+
+				color: #000;
+
+			}
+
+			b {
+
+				font-weight: 400;
+				color: #000;
+
+			}
+
+		}
+
+	}
+
+}
