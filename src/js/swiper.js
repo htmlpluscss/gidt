@@ -22,7 +22,9 @@
 			  items = swipe.querySelectorAll('.swiper-slide'),
 			  count = items.length,
 			  group3 = swipe.classList.contains('swiper-container--group3'),
-			  customGift = swipe.classList.contains('swiper-container--custom-gift');
+			  customGift = swipe.classList.contains('swiper-container--custom-gift'),
+			  packing = swipe.classList.contains('swiper-container--packing'),
+			  packingCover = swipe.classList.contains('swiper-container--packing-cover');
 
 		swipeNav.className = 'swiper-pagination';
 		swipeControls.className = 'swiper-controls';
@@ -154,6 +156,76 @@
 							nextEl: swipeNext,
 							prevEl: swipePrev
 						}
+					});
+
+				}
+
+			}
+
+		}
+
+		if (packing) {
+
+			toggleSwipe = () => {
+
+				toggleSwipe = null;
+
+				swipe.parentNode.classList.add('swiper-container-style');
+
+				swipeNav.classList.remove('hide');
+				swipeControls.classList.remove('hide');
+
+				mySwipe = new Swiper(swipe, {
+					loop: true,
+					autoHeight: true,
+					autoplay: {
+						delay: 3000
+					},
+					pagination: {
+						el: swipeNav,
+						clickable: true,
+						bulletClass: 'button',
+						bulletActiveClass: 'is-active'
+					}
+				});
+
+			}
+
+		}
+
+		if (packingCover) {
+
+			toggleSwipe = () => {
+
+				resetSwipe();
+
+				swipe.parentNode.classList.add('swiper-container-style');
+
+				if (window.innerWidth < 1200) {
+
+					swipeNav.classList.remove('hide');
+					swipeControls.classList.remove('hide');
+
+					mySwipe = new Swiper(swipe, {
+						loop: true,
+						pagination: {
+							el: swipeNav,
+							clickable: true,
+							bulletClass: 'button',
+							bulletActiveClass: 'is-active'
+						}
+					});
+
+				}
+				else {
+
+					mySwipe = new Swiper(swipe, {
+						loop: true,
+						autoplay: {
+							delay: 3000
+						},
+						slidesPerView: 'auto',
+						centeredSlides: true
 					});
 
 				}

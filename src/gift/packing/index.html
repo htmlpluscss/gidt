@@ -1,0 +1,167 @@
+{% set title = "Упаковка" %}
+
+{% set description = "Чем занимается наша компания, Наши приемущества, Наши предложения" %}
+
+{% set breadcrumbs = ['О нас',title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="packing">
+
+	<div class="packing__bg-top-right">
+
+		<img src="/img/packing/bg-top-right.svg" width="418" height="571" loading="lazy" alt="">
+
+	</div>
+
+	<div class="center">
+
+		<h1 class="packing__title h1">
+			{{ title }}
+		</h1>
+
+		<div class="packing__item">
+
+			<div class="packing__img">
+
+				<div class="swiper-container swiper-container--packing packing-swiper">
+
+					<ul class="swiper-wrapper packing-swiper__list">
+
+						<li class="swiper-slide packing-swiper__item">
+
+							<picture>
+
+								<source srcset="/img/packing/img.webp 1x, /img/packing/img@2x.webp 2x" type="image/webp">
+
+								<source srcset="/img/packing/img.jpg 1x, /img/packing/img@2x.jpg 2x">
+
+								<img src="/img/packing/img.jpg" alt="Подарочный сертификат в коробке" width="569" height="382" loading="lazy">
+
+							</picture>
+
+						</li>
+
+						<li class="swiper-slide packing-swiper__item">
+
+							<picture>
+
+								<source srcset="/img/packing/img.webp 1x, /img/packing/img@2x.webp 2x" type="image/webp">
+
+								<source srcset="/img/packing/img.jpg 1x, /img/packing/img@2x.jpg 2x">
+
+								<img src="/img/packing/img.jpg" alt="Подарочный сертификат в коробке" width="569" height="382" loading="lazy">
+
+							</picture>
+
+						</li>
+
+						<li class="swiper-slide packing-swiper__item">
+
+							<picture>
+
+								<source srcset="/img/packing/img.webp 1x, /img/packing/img@2x.webp 2x" type="image/webp">
+
+								<source srcset="/img/packing/img.jpg 1x, /img/packing/img@2x.jpg 2x">
+
+								<img src="/img/packing/img.jpg" alt="Подарочный сертификат в коробке" width="569" height="382" loading="lazy">
+
+							</picture>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+			<div class="packing__content">
+
+				<h2 class="packing__head">
+					Подарочный сертификат в коробке
+				</h2>
+
+				<p>
+					Коробка формата А5 из плотного картона.
+				</p>
+
+				<p>
+					В коробке карточки с описанием каждого впечатления и подробная инструкция по использованию подарка. Ниже пример коробки из категорий Стандарт, Топ, Элит, Престиж, Делюкс
+				</p>
+
+			</div>
+
+		</div>
+
+		<div class="packing__item">
+
+			<div class="packing__content">
+
+				<h2 class="packing__head">
+					Специальный подарочный сертификат
+				</h2>
+
+				<p>
+					Собранные наборы впечатлений и отдельные впечатления упаковываются в стильную черную коробку "Handmade".
+				</p>
+
+			</div>
+
+			<div class="packing__img">
+
+				<picture>
+
+					<source srcset="/img/packing/img.webp 1x, /img/packing/img@2x.webp 2x" type="image/webp">
+
+					<source srcset="/img/packing/img.jpg 1x, /img/packing/img@2x.jpg 2x">
+
+					<img src="/img/packing/img.jpg" alt="Специальный подарочный сертификат" width="569" height="382" loading="lazy">
+
+				</picture>
+
+			</div>
+
+		</div>
+
+		<div class="packing__item">
+
+			<div class="packing__img">
+
+				<picture>
+
+					<source srcset="/img/packing/img.webp 1x, /img/packing/img@2x.webp 2x" type="image/webp">
+
+					<source srcset="/img/packing/img.jpg 1x, /img/packing/img@2x.jpg 2x">
+
+					<img src="/img/packing/img.jpg" alt="Электронный подарочный сертификат" width="569" height="382" loading="lazy">
+
+				</picture>
+
+			</div>
+
+			<div class="packing__content">
+
+				<h2 class="packing__head">
+					Электронный подарочный сертификат
+				</h2>
+
+				<p>
+					При заказе сертификата в электронном формате вы получите файл в формате pdf с перечнем услуг и подробной инструкцией. <br>При оформлении заказа в корзине вы можете выбрать любой дизайн
+				</p>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</article>
+
+{% include "gift/packing/cover.html" %}
+
+{% include "_include/help-after.html" %}
+
+{% endblock %}

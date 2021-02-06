@@ -164,28 +164,9 @@
 
 	}
 
-	&__after {
+	.help-after {
 
-		text-align: center;
-		padding: 43px 0;
-		font-size: 17px;
-		line-height: 21px;
-
-		@media ($smWidth) {
-
-			padding: 30px 0;
-			font-size: 14px;
-			line-height: 17px;
-			text-align: left;
-
-		}
-
-		a {
-
-			color: var(--blue);
-			white-space: nowrap;
-
-		}
+		padding: 42px 0;
 
 	}
 
