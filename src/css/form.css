@@ -168,6 +168,12 @@
 	border: 1px solid var(--border);
 	background-color: #fff;
 
+	@media ($smWidth) {
+
+		padding: 14px;
+
+	}
+
 	textarea& {
 
 		height: 120px;
@@ -182,6 +188,12 @@
 		opacity: 1;
 		font-size: 14px;
 		font-weight: 300;
+
+		@media ($smWidth) {
+
+			font-size: 12px;
+
+		}
 
 	}
 
