@@ -8,15 +8,15 @@
 
 {% block content %}
 
-<article class="shipping">
+<article class="page">
 
 	<div class="center">
 
-		<h1 class="shipping__title h1">
+		<h1 class="page__title h1">
 			{{ title }}
 		</h1>
 
-		<p class="shipping__intro">
+		<p class="page__intro">
 			Доставим красивый подарочный сертификат курьером (бесплатно)  или на email - в течение 30 минут. <br>
 			В любой день в течение 6 месяцев забронируем для вас впечатление (просто позвоните нам)! <br>
 			Оплатить подарок можно на сайте или курьеру при получении - наличными или по карте!
@@ -24,9 +24,9 @@
 
 	</div>
 
-	<div class="shipping__calculator">
+	<div class="shipping-calculator">
 
-		<div class="shipping__calculator-bg">
+		<div class="shipping-calculator__bg">
 
 			<img src="/img/service/shipping.svg" width="427" height="442" loading="lazy" alt="">
 
@@ -34,57 +34,57 @@
 
 		<div class="center">
 
-			<div class="shipping__calculator-box">
+			<div class="shipping-calculator__box">
 
-				<div class="shipping__calculator-tab">
+				<div class="shipping-calculator__tab">
 
-					<div class="shipping__calculator-item">
+					<div class="shipping-calculator__item">
 
-						<div class="shipping__calculator-head">
+						<div class="shipping-calculator__head">
 
-							<img class="shipping__calculator-head-logo" src="/img/service/shipping-ip.svg" width="36" height="36" loading="lazy" alt="">
+							<img class="shipping-calculator__head-logo" src="/img/service/shipping-ip.svg" width="36" height="36" loading="lazy" alt="">
 
-							<div class="shipping__calculator-head-name">
+							<div class="shipping-calculator__head-name">
 								Юридическим лицам
 							</div>
 
-							<svg class="shipping__calculator-head-arrow" width="5" height="8">
+							<svg class="shipping-calculator__head-arrow" width="5" height="8">
 								<path d="M0 6.86L3.13 4 0 1.14.63 0 5 4 .62 8 0 6.86z"/>
 							</svg>
 
 						</div>
 
-						<div class="shipping__calculator-body">
-
+						<div class="shipping-calculator__body">
+какие тут поля?
 						</div>
 
 					</div>
 
-					<div class="shipping__calculator-item">
+					<div class="shipping-calculator__item">
 
-						<div class="shipping__calculator-head shipping__calculator-head--right is-active">
+						<div class="shipping-calculator__head shipping-calculator__head--right is-active">
 
-							<img class="shipping__calculator-head-logo" src="/img/service/shipping-fio.svg" width="36" height="36" loading="lazy" alt="">
+							<img class="shipping-calculator__head-logo" src="/img/service/shipping-fio.svg" width="36" height="36" loading="lazy" alt="">
 
-							<div class="shipping__calculator-head-name">
+							<div class="shipping-calculator__head-name">
 								Физическим лицам
 							</div>
 
-							<svg class="shipping__calculator-head-arrow" width="5" height="8">
+							<svg class="shipping-calculator__head-arrow" width="5" height="8">
 								<path d="M0 6.86L3.13 4 0 1.14.63 0 5 4 .62 8 0 6.86z"/>
 							</svg>
 
 						</div>
 
-						<form action="/" class="shipping__calculator-body">
+						<form action="/" class="shipping-calculator__body">
 
-							<div class="shipping__calculator-row">
+							<div class="shipping-calculator__row">
 
-								<div class="shipping__calculator-label">
+								<div class="shipping-calculator__label shipping-calculator__label--34">
 									Выберите город
 								</div>
 
-								<div class="shipping__calculator-control">
+								<div class="shipping-calculator__control">
 
 									<div class="select">
 
@@ -99,13 +99,13 @@
 
 							</div>
 
-							<div class="shipping__calculator-row">
+							<div class="shipping-calculator__row">
 
-								<div class="shipping__calculator-label">
+								<div class="shipping-calculator__label">
 									Формат подарка
 								</div>
 
-								<div class="shipping__calculator-control">
+								<div class="shipping-calculator__control">
 
 									<div class="radio-input">
 
@@ -135,15 +135,15 @@
 
 							</div>
 
-							<div class="shipping__calculator-row">
+							<div class="shipping-calculator__row">
 
-								<div class="shipping__calculator-label">
+								<div class="shipping-calculator__label">
 									Способ доставки
 								</div>
 
-								<div class="shipping__calculator-control">
+								<div class="shipping-calculator__control">
 
-									<div class="shipping__calculator-info">
+									<div class="shipping-calculator__info">
 										Доставка курьером по Москве: 300р.
 										<details class="tooltip-help">
 											<summary class="tooltip-help__btn">
@@ -155,7 +155,7 @@
 										</details>
 									</div>
 
-									<div class="shipping__calculator-info">
+									<div class="shipping-calculator__info">
 										Срочная доставка: 700 р.
 										<details class="tooltip-help">
 											<summary class="tooltip-help__btn">
@@ -167,22 +167,22 @@
 										</details>
 									</div>
 
-									<div class="shipping__calculator-info">
+									<div class="shipping-calculator__info">
 										Самовывоз из офиса
 									</div>
 								</div>
 
 							</div>
 
-							<div class="shipping__calculator-row">
+							<div class="shipping-calculator__row">
 
-								<div class="shipping__calculator-label">
+								<div class="shipping-calculator__label">
 									Способ оплаты
 								</div>
 
-								<div class="shipping__calculator-control">
+								<div class="shipping-calculator__control">
 
-									<div class="shipping__calculator-info">
+									<div class="shipping-calculator__info">
 										Банковской картой
 										<details class="tooltip-help">
 											<summary class="tooltip-help__btn">
@@ -194,7 +194,7 @@
 										</details>
 									</div>
 
-									<div class="shipping__calculator-info">
+									<div class="shipping-calculator__info">
 										Безналичный расчет
 										<details class="tooltip-help">
 											<summary class="tooltip-help__btn">
@@ -206,7 +206,7 @@
 										</details>
 									</div>
 
-									<div class="shipping__calculator-info">
+									<div class="shipping-calculator__info">
 										Наличными курьеру при <br>получепнии
 										<details class="tooltip-help">
 											<summary class="tooltip-help__btn">
@@ -222,15 +222,15 @@
 
 							</div>
 
-							<div class="shipping__calculator-row">
+							<div class="shipping-calculator__row">
 
-								<div class="shipping__calculator-label">
+								<div class="shipping-calculator__label">
 									Сроки доставки
 								</div>
 
-								<div class="shipping__calculator-control">
+								<div class="shipping-calculator__control">
 
-									<div class="shipping__calculator-info">
+									<div class="shipping-calculator__info">
 										В течение 1 дня с 09:00 до 21:00
 									</div>
 
@@ -244,7 +244,7 @@
 
 				</div>
 
-				<div class="shipping__calculator-text">
+				<div class="shipping-calculator__text">
 
 					<ul>
 

@@ -1,17 +1,5 @@
 .page-activation {
 
-	&__title {
-
-		margin: 56px 0 32px;
-
-		@media ($smWidth) {
-
-			margin: 18px 0;
-
-		}
-
-	}
-
 	&__text {
 
 		font-size: 17px;

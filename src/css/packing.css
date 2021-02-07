@@ -35,19 +35,6 @@
 
 	}
 
-
-	&__title {
-
-		margin: 56px 0 32px;
-
-		@media ($smWidth) {
-
-			margin: 18px 0;
-
-		}
-
-	}
-
 	&__item {
 
 		display: flex;
@@ -180,7 +167,40 @@
 
 		background-color: #F8F9FD;
 		padding: 54px 0 100px;
-		overflow: hidden;
+		position: relative;
+
+		.swiper-container {
+
+			overflow: hidden;
+
+		}
+
+		&__bg {
+
+			position: absolute;
+			top: -64px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			pointer-events: none;
+			overflow: hidden;
+
+			img {
+
+				position: absolute;
+				top: 0;
+				right: 50%;
+				margin-right: 365px;
+
+			}
+
+			@media ($smWidth) {
+
+				display: none;
+
+			}
+
+		}
 
 		@media ($smWidth) {
 

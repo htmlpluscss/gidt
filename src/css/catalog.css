@@ -30,7 +30,6 @@
 	&__progress {
 
 		text-align: center;
-		margin: 26px 0;
 		font-size: 12px;
 		line-height: 15px;
 		color: var(--grey);
@@ -70,7 +69,13 @@
 
 	&__rows {
 
-		margin-bottom: 60px;
+		margin-bottom: 50px;
+
+		@media ($smWidth) {
+
+			margin: 0;
+
+		}
 
 	}
 
@@ -79,6 +84,13 @@
 		margin: 0 -15px;
 		display: flex;
 		flex-wrap: wrap;
+
+		@media ($smWidth) {
+
+			margin: 0;
+			display: block;
+
+		}
 
 	}
 
@@ -90,6 +102,13 @@
 		border-radius: 3px;
 		background-color: #fff;
 		display: flex;
+
+		@media ($smWidth) {
+
+			margin: 20px 0;
+			width: 100%;
+
+		}
 
 		&--column {
 
@@ -112,6 +131,17 @@
 
 				width: 100%;
 				margin: 0;
+
+				@media ($smWidth) {
+
+					img {
+
+						width: 100%;
+						height: auto;
+
+					}
+
+				}
 
 			}
 
@@ -317,6 +347,7 @@
 		&__column {
 
 			display: flex;
+			justify-content: space-between;
 
 		}
 

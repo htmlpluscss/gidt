@@ -2,7 +2,7 @@
 
 	if(tab) {
 
-		const btns = tab.querySelectorAll('.shipping__calculator-head');
+		const btns = tab.querySelectorAll('.shipping-calculator__head');
 
 		Array.from(btns, btn => btn.addEventListener('click', () => {
 
@@ -12,4 +12,4 @@
 
 	}
 
-})(document.querySelector('.shipping__calculator-tab'));
+})(document.querySelector('.shipping-calculator'));

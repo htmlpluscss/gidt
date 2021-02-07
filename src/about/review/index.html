@@ -1,6 +1,6 @@
 {% set title = "Отзывы" %}
 
-{% set description = "Как с нами связаться? 8 (812) 123-45-67 info@info.ru" %}
+{% set description = "Вы можете написать свой отзыв о нашей работе на нашем сайте, замечание или пожелание о работе интернет магазина, за что мы будем очень признательны" %}
 
 {% set breadcrumbs = [title] %}
 
@@ -8,113 +8,117 @@
 
 {% block content %}
 
-<article class="page-review">
+<article class="page">
 
 	<div class="center">
 
-		<h1 class="page-review__title h1">
+		<h1 class="page__title h1">
 			{{ title }}
 		</h1>
 
-		<p class="page-review__intro">
+		<p class="page__intro">
 			Нам важно знать мнение каждого клиента. Вы можете написать свой отзыв о нашей работе на нашем сайте, замечание или пожелание о работе интернет магазина, за что мы будем очень признательны и постараемся учесть все пожелания клиентов в нашей работе.
 		</p>
 
-		<h2 class="page-review__head">
-			Что о нас говорят
-		</h2>
+		<div class="page-review">
 
-		<div class="page-review__list">
+			<h2 class="page-review__head">
+				Что о нас говорят
+			</h2>
 
-			<blockquote class="page-review-item">
+			<div class="page-review__list">
 
-				<div class="page-review-item__head">
+				<blockquote class="page-review-item">
 
-					<div class="page-review-item__ratio" data-ratio="5">
-						5 звёзд
+					<div class="page-review-item__head">
+
+						<div class="page-review-item__ratio" data-ratio="5">
+							5 звёзд
+						</div>
+
+						<time class="page-review-item__date" datetime="2020-11-01">
+							1 норября 2020
+						</time>
+
 					</div>
 
-					<time class="page-review-item__date" datetime="2020-11-01">
-						1 норября 2020
-					</time>
+					<div class="page-review-item__body">
 
-				</div>
+						<img src="/img/review/1.png" srcset="/img/review/1@2x.png 2x" class="page-review-item__avatar" width="32" height="32" loading="lazy" alt="Екатерина">
 
-				<div class="page-review-item__body">
+						<cite class="page-review-item__name">
+							Екатерина
+						</cite>
 
-					<img src="/img/review/1.png" srcset="/img/review/1@2x.png 2x" class="page-review-item__avatar" width="32" height="32" loading="lazy" alt="Екатерина">
+						<p class="page-review-item__text">
+							Это было очень круто, я воспользовалась сертификатом, никаких сложностей не было. Рекомендую всем)
+						</p>
 
-					<cite class="page-review-item__name">
-						Екатерина
-					</cite>
-
-					<p class="page-review-item__text">
-						Это было очень круто, я воспользовалась сертификатом, никаких сложностей не было. Рекомендую всем)
-					</p>
-
-				</div>
-
-			</blockquote>
-
-			<blockquote class="page-review-item">
-
-				<div class="page-review-item__head">
-
-					<div class="page-review-item__ratio" data-ratio="3">
-						3 звезды
 					</div>
 
-					<time class="page-review-item__date" datetime="2020-12-01">
-						1 декабря 2020
-					</time>
+				</blockquote>
 
-				</div>
+				<blockquote class="page-review-item">
 
-				<div class="page-review-item__body">
+					<div class="page-review-item__head">
 
-					<img src="/img/review/2.jpg" srcset="/img/review/2@2x.jpg 2x" class="page-review-item__avatar" width="32" height="32" loading="lazy" alt="Роман">
+						<div class="page-review-item__ratio" data-ratio="3">
+							3 звезды
+						</div>
 
-					<cite class="page-review-item__name">
-						Роман
-					</cite>
+						<time class="page-review-item__date" datetime="2020-12-01">
+							1 декабря 2020
+						</time>
 
-					<p class="page-review-item__text">
-						Подарили друзья на ДР. Было супер, но долго не мог использовать, так как была плохая погода
-					</p>
-
-				</div>
-
-			</blockquote>
-
-			<blockquote class="page-review-item">
-
-				<div class="page-review-item__head">
-
-					<div class="page-review-item__ratio" data-ratio="5">
-						5 звёзд
 					</div>
 
-					<time class="page-review-item__date" datetime="2020-12-05">
-						5 декабря 2020
-					</time>
+					<div class="page-review-item__body">
 
-				</div>
+						<img src="/img/review/2.jpg" srcset="/img/review/2@2x.jpg 2x" class="page-review-item__avatar" width="32" height="32" loading="lazy" alt="Роман">
 
-				<div class="page-review-item__body">
+						<cite class="page-review-item__name">
+							Роман
+						</cite>
 
-					<img src="/img/review/3.png" srcset="/img/review/3@2x.png 2x" class="page-review-item__avatar" width="32" height="32" loading="lazy" alt="Владислав">
+						<p class="page-review-item__text">
+							Подарили друзья на ДР. Было супер, но долго не мог использовать, так как была плохая погода
+						</p>
 
-					<cite class="page-review-item__name">
-						Владислав
-					</cite>
+					</div>
 
-					<p class="page-review-item__text">
-						Этой мой магазин и конечно он крутой
-					</p>
+				</blockquote>
 
-				</div>
+				<blockquote class="page-review-item">
 
-			</blockquote>
+					<div class="page-review-item__head">
+
+						<div class="page-review-item__ratio" data-ratio="5">
+							5 звёзд
+						</div>
+
+						<time class="page-review-item__date" datetime="2020-12-05">
+							5 декабря 2020
+						</time>
+
+					</div>
+
+					<div class="page-review-item__body">
+
+						<img src="/img/review/3.png" srcset="/img/review/3@2x.png 2x" class="page-review-item__avatar" width="32" height="32" loading="lazy" alt="Владислав">
+
+						<cite class="page-review-item__name">
+							Владислав
+						</cite>
+
+						<p class="page-review-item__text">
+							Этой мой магазин и конечно он крутой
+						</p>
+
+					</div>
+
+				</blockquote>
+
+			</div>
 
 		</div>
 

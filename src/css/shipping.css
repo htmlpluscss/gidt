@@ -1,50 +1,19 @@
 .shipping {
 
-	&__title {
-
-		margin: 56px 0 32px;
-
-		@media ($smWidth) {
-
-			margin: 18px 0;
-
-		}
-
-	}
-
-	&__intro {
-
-		font-weight: 300;
-		font-size: 22px;
-		line-height: 1.33;
-		letter-spacing: 0.05em;
-		max-width: 720px;
-		margin-bottom: 40px;
-
-		@media ($smWidth) {
-
-			font-size: 14px;
-			line-height: 17px;
-			font-weight: 400;
-
-		}
-
-	}
-
-	&__calculator {
+	&-calculator {
 
 		background-color: #F0F2F9;
 		border-top: 3px solid #AABAE5;
 		position: relative;
 		margin-top: 128px;
 
-		@media ($smWidth) {
+		@media ($mdWidth) {
 
 			margin: 0;
 
 		}
 
-		&-bg {
+		&__bg {
 
 			position: absolute;
 			top: -290px;
@@ -71,20 +40,23 @@
 
 		}
 
-		&-box {
+		&__box {
 
 			display: flex;
 			padding-bottom: 44px;
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				display: block;
+				margin: auto;
+				width: 582px;
+				max-width: 100%;
 
 			}
 
 		}
 
-		&-tab {
+		&__tab {
 
 			background-color: #F8F9FD;
 			width: 582px;
@@ -99,7 +71,7 @@
 
 		}
 
-		&-body {
+		&__body {
 
 			display: none;
 			padding: 90px 42px 82px;
@@ -112,13 +84,13 @@
 
 		}
 
-		&-head.is-active + &-body {
+		&__head.is-active + &__body {
 
 			display: block;
 
 		}
 
-		&-head {
+		&__head {
 
 			position: absolute;
 			width: 50%;
@@ -203,14 +175,13 @@
 
 		}
 
-		&-row {
+		&__row {
 
 			display: flex;
 
 			@media ($smWidth) {
 
 				display: block;
-
 
 			}
 
@@ -222,13 +193,19 @@
 
 		}
 
-		&-label {
+		&__label {
 
 			flex-shrink: 0;
 			width: 200px;
 			font-weight: bold;
 			font-size: 17px;
 			line-height: 21px;
+
+			&--34 {
+
+				line-height: 34px;
+
+			}
 
 			@media ($smWidth) {
 
@@ -238,7 +215,7 @@
 
 		}
 
-		&-control {
+		&__control {
 
 			margin-left: 10px;
 
@@ -248,9 +225,15 @@
 
 			}
 
+			.radio-input {
+
+				margin: 4px 0;
+
+			}
+
 		}
 
-		&-info {
+		&__info {
 
 			font-size: 14px;
 			line-height: 17px;
@@ -271,7 +254,7 @@
 
 		}
 
-		&-text {
+		&__text {
 
 			padding-left: 83px;
 			padding-right: 50px;
@@ -279,6 +262,12 @@
 			line-height: 17px;
 			color: var(--text);
 			align-self: center;
+
+			@media ($mdWidth) {
+
+				padding: 0 40px;
+
+			}
 
 			@media ($smWidth) {
 
@@ -309,7 +298,7 @@
 
 	}
 
-	&__return {
+	&-return {
 
 		position: relative;
 		padding: 128px 0;
@@ -326,7 +315,7 @@
 
 		}
 
-		&-bg {
+		&__bg {
 
 			position: absolute;
 			top: -200px;
@@ -355,15 +344,15 @@
 
 	}
 
-	&__oferta {
+}
 
-		margin: 72px 0 96px;
+.service-oferta {
 
-		@media ($smWidth) {
+	margin: 72px 0 96px;
 
-			margin: 36px 0;
+	@media ($smWidth) {
 
-		}
+		margin: 36px 0;
 
 	}
 
