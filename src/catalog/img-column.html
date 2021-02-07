@@ -1,0 +1,52 @@
+		<div class="catalog-item__img">
+
+			<picture>
+
+				<source srcset="/img/catalog/{{ img }}.webp 1x, /img/catalog/{{ img }}@2x.webp 2x" type="image/webp">
+
+				<source srcset="/img/catalog/{{ img }}.jpg 1x, /img/catalog/{{ img }}@2x.jpg 2x">
+
+				<img src="/img/catalog/{{ img }}.jpg" alt="Экстрим Стандарт" width="270" height="208" loading="lazy">
+
+			</picture>
+
+	{% if loop.index < 4 %}
+
+			<div class="catalog-item__sale">
+				-20%
+			</div>
+
+	{% endif %}
+
+			<form action="/" class="catalog-item__favourites">
+
+				<button class="button">
+					<svg width="21" height="21" viewBox="0 0 21 21">
+						<path d="M10.76 3.76l-.9-1C7.79.37 3.95 1.2 2.57 4.17c-.66 1.4-.8 3.42.38 6 1.15 2.49 3.53 5.47 7.82 8.7 4.3-3.23 6.67-6.21 7.82-8.7 1.19-2.58 1.04-4.6.39-6-1.39-2.98-5.22-3.8-7.32-1.43l-.89 1.01zm0 16.78C-8.3 6.67 4.9-4.16 10.54 1.57l.22.23.22-.23c5.65-5.74 18.85 5.1-.22 18.97z"/>
+					</svg>
+				</button>
+
+			</form>
+
+			<ul class="catalog-item__param hide">
+
+				<li>Полёт на авиатренажёре</li>
+				<li>СУ-27 Курсант</li>
+				<li>Полет в аэротрубе</li>
+				<li>Экскурсия в секретный бункер</li>
+				<li>Веревочный парк</li>
+				<li>Q-zar для компании</li>
+				<li>SUP-серфинг</li>
+				<li>Прогулка в темноте</li>
+				<li>Мастер-класс по канатоходству</li>
+				<li>Урок дайвинга</li>
+				<li>Картинг</li>
+				<li>Мастер-класс езды на мотоцикле</li>
+				<li>Загадки и тайны Москвы</li>
+				<li>Заезд на багги</li>
+				<li>Виртуальный слалом</li>
+				<li>Аквапарк</li>
+
+			</ul>
+
+		</div>

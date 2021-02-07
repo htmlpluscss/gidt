@@ -1,0 +1,27 @@
+{% set title = "Каталог" %}
+
+{% set description = "Каталог впечатлений на День рождения" %}
+
+{% set breadcrumbs = [title, 'День рождения'] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "catalog/head.html" %}
+
+		<div class="catalog__rows">
+
+{% set name = 'Театр "На Страстном"' %}
+{% set img = 21 %}
+{% set one = true %}
+
+{% include "catalog/item.html" %}
+{% include "catalog/item.html" %}
+{% include "catalog/item.html" %}
+
+		</div>
+
+{% include "catalog/foot.html" %}
+
+{% endblock %}

@@ -1,0 +1,34 @@
+{% set title = "Каталог" %}
+
+{% set description = "Каталог впечатлений на День рождения" %}
+
+{% set breadcrumbs = [title, 'День рождения'] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "catalog/head.html" %}
+
+		<div class="catalog__rows">
+
+{% set name = 'Экстрим Стандарт' %}
+{% set img = 22 %}
+{% set param = 20 %}
+{% include "catalog/item.html" %}
+
+{% set name = 'Экстрим Стандарт (подарочный набор)' %}
+{% set img = 23 %}
+{% set param = 10 %}
+{% include "catalog/item.html" %}
+
+{% set name = 'Экстрим Стандарт (подарочный набор)' %}
+{% set img = 22 %}
+{% set param = 20 %}
+{% include "catalog/item.html" %}
+
+		</div>
+
+{% include "catalog/foot.html" %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% set title = "Каталог" %}
+
+{% set description = "Каталог впечатлений на День рождения" %}
+
+{% set breadcrumbs = [title, 'День рождения'] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+{% include "catalog/head.html" %}
+
+		<div class="catalog__column">
+
+{% for img in [1,2,3,4,5,6,7,8] %}
+
+{% include "catalog/item-column.html" %}
+
+{% endfor %}
+
+		</div>
+
+{% include "catalog/foot.html" %}
+
+{% endblock %}

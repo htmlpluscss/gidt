@@ -97,6 +97,31 @@
 
 	}
 
+	&--buy {
+
+		color: #000;
+		border-radius: 1px;
+		height: 31px;
+		line-height: 31px;
+		text-transform: uppercase;
+		background-color: var(--yellow);
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		width: 100%;
+
+		@media ($desktop) {
+
+			&:hover {
+
+				background-color: var(--yellowHover);
+
+			}
+
+		}
+
+	}
+
 	&--outline {
 
 		color: var(--blue);
@@ -288,6 +313,7 @@
 		line-height: 17px;
 		color: var(--grey);
 		padding-left: 32px;
+		position: relative;
 		display: block;
 
 		&::before {
@@ -356,6 +382,7 @@
 		color: var(--color);
 		padding: 6px 10px;
 		width: 100%;
+		min-width: 130px;
 		max-width: 100%;
 		border: solid 1px var(--border);
 		appearance: none;

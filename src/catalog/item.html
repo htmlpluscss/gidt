@@ -1,0 +1,35 @@
+	<article class="catalog-item">
+
+{% include "catalog/img.html" %}
+
+		<form action="/" class="catalog-item__body">
+
+			<h2 class="catalog-item__title">
+				{{ name }}
+			</h2>
+
+{% include "catalog/label.html" %}
+
+			<div class="catalog-item__column">
+
+				<div class="catalog-item__column-inner">
+
+{% if one %}
+
+{% include "catalog/one-desc.html" %}
+
+{% else %}
+
+{% include "catalog/set-param.html" %}
+
+{% endif %}
+
+				</div>
+
+{% include "catalog/buy.html" %}
+
+			</div>
+
+		</form>
+
+	</article>
