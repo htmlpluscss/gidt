@@ -1,0 +1,84 @@
+
+.tooltip {
+
+	&-help {
+
+		width: 12px;
+		height: 12px;
+		display: block;
+		position: relative;
+
+		&__btn {
+
+			width: 12px;
+			height: 12px;
+			display: block;
+			cursor: pointer;
+			overflow: hidden;
+			color: transparent;
+
+			&::-webkit-details-marker {
+
+				display: none;
+
+			}
+
+			&::marker {
+
+				display: none;
+
+			}
+
+			svg {
+
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 12px;
+				height: 12px;
+
+			}
+
+		}
+
+		&__inner {
+
+			width: 160px;
+			color: var(--grey);
+			padding: 14px 12px;
+			position: absolute;
+			left: 50%;
+			margin-left: -80px;
+			margin-top: 12px;
+			top: 100%;
+			font-size: 11px;
+			line-height: 13px;
+			background-color: #fff;
+			box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
+
+		}
+
+		&[open] {
+
+			z-index: 5;
+
+		}
+
+		&[open] &__inner {
+
+			animation: opacity var(--transitionDefault);
+
+		}
+
+	}
+
+}
+
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

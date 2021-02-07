@@ -1,0 +1,103 @@
+{% set title = "Возврат" %}
+
+{% set description = "Мы всегда идём вам на встречу нашим клиентам и ни когда не идем на конфликт с хорошими людьми!" %}
+
+{% set breadcrumbs = [title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="shipping">
+
+	<div class="center">
+
+		<h1 class="shipping__title h1">
+			{{ title }}
+		</h1>
+
+		<p class="shipping__intro">
+			{{ description }}
+		</p>
+
+	</div>
+
+	<div class="shipping__return">
+
+		<div class="shipping__return-bg">
+
+			<img src="/img/service/return.svg" width="561" height="573" loading="lazy" alt="">
+
+		</div>
+
+		<div class="center">
+
+			<div class="accordion">
+
+				<div class="accordion__item">
+
+					<h2 class="accordion__head accordion__btn">
+						<span>
+							<b>Вариант 1:</b> «Товар не понравился»
+						</span>
+					</h2>
+
+					<div class="accordion__body">
+
+						<p>
+							Если товар находится в том виде в котором вы его купили (нет механических повреждений, следов вскрытия, упаковка не порвана, ничего не утеряно  из комплекта) то смело несите нам его назад мы примем все без лишних вопросов.
+						</p>
+
+						<h3>
+							Небольшие условия:
+						</h3>
+
+						<p>
+							Срок: 14 дней.
+						</p>
+
+						<p>
+							Документы: Если есть чек отлично, нет чека тогда есть масса способов доказать что товар куплен у нас: есть номер заказа, sms от нашего магазина в телефоне, помните телефон на который оформляли заказ, на многих товарах наклеены наши штрихкоды с указанием сайта и т.д.
+						</p>
+
+					</div>
+
+				</div>
+
+				<div class="accordion__item">
+
+					<h2 class="accordion__head accordion__btn">
+						<span>
+							<b>Вариант 2:</b> Возврат Электронного подарочного сертификата
+						</span>
+					</h2>
+
+					<div class="accordion__body">
+						text
+					</div>
+
+				</div>
+
+				<div class="accordion__item">
+
+					<h2 class="accordion__head accordion__btn">
+						<span>
+							<b>Условия возврата</b>
+						</span>
+					</h2>
+
+					<div class="accordion__body">
+						text
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</article>
+
+{% endblock %}

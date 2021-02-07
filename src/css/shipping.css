@@ -1,0 +1,370 @@
+.shipping {
+
+	&__title {
+
+		margin: 56px 0 32px;
+
+		@media ($smWidth) {
+
+			margin: 18px 0;
+
+		}
+
+	}
+
+	&__intro {
+
+		font-weight: 300;
+		font-size: 22px;
+		line-height: 1.33;
+		letter-spacing: 0.05em;
+		max-width: 720px;
+		margin-bottom: 40px;
+
+		@media ($smWidth) {
+
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: 400;
+
+		}
+
+	}
+
+	&__calculator {
+
+		background-color: #F0F2F9;
+		border-top: 3px solid #AABAE5;
+		position: relative;
+		margin-top: 128px;
+
+		@media ($smWidth) {
+
+			margin: 0;
+
+		}
+
+		&-bg {
+
+			position: absolute;
+			top: -290px;
+			left: 0;
+			right: 0;
+			height: 442px;
+			overflow: hidden;
+			pointer-events: none;
+
+			@media ($smWidth) {
+
+				display: none;
+
+			}
+
+			img {
+
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: 400px;
+
+			}
+
+		}
+
+		&-box {
+
+			display: flex;
+			padding-bottom: 44px;
+
+			@media ($smWidth) {
+
+				display: block;
+
+			}
+
+		}
+
+		&-tab {
+
+			background-color: #F8F9FD;
+			width: 582px;
+			flex-shrink: 0;
+			position: relative;
+
+			@media ($smWidth) {
+
+				width: 100%;
+
+			}
+
+		}
+
+		&-body {
+
+			display: none;
+			padding: 90px 42px 82px;
+
+			@media ($smWidth) {
+
+				padding: 80px 20px 20px;
+
+			}
+
+		}
+
+		&-head.is-active + &-body {
+
+			display: block;
+
+		}
+
+		&-head {
+
+			position: absolute;
+			width: 50%;
+			top: 0;
+			left: 0;
+			cursor: pointer;
+
+			&:not(.is-active) {
+
+				background-color: #F0F2F9;
+
+			}
+
+			&-name {
+
+				display: block;
+				padding: 18px 0 18px 68px;
+				font-size: 17px;
+				line-height: 21px;
+				color: #849BD9;
+
+				@media ($smWidth) {
+
+					font-size: 14px;
+					padding: 20px 14px;
+					line-height: 20px;
+
+				}
+
+			}
+
+			&-logo {
+
+				position: absolute;
+				top: 9px;
+				left: 22px;
+
+				@media ($smWidth) {
+
+					display: none;
+
+				}
+
+			}
+
+			&-arrow {
+
+				position: absolute;
+				top: 0;
+				right: 13px;
+				bottom: 0;
+				margin: auto;
+				fill: #849BD9;
+
+			}
+
+			&.is-active &-arrow {
+
+				transform: rotate(90deg);
+
+			}
+
+			&--right {
+
+				left: auto;
+				right: 0;
+
+			}
+
+			&--right &-name {
+
+				color: var(--red);
+
+			}
+
+			&--right &-arrow {
+
+				fill: var(--red);
+				right: 24px;
+
+			}
+
+		}
+
+		&-row {
+
+			display: flex;
+
+			@media ($smWidth) {
+
+				display: block;
+
+
+			}
+
+			& + & {
+
+				margin-top: 32px;
+
+			}
+
+		}
+
+		&-label {
+
+			flex-shrink: 0;
+			width: 200px;
+			font-weight: bold;
+			font-size: 17px;
+			line-height: 21px;
+
+			@media ($smWidth) {
+
+				width: auto;
+
+			}
+
+		}
+
+		&-control {
+
+			margin-left: 10px;
+
+			@media ($smWidth) {
+
+				margin: 14px 0;
+
+			}
+
+		}
+
+		&-info {
+
+			font-size: 14px;
+			line-height: 17px;
+			margin: 4px 0;
+
+			& + & {
+
+				margin-top: 17px;
+
+			}
+
+			.tooltip-help {
+
+				display: inline-block;
+				vertical-align: baseline;
+
+			}
+
+		}
+
+		&-text {
+
+			padding-left: 83px;
+			padding-right: 50px;
+			font-size: 14px;
+			line-height: 17px;
+			color: var(--text);
+			align-self: center;
+
+			@media ($smWidth) {
+
+				padding: 0;
+
+			}
+
+			li {
+
+				padding-left: 26px;
+				margin: 40px 0;
+
+				&::before {
+
+					position: absolute;
+					width: 11px;
+					height: 10px;
+					top: 3px;
+					left: 0;
+					content: '';
+					background-color: var(--text);
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&__return {
+
+		position: relative;
+		padding: 128px 0;
+		margin-top: -128px;
+		background-position: bottom;
+		background-repeat: no-repeat;
+		background-image: url("data:image/svg+xml,%3Csvg width='2479' height='600' viewBox='0 0 2479 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M856.63 643.37C492.36 678.01-74.02 818.01 8.01 706.08c345.2-470.97 2337.46-1081.25 2467.6-406.2 26.4 136.91-109.17 107.3-135.96 268.33-74.64 448.66-935.7 23.11-1483.02 75.16z' fill='%23F8F9FD'/%3E%3C/svg%3E");
+
+		@media ($smWidth) {
+
+			background: #F8F9FD;
+			padding: 18px 0;
+			margin: 0;
+
+		}
+
+		&-bg {
+
+			position: absolute;
+			top: -200px;
+			left: 0;
+			right: 0;
+			height: 573px;
+			overflow: hidden;
+			pointer-events: none;
+
+			@media ($smWidth) {
+
+				display: none;
+
+			}
+
+			img {
+
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: 400px;
+
+			}
+
+		}
+
+	}
+
+	&__oferta {
+
+		margin: 72px 0 96px;
+
+		@media ($smWidth) {
+
+			margin: 36px 0;
+
+		}
+
+	}
+
+}

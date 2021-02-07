@@ -250,3 +250,150 @@
 	}
 
 }
+
+.radio-input {
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	&__item {
+
+		cursor: pointer;
+		position: relative;
+
+		& + & {
+
+			margin-top: 18px;
+
+		}
+
+	}
+
+	&__input {
+
+		position: absolute;
+		width: 17px;
+		height: 17px;
+		top: 0;
+		left: 0;
+		appearance: none;
+
+	}
+
+	&__label {
+
+		font-size: 14px;
+		line-height: 17px;
+		color: var(--grey);
+		padding-left: 32px;
+		display: block;
+
+		&::before {
+
+			position: absolute;
+			width: 6px;
+			height: 6px;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+			content: '';
+			border: 4px solid #fff;
+			background-color: #fff;
+			box-shadow: 0 0 0 1px var(--border);
+
+		}
+
+	}
+
+
+
+	&__input:checked + &__label {
+
+		font-weight: 700;
+		color: var(--blueText);
+
+		&::before {
+
+			background-color: var(--blueText);
+
+		}
+
+	}
+
+}
+
+
+.select {
+
+	position: relative;
+	display: block;
+
+	&::after {
+
+		position: absolute;
+		top: 50%;
+		right: 14px;
+		content: '';
+		box-shadow: 0 0 0 8px #fff;
+		background-color: #fff;
+		pointer-events: none;
+		margin-top: -2px;
+		border: 5px solid transparent;
+		border-top-color: var(--border);
+		border-bottom: 0;
+
+	}
+
+	select {
+
+		background-color: #fff;
+		position: relative;
+		display: block;
+		font-size: 16px;
+		font-family: inherit;
+		color: var(--color);
+		padding: 6px 10px;
+		width: 100%;
+		max-width: 100%;
+		border: solid 1px var(--border);
+		appearance: none;
+		line-height: 20px;
+
+		@media ($desktop) {
+
+			font-size: 14px;
+
+		}
+
+		&::-ms-expand {
+
+			display: none;
+
+		}
+
+		&:hover {
+
+			cursor: pointer;
+
+		}
+
+		&:focus {
+
+			outline: none;
+
+		}
+
+	}
+
+	option {
+
+		font-size: 16px;
+		font-family: inherit;
+		color: var(--color);
+		line-height: 1.3;
+
+	}
+
+}

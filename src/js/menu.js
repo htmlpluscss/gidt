@@ -39,6 +39,16 @@ document.querySelector('.btn-menu-toggle').addEventListener('click', event => {
 
 		});
 
+		window.addEventListener("click", event => {
+
+			if(!event.target.closest('.menu-catalog')) {
+
+				menu.classList.remove('is-show');
+
+			}
+
+		});
+
 	}
 
 })(document.querySelector('.menu-catalog'));

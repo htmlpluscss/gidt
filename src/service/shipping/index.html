@@ -1,0 +1,275 @@
+{% set title = "Доставка и оплата" %}
+
+{% set description = "Доставим красивый подарочный сертификат курьером (бесплатно)  или на email - в течение 30 минут" %}
+
+{% set breadcrumbs = [title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="shipping">
+
+	<div class="center">
+
+		<h1 class="shipping__title h1">
+			{{ title }}
+		</h1>
+
+		<p class="shipping__intro">
+			Доставим красивый подарочный сертификат курьером (бесплатно)  или на email - в течение 30 минут. <br>
+			В любой день в течение 6 месяцев забронируем для вас впечатление (просто позвоните нам)! <br>
+			Оплатить подарок можно на сайте или курьеру при получении - наличными или по карте!
+		</p>
+
+	</div>
+
+	<div class="shipping__calculator">
+
+		<div class="shipping__calculator-bg">
+
+			<img src="/img/service/shipping.svg" width="427" height="442" loading="lazy" alt="">
+
+		</div>
+
+		<div class="center">
+
+			<div class="shipping__calculator-box">
+
+				<div class="shipping__calculator-tab">
+
+					<div class="shipping__calculator-item">
+
+						<div class="shipping__calculator-head">
+
+							<img class="shipping__calculator-head-logo" src="/img/service/shipping-ip.svg" width="36" height="36" loading="lazy" alt="">
+
+							<div class="shipping__calculator-head-name">
+								Юридическим лицам
+							</div>
+
+							<svg class="shipping__calculator-head-arrow" width="5" height="8">
+								<path d="M0 6.86L3.13 4 0 1.14.63 0 5 4 .62 8 0 6.86z"/>
+							</svg>
+
+						</div>
+
+						<div class="shipping__calculator-body">
+
+						</div>
+
+					</div>
+
+					<div class="shipping__calculator-item">
+
+						<div class="shipping__calculator-head shipping__calculator-head--right is-active">
+
+							<img class="shipping__calculator-head-logo" src="/img/service/shipping-fio.svg" width="36" height="36" loading="lazy" alt="">
+
+							<div class="shipping__calculator-head-name">
+								Физическим лицам
+							</div>
+
+							<svg class="shipping__calculator-head-arrow" width="5" height="8">
+								<path d="M0 6.86L3.13 4 0 1.14.63 0 5 4 .62 8 0 6.86z"/>
+							</svg>
+
+						</div>
+
+						<form action="/" class="shipping__calculator-body">
+
+							<div class="shipping__calculator-row">
+
+								<div class="shipping__calculator-label">
+									Выберите город
+								</div>
+
+								<div class="shipping__calculator-control">
+
+									<div class="select">
+
+										<select name="city">
+											<option value="1">Москва</option>
+											<option value="2">Санкт-Петербург</option>
+											<option value="3">Екатеринбург</option>
+										</select>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shipping__calculator-row">
+
+								<div class="shipping__calculator-label">
+									Формат подарка
+								</div>
+
+								<div class="shipping__calculator-control">
+
+									<div class="radio-input">
+
+										<label class="radio-input__item">
+
+											<input class="radio-input__input" type="radio" name="type" value="Электронный сертификат">
+
+											<span class="radio-input__label">
+												Электронный сертификат
+											</span>
+
+										</label>
+
+										<label class="radio-input__item">
+
+											<input class="radio-input__input" type="radio" name="type" value="В подарочной коробке">
+
+											<span class="radio-input__label">
+												В подарочной коробке
+											</span>
+
+										</label>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shipping__calculator-row">
+
+								<div class="shipping__calculator-label">
+									Способ доставки
+								</div>
+
+								<div class="shipping__calculator-control">
+
+									<div class="shipping__calculator-info">
+										Доставка курьером по Москве: 300р.
+										<details class="tooltip-help">
+											<summary class="tooltip-help__btn">
+												Подсказка
+											</summary>
+											<p class="tooltip-help__inner">
+												Доставка по МКАД осуществляется в
+											</p>
+										</details>
+									</div>
+
+									<div class="shipping__calculator-info">
+										Срочная доставка: 700 р.
+										<details class="tooltip-help">
+											<summary class="tooltip-help__btn">
+												Подсказка
+											</summary>
+											<p class="tooltip-help__inner">
+												Доставка по МКАД осуществляется в
+											</p>
+										</details>
+									</div>
+
+									<div class="shipping__calculator-info">
+										Самовывоз из офиса
+									</div>
+								</div>
+
+							</div>
+
+							<div class="shipping__calculator-row">
+
+								<div class="shipping__calculator-label">
+									Способ оплаты
+								</div>
+
+								<div class="shipping__calculator-control">
+
+									<div class="shipping__calculator-info">
+										Банковской картой
+										<details class="tooltip-help">
+											<summary class="tooltip-help__btn">
+												Подсказка
+											</summary>
+											<p class="tooltip-help__inner">
+												Доставка по МКАД осуществляется в
+											</p>
+										</details>
+									</div>
+
+									<div class="shipping__calculator-info">
+										Безналичный расчет
+										<details class="tooltip-help">
+											<summary class="tooltip-help__btn">
+												Подсказка
+											</summary>
+											<p class="tooltip-help__inner">
+												Доставка по МКАД осуществляется в
+											</p>
+										</details>
+									</div>
+
+									<div class="shipping__calculator-info">
+										Наличными курьеру при <br>получепнии
+										<details class="tooltip-help">
+											<summary class="tooltip-help__btn">
+												Подсказка
+											</summary>
+											<p class="tooltip-help__inner">
+												Доставка по МКАД осуществляется в
+											</p>
+										</details>
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="shipping__calculator-row">
+
+								<div class="shipping__calculator-label">
+									Сроки доставки
+								</div>
+
+								<div class="shipping__calculator-control">
+
+									<div class="shipping__calculator-info">
+										В течение 1 дня с 09:00 до 21:00
+									</div>
+
+								</div>
+
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+				<div class="shipping__calculator-text">
+
+					<ul>
+
+						<li>
+							После оплаты в течение 30&nbsp;минут сертификат поступает на e-mail, указанный в заказе. Пожалуйста, будьте внимательны при указании e-mail. Если адрес указан верно и с момента оплаты прошло больше 30&nbsp;минут, пожалуйста, проверьте папку «СПАМ».
+						</li>
+
+						<li>
+							Если вы отказываетесь от заказа в день доставки, стоимость доставки не возвращается.
+						</li>
+
+						<li>
+							Срочная доставка в течение 3&nbsp;часов - 700&nbsp;руб. Такую доставку возможно оформить с&nbsp;9.00 до&nbsp;17.00 текущего дня.
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</article>
+
+{% endblock %}
