@@ -8,6 +8,20 @@
 				Экстрим Стандарт
 			</h2>
 
+{% if loop.index == 3 or loop.index == 7 %}
+
+			<p class="catalog-item__label catalog-item__label--yellow">
+
+				<span class="catalog-item__label-inner">
+					1 впечатление
+				</span>
+
+			</p>
+
+{% include "catalog/one-desc.html" %}
+
+{% else %}
+
 			<p class="catalog-item__label catalog-item__label--green">
 
 				<span class="catalog-item__label-inner">
@@ -19,6 +33,8 @@
 {% include "catalog/set-count.html" %}
 
 {% include "catalog/set-count-btn.html" %}
+
+{% endif %}
 
 {% include "catalog/buy.html" %}
 

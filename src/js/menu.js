@@ -31,7 +31,7 @@ document.querySelector('.btn-menu-toggle').addEventListener('click', event => {
 
 			}
 
-			else if(target.closest('a') || target.closest('buttom')) {
+			else if(target.closest('a') || target.closest('button') || target.closest('input') || target.closest('select')) {
 
 				menu.classList.remove('is-show');
 

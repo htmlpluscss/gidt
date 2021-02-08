@@ -154,13 +154,13 @@
 
 .form-review {
 
-	padding: 150px 0 20px;
+	padding: 180px 0 20px;
 	position: relative;
 
 	&__bg {
 
 		position: absolute;
-		top: 0;
+		top: 60px;
 		left: 0;
 		right: 0;
 		bottom: 0;
@@ -200,7 +200,8 @@
 		pointer-events: none;
 		background-position: center 0;
 		background-repeat: no-repeat;
-		background-image: url("data:image/svg+xml,%3Csvg width='1518' height='1552' viewBox='0 0 1518 1552' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M672.54 207.5C411.9 225.74 0 151.41 0 151.41v1114.34s598.74 337.2 975.5 279.64c223.72-34.18 542.5-279.64 542.5-279.64V0c-273.94 113-609.71 191-845.46 207.5z' fill='%23F8F9FD'/%3E%3C/svg%3E");
+		background-size: 100% 100%;
+		background-image: url("data:image/svg+xml,%3Csvg preserveAspectRatio='none' width='1518' height='1552' viewBox='0 0 1518 1552' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M672.54 207.5C411.9 225.74 0 151.41 0 151.41v1114.34s598.74 337.2 975.5 279.64c223.72-34.18 542.5-279.64 542.5-279.64V0c-273.94 113-609.71 191-845.46 207.5z' fill='%23F8F9FD'/%3E%3C/svg%3E");
 
 	}
 

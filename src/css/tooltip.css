@@ -29,6 +29,12 @@
 
 			}
 
+			&:focus {
+
+				outline: none;
+
+			}
+
 			svg {
 
 				position: absolute;

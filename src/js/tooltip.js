@@ -27,6 +27,26 @@
 
 			});
 
+			tooltip.addEventListener('mouseenter', () => {
+
+				if(window.innerWidth > 1200) {
+
+					tooltip.open = true;
+
+				}
+
+			});
+
+			tooltip.addEventListener('mouseleave', () => {
+
+				if(window.innerWidth > 1200) {
+
+					tooltip.open = false;
+
+				}
+
+			});
+
 		});
 
 		window.addEventListener("click", event => {

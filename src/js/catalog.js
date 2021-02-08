@@ -1,3 +1,5 @@
+// кнопки состав
+
 ( block => {
 
 	if(block) {
@@ -22,3 +24,33 @@
 	};
 
 })(document.querySelector('.catalog'));
+
+// фильтр
+( form => {
+
+	if(form) {
+
+		form.addEventListener("reset", () => {
+
+			console.log('reset');
+
+		});
+
+	};
+
+})(document.querySelector('.catalog-filter'));
+
+// сортировка
+( form => {
+
+	if(form) {
+
+		form.addEventListener("change", () => {
+
+			console.log('change');
+
+		});
+
+	};
+
+})(document.querySelector('.catalog-sort'));
