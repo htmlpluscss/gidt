@@ -168,6 +168,29 @@
 
 	}
 
+	&--clear {
+
+		color: var(--grey);
+		font-size: 12px;
+		text-transform: uppercase;
+		height: 32px;
+		line-height: 32px;
+		box-shadow: inset 0 0 0 2px var(--grey);
+		width: 100%;
+
+		@media ($desktop) {
+
+			&:hover {
+
+				color: var(--blue);
+				background-color: var(--grey);
+
+			}
+
+		}
+
+	}
+
 	&--big {
 
 		padding: 0 28px;

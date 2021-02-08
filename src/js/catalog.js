@@ -45,9 +45,9 @@
 
 	if(form) {
 
-		form.addEventListener("change", () => {
+		form.addEventListener("change", event => {
 
-			console.log('change');
+			console.log('слушаем форму, делаем редирект в зависимости от параметров');
 
 		});
 
