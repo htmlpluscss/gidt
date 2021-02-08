@@ -2,7 +2,11 @@
 
 			<picture>
 
-				<source srcset="/img/catalog/{{ img }}.webp 1x, /img/catalog/{{ img }}@2x.webp 2x" type="image/webp">
+				<source srcset="/img/catalog/{{ img }}--w640.webp" type="image/webp" media="(max-width: 360px)">
+				<source srcset="/img/catalog/{{ img }}--w640.jpg" media="(max-width: 360px)">
+
+				<source srcset="/img/catalog/{{ img }}--w880.webp" type="image/webp" media="(max-width: 767px)">
+				<source srcset="/img/catalog/{{ img }}--w880.jpg" media="(max-width: 767px)">
 
 				<source srcset="/img/catalog/{{ img }}.jpg 1x, /img/catalog/{{ img }}@2x.jpg 2x">
 
@@ -14,7 +18,7 @@
 				-20%
 			</div>
 
-			<form action="/" class="catalog-item__favourites">
+			<form action="/" class="catalog-item__favourites{% if favourites %} in-list{% endif %}">
 
 				<button class="button">
 					<svg width="31" height="31" viewBox="0 0 31 31">
@@ -23,5 +27,26 @@
 				</button>
 
 			</form>
+
+			<ul class="catalog-item__param catalog-item__param--img hide">
+
+				<li>Полёт на авиатренажёре</li>
+				<li>СУ-27 Курсант</li>
+				<li>Полет в аэротрубе</li>
+				<li>Экскурсия в секретный бункер</li>
+				<li>Веревочный парк</li>
+				<li>Q-zar для компании</li>
+				<li>SUP-серфинг</li>
+				<li>Прогулка в темноте</li>
+				<li>Мастер-класс по канатоходству</li>
+				<li>Урок дайвинга</li>
+				<li>Картинг</li>
+				<li>Мастер-класс езды на мотоцикле</li>
+				<li>Загадки и тайны Москвы</li>
+				<li>Заезд на багги</li>
+				<li>Виртуальный слалом</li>
+				<li>Аквапарк</li>
+
+			</ul>
 
 		</div>

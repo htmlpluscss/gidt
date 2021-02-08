@@ -71,9 +71,18 @@
 
 		margin-bottom: 50px;
 
+		@media ($mdWidth) {
+
+			margin: 0 -15px;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
 		@media ($smWidth) {
 
 			margin: 0;
+			display: block;
 
 		}
 
@@ -103,19 +112,29 @@
 		background-color: #fff;
 		display: flex;
 
+		@media ($mdWidth) {
+
+			width: calc(50% - 30px);
+			flex-direction: column;
+			margin: 0 15px 50px;
+			border-radius: 0;
+
+		}
+
 		@media ($smWidth) {
 
 			margin: 20px 0;
 			width: 100%;
+			display: block;
 
 		}
 
 		&--column {
 
 			width: 270px;
-			display: block;
 			border-radius: 0;
 			margin: 0 15px 50px;
+			flex-direction: column;
 
 		}
 
@@ -127,21 +146,30 @@
 			background-color: #ebebeb;
 			margin-right: 24px;
 
-			.catalog-item--column & {
+			@media ($mdWidth) {
 
 				width: 100%;
 				margin: 0;
 
-				@media ($smWidth) {
+				img {
 
-					img {
-
-						width: 100%;
-						height: auto;
-
-					}
+					width: 100%;
+					height: auto;
 
 				}
+
+			}
+
+			@media ($smWidth) {
+
+				width: 100%;
+
+			}
+
+			.catalog-item--column & {
+
+				width: 100%;
+				margin: 0;
 
 			}
 
@@ -158,6 +186,21 @@
 			color: #fff;
 			padding: 0 13px 0 10px;
 			background-color: var(--red);
+
+			@media ($smWidth) {
+
+				font-size: 12px;
+				line-height: 16px;
+				padding: 0 6px;
+				top: 5px;
+
+				&::after {
+
+					border-width: 16px 5px 0 0;
+
+				}
+
+			}
 
 			&::after {
 
@@ -180,10 +223,17 @@
 			top: 10px;
 			right: 12px;
 
+			@media ($smWidth) {
+
+				top: 5px;
+				right: 5px;
+
+			}
+
 			.catalog-item--column & {
 
-				top: 6px;
-				right: 6px;
+				top: 5px;
+				right: 5px;
 
 				.button {
 
@@ -201,6 +251,20 @@
 				border-radius: 50%;
 				background-color: rgba(255, 255, 255, 0.8);
 
+				@media ($smWidth) {
+
+					width: 22px;
+					height: 22px;
+
+					svg {
+
+						width: 14px;
+						height: 14px;
+
+					}
+
+				}
+
 			}
 
 			svg {
@@ -215,18 +279,31 @@
 
 			}
 
+			&.in-list {
+
+				.button {
+
+					background-color: rgba(255, 255, 255, 0.9);
+
+					svg {
+
+						fill: var(--red);
+						stroke: var(--red);
+
+					}
+
+				}
+
+			}
+
 		}
 
 		&__body {
 
 			padding: 24px 20px;
 			flex-grow: 1;
-
-			.catalog-item--column & {
-
-				padding: 8px 18px 24px;
-
-			}
+			display: flex;
+			flex-direction: column;
 
 		}
 
@@ -236,10 +313,17 @@
 			line-height: 22px;
 			margin-bottom: 10px;
 
+			@media ($smWidth) {
+
+				font-size: 16px;
+				line-height: 20px;
+
+			}
+
 			.catalog-item--column & {
 
-				font-size: 12px;
-				line-height: 15px;
+				font-size: 16px;
+				line-height: 20px;
 
 			}
 
@@ -309,6 +393,16 @@
 
 					}
 
+					@media ($mdWidth) {
+
+						select {
+
+							padding: 2px 10px;
+
+						}
+
+					}
+
 				}
 
 			}
@@ -322,8 +416,8 @@
 
 			&-inner {
 
-				font-size: 12px;
-				line-height: 21px;
+				font-size: 14px;
+				line-height: 26px;
 				white-space: nowrap;
 				padding: 0 14px;
 				border-radius: 4px;
@@ -349,6 +443,29 @@
 			display: flex;
 			justify-content: space-between;
 
+			@media ($mdWidth) {
+
+				flex-direction: column;
+				flex-grow: 1;
+
+			}
+
+			@media ($smWidth) {
+
+				display: block;
+
+			}
+
+		}
+
+		&__details {
+
+			@media ($mdWidth) {
+
+				width: 100%;
+
+			}
+
 		}
 
 		&__buy {
@@ -358,17 +475,37 @@
 			flex-shrink: 0;
 			align-self: flex-end;
 
+			&-submit {
+
+				width: 100%;
+
+				@media ($smWidth) {
+
+					width: auto;
+					margin-top: 20px;
+
+				}
+
+			}
+
+			@media ($mdWidth) {
+
+				width: 100%;
+				margin: auto 0 0;
+				padding-top: 10px;
+
+			}
+
 			.catalog-item--column & {
 
-				width: auto;
-				margin: 0;
+				width: 100%;
+				margin: auto 0 0;
+				padding-top: 10px;
 
 				.btn {
 
-					width: 106px;
-					height: 22px;
-					line-height: 22px;
-					font-size: 10px;
+					width: auto;
+					margin-top: 20px;
 
 				}
 
@@ -379,9 +516,15 @@
 				margin-bottom: 36px;
 				white-space: nowrap;
 
+				@media ($mdWidth) {
+
+					margin-bottom: 18px;
+
+				}
+
 				.catalog-item--column & {
 
-					margin-bottom: 10px;
+					margin-bottom: 18px;
 
 				}
 
@@ -391,12 +534,6 @@
 					align-items: baseline;
 					padding-left: 24px;
 					color: #C4C4C4;
-
-					.catalog-item--column & {
-
-						font-size: 10px;
-
-					}
 
 					&::before {
 
@@ -428,13 +565,6 @@
 					width: 90px;
 					flex-shrink: 0;
 
-					.catalog-item--column & {
-
-						font-size: 12px;
-						width: 120px;
-
-					}
-
 					&-old {
 
 						font-weight: normal;
@@ -443,15 +573,6 @@
 						margin-top: 5px;
 						display: block;
 						text-decoration: line-through;
-
-						.catalog-item--column & {
-
-							font-size: 12px;
-							margin: 0 0 0 5px;
-							color: #C4C4C4;
-							display: inline;
-
-						}
 
 					}
 
@@ -469,12 +590,33 @@
 			font-size: 14px;
 			line-height: 17px;
 			margin-bottom: 18px;
+			white-space: nowrap;
+
+			@media ($mdWidth) {
+
+				font-size: 12px;
+				margin-bottom: 4px;
+				color: var(--grey);
+
+				svg {
+
+					display: none;
+
+				}
+
+			}
 
 			.catalog-item--column & {
 
-				font-size: 10px;
-				line-height: 12px;
-				color: #C4C4C4;
+				font-size: 12px;
+				margin-bottom: 4px;
+				color: var(--grey);
+
+				svg {
+
+					display: none;
+
+				}
 
 			}
 
@@ -500,10 +642,10 @@
 			color: var(--grey);
 			column-count: 2;
 
-			.catalog-item--column & {
+			&--img {
 
-				font-size: 10px;
-				line-height: 12px;
+				font-size: 12px;
+				line-height: 15px;
 				color: #fff;
 				column-count: auto;
 
@@ -512,7 +654,8 @@
 				left: 0;
 				right: 0;
 				bottom: 0;
-				padding: 10px 20px;
+				padding: 0 10px;
+				border: 10px solid transparent;
 				background-color: color(var(--blue) a(74%));
 
 				overflow-y: auto;
@@ -543,18 +686,24 @@
 
 			margin-bottom: 10px;
 
+			@media ($smWidth) {
+
+				margin-bottom: 20px;
+
+			}
+
 			&-inner {
 
 				display: flex;
 				align-items: center;
 				color: var(--blue);
-				font-size: 10px;
-				line-height: 13px;
+				font-size: 14px;
+				line-height: 17px;
 
 				svg {
 
 					fill: var(--blue);
-					margin-left: 4px;
+					margin-left: 6px;
 
 				}
 

@@ -101,14 +101,12 @@
 
 		color: #000;
 		border-radius: 1px;
-		height: 31px;
-		line-height: 31px;
+		height: 40px;
+		line-height: 40px;
 		text-transform: uppercase;
 		background-color: var(--yellow);
-		font-weight: normal;
-		font-size: 12px;
-		line-height: 15px;
-		width: 100%;
+		font-size: 14px;
+		padding: 0 30px;
 
 		@media ($desktop) {
 

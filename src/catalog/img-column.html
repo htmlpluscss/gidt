@@ -2,8 +2,13 @@
 
 			<picture>
 
-				<source srcset="/img/catalog/{{ img }}.webp 1x, /img/catalog/{{ img }}@2x.webp 2x" type="image/webp">
+				<source srcset="/img/catalog/{{ img }}--w640.webp" type="image/webp" media="(max-width: 360px)">
+				<source srcset="/img/catalog/{{ img }}--w640.jpg" media="(max-width: 360px)">
 
+				<source srcset="/img/catalog/{{ img }}--w880.webp" type="image/webp" media="(max-width: 1199px)">
+				<source srcset="/img/catalog/{{ img }}--w880.jpg" media="(max-width: 1199px)">
+
+				<source srcset="/img/catalog/{{ img }}.webp 1x, /img/catalog/{{ img }}@2x.webp 2x" type="image/webp">
 				<source srcset="/img/catalog/{{ img }}.jpg 1x, /img/catalog/{{ img }}@2x.jpg 2x">
 
 				<img src="/img/catalog/{{ img }}.jpg" alt="Экстрим Стандарт" width="270" height="208" loading="lazy">
@@ -18,7 +23,7 @@
 
 	{% endif %}
 
-			<form action="/" class="catalog-item__favourites">
+			<form action="/" class="catalog-item__favourites{% if loop.index > 2 and loop.index < 5 %} in-list{% endif %}">
 
 				<button class="button">
 					<svg width="21" height="21" viewBox="0 0 21 21">
@@ -28,7 +33,7 @@
 
 			</form>
 
-			<ul class="catalog-item__param hide">
+			<ul class="catalog-item__param catalog-item__param--img hide">
 
 				<li>Полёт на авиатренажёре</li>
 				<li>СУ-27 Курсант</li>
