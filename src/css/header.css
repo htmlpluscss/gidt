@@ -289,7 +289,7 @@
 				opacity: 1;
 				transform: translateY(0);
 				visibility: visible;
-				transition: opacity 0.3s 0s, transform 0.3s 0s;
+				transition: opacity var(--transitionDefault) 0s, transform var(--transitionDefault) 0s;
 
 			}
 
@@ -317,7 +317,7 @@
 				visibility: hidden;
 				opacity: 0;
 				transform: translateY(30px);
-				transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s;
+				transition: opacity var(--transitionDefault) 0s, visibility 0s var(--transitionDefault), transform var(--transitionDefault) 0s;
 				box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05);
 
 				&::after,

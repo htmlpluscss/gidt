@@ -6,31 +6,80 @@
 
 	}
 
-	const value = slider.querySelector('.slider__value'),
-		  track = slider.querySelector('.slider__track'),
-		  start = parseInt(value.textContent),
-		  marker = slider.querySelectorAll('.slider__marker-item');
+	// отделяем тысячи
+	const sepNumber = str => str.toString().replace(/\s+/g,'').replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+
+	// склеиваем тысячи
+	const strToNumber = n => parseInt(n.replace(/\s+/g,''), 10);
+
+	const track = slider.querySelector('.slider__track'),
+		  form = slider.closest('form'),
+		  minValue = slider.querySelector('.slider__value-min'),
+		  maxValue = slider.querySelector('.slider__value-max'),
+		  minInput = slider.querySelector('.slider__input-min'),
+		  maxInput = slider.querySelector('.slider__input-max'),
+		  btnReset = slider.querySelector('.slider__reset'),
+		  btnOpen = slider.querySelector('.catalog-filter__item-btn'),
+		  min   = parseInt(track.getAttribute('data-min')),
+		  max   = parseInt(track.getAttribute('data-max')),
+		  step  = parseInt(track.getAttribute('data-step')),
+		  begin = parseInt(track.getAttribute('data-begin')),
+		  end   = parseInt(track.getAttribute('data-end'));
 
 	noUiSlider.create(track, {
-		start: start,
+		start: [begin,end],
+		step: step,
 		connect: true,
 		range: {
-			'min': 0,
-			'max': 100
+			'min': min,
+			'max': max
 		}
 	});
 
-	track.noUiSlider.on('slide', values => value.textContent = parseInt(values[0]));
+	track.noUiSlider.on('slide', values => {
 
-	Array.from(marker, el =>
+		minValue.textContent = sepNumber(parseInt(values[0]));
+		maxValue.textContent = sepNumber(parseInt(values[1]));
 
-		el.addEventListener('click', () => {
+	});
 
-			const v = el.getAttribute('data-value');
+	track.noUiSlider.on('end', values => {
 
-			value.textContent = v;
-			track.noUiSlider.set(Number(v));
+		minInput.value = parseInt(values[0]);
+		maxInput.value = parseInt(values[1]);
 
-		}));
+		btnOpen.classList.add('is-checked');
+
+		form.dispatchEvent(new CustomEvent("change"));
+
+	});
+
+	btnReset.addEventListener('click', () => {
+
+		track.noUiSlider.set([min,max]);
+
+		minValue.textContent = sepNumber(min);
+		maxValue.textContent = sepNumber(max);
+
+		minInput.value = min;
+		maxInput.value = max;
+
+		form.dispatchEvent(new CustomEvent("change"));
+
+	});
+
+	form.addEventListener("reset", () => {
+
+		console.log('reset');
+
+		track.noUiSlider.set([min,max]);
+
+		minValue.textContent = sepNumber(min);
+		maxValue.textContent = sepNumber(max);
+
+		minInput.value = min;
+		maxInput.value = max;
+
+	});
 
 })(document.querySelector('.slider'));
