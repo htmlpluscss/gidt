@@ -26,3 +26,17 @@
 	};
 
 })(document.querySelectorAll('.product-main__img-preview'));
+
+// btn set-details
+
+( items => {
+
+	if(items.length) {
+
+		Array.from(items, btn =>
+			btn.addEventListener("click", () =>
+				btn.closest('.product-set-details__item').classList.toggle('is-down')));
+
+	};
+
+})(document.querySelectorAll('.product-set-details__btn-open'));

@@ -1,0 +1,47 @@
+{% for tr in table %}
+
+								<tbody class="product-set-details__item">
+
+									<tr class="product-set-details__short">
+
+										<td>
+											{{ tr.name }}
+										</td>
+
+										<td>
+											{{ tr.people }}
+										</td>
+
+										<td>
+											30 мин
+										</td>
+
+										<td>
+											10+
+										</td>
+
+										<td>
+											круглый год
+										</td>
+
+										<td>
+											<button class="btn btn--outline product-set-details__btn-open" type="button" data-alt="Свернуть">
+												<span>Подробнее</span>
+											</button>
+										</td>
+
+									</tr>
+
+									<tr class="product-set-details__full">
+
+										<td colspan="6">
+
+{% include "product/set-details-full.html" %}
+
+										</td>
+
+									</tr>
+
+								</tbody>
+
+{% endfor %}

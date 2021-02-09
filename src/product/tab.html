@@ -6,21 +6,168 @@
 
 					<div class="tabs__item">
 
-						<div class="tabs__btn">
-							Полезная информация
-						</div>
+						<h2 class="tabs__btn">
 
-						1
+							<span class="tabs__btn-logo tabs__btn-logo--show-active">
+
+								<img src="/img/product/tab-info-color.svg" width="23" height="23" loading="lazy" alt="">
+
+							</span>
+
+							<span class="tabs__btn-logo tabs__btn-logo--hide-active">
+
+								<img src="/img/product/tab-info-blue.svg" width="23" height="23" loading="lazy" alt="">
+
+							</span>
+
+							<span class="tabs__btn-name">
+								Полезная информация
+							</span>
+
+						</h2>
+
+						<div class="product-tab__info">
+
+							<div class="product-tab__info-item">
+
+								<ul>
+
+									<li><b>Срок действия</b> до 15.01.2022 (больше года!)</li>
+									<li>Полное сопровождение получателя подарка при активации</li>
+									<li>Гарантия качества</li>
+									<li>Быстрая доставка</li>
+									<li>Вы можете заказать упаковку, которая больше понравится при оформлении заказа</li>
+
+								</ul>
+
+							</div>
+
+							<div class="product-tab__info-item">
+
+								<h3>
+									Для оформления заказа:
+								</h3>
+
+								<ol>
+									<li>Выберите подарок</li>
+									<li>Оформите заказ</li>
+									<li>Получите заказ</li>
+								</ol>
+
+								<h3>
+									Тот кому подарите:
+								</h3>
+
+								<ol>
+									<li>Выбирает впечатление</li>
+									<li>Акстивирует сертификат на нашем сайте или по телефону</li>
+									<li>Получает впечатление</li>
+								</ol>
+
+							</div>
+
+						</div>
 
 					</div>
 
 					<div class="tabs__item is-active">
 
-						<div class="tabs__btn is-active">
-							Состав
-						</div>
+						<h2 class="tabs__btn">
 
-						2
+							<span class="tabs__btn-logo tabs__btn-logo--svg">
+
+								<svg width="16" height="18" viewBox="0 0 16 18">
+									<path d="M10.37 16.23a6.1 6.1 0 01-8.59 0 5.99 5.99 0 010-8.51l6.44-6.4a4.58 4.58 0 016.44 0 4.49 4.49 0 010 6.4L8.22 14.1a3.06 3.06 0 01-4.3 0 3 3 0 010-4.26l6.45-6.4 1.07 1.07L5 10.91a1.5 1.5 0 000 2.13c.6.59 1.56.59 2.15 0l6.44-6.39a3 3 0 000-4.26 3.06 3.06 0 00-4.3 0L2.86 8.78a4.49 4.49 0 000 6.39 4.58 4.58 0 006.45 0l5.36-5.32 1.08 1.06-5.37 5.32z"/>
+								</svg>
+
+							</span>
+
+							<span class="tabs__btn-name">
+								Состав
+							</span>
+
+						</h2>
+
+						<div class="product-set-details">
+
+							<div class="product-set-details__head">
+
+								<h3>
+									Впечатления на выбор получателя:
+								</h3>
+
+								<p>
+									Получатель подарка сам выберет одно любое впечатление из всего набора.
+								</p>
+
+							</div>
+
+							<table>
+
+								<thead>
+
+									<tr>
+										<th>
+											Вид впечатления
+										</th>
+
+										<th>
+											Количество <br>персон
+										</th>
+
+										<th>
+											Длительность
+										</th>
+
+										<th>
+											Возрастное <br>ограничение
+										</th>
+
+										<th>
+											Сезон
+										</th>
+
+										<th>
+
+										</th>
+									</tr>
+
+								</thead>
+
+{% set table = [
+
+	{
+		name : "Театр \"На Страстном\"",
+		people : "1 персона"
+	},
+	{
+		name : "Мастер-класс езды на мотоцикле",
+		people : "2 персоны"
+	},
+	{
+		name : "Картинг для двоих",
+		people : "1 персона"
+	},
+	{
+		name : "Полёт на авиатренажёре СУ-27 Курсант",
+		people : "1 персона"
+	},
+	{
+		name : "Планетарий для двоих",
+		people : "2 персоны"
+	},
+	{
+		name : "Океанариум для двоих",
+		people : "1 персона"
+	}
+
+] %}
+
+{% include "product/set-details.html" %}
+
+							</table>
+
+						</div>
 
 					</div>
 

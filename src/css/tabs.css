@@ -5,12 +5,12 @@
 	&__nav {
 
 		display: flex;
+		background-color: #F0F2F9;
 
 	}
 
 	&__btn {
 
-		background-color: #F0F2F9;
 		padding: 18px;
 		font-size: 17px;
 		line-height: 21px;
@@ -36,6 +36,18 @@
 		&-logo {
 
 			margin-right: 10px;
+
+			&--svg svg {
+
+				fill: #849BD9;
+
+			}
+
+		}
+
+		&.is-active &-logo--svg svg {
+
+			fill: var(--red);
 
 		}
 
