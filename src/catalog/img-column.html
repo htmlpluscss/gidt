@@ -1,19 +1,23 @@
 		<div class="catalog-item__img">
 
-			<picture>
+			<a href="/product/">
 
-				<source srcset="/img/catalog/{{ img }}--w640.webp" type="image/webp" media="(max-width: 360px)">
-				<source srcset="/img/catalog/{{ img }}--w640.jpg" media="(max-width: 360px)">
+				<picture>
 
-				<source srcset="/img/catalog/{{ img }}--w880.webp" type="image/webp" media="(max-width: 1199px)">
-				<source srcset="/img/catalog/{{ img }}--w880.jpg" media="(max-width: 1199px)">
+					<source srcset="/img/catalog/{{ img }}--w640.webp" type="image/webp" media="(max-width: 360px)">
+					<source srcset="/img/catalog/{{ img }}--w640.jpg" media="(max-width: 360px)">
 
-				<source srcset="/img/catalog/{{ img }}.webp 1x, /img/catalog/{{ img }}@2x.webp 2x" type="image/webp">
-				<source srcset="/img/catalog/{{ img }}.jpg 1x, /img/catalog/{{ img }}@2x.jpg 2x">
+					<source srcset="/img/catalog/{{ img }}--w880.webp" type="image/webp" media="(max-width: 1199px)">
+					<source srcset="/img/catalog/{{ img }}--w880.jpg" media="(max-width: 1199px)">
 
-				<img src="/img/catalog/{{ img }}.jpg" alt="Экстрим Стандарт" width="270" height="208" loading="lazy">
+					<source srcset="/img/catalog/{{ img }}.webp 1x, /img/catalog/{{ img }}@2x.webp 2x" type="image/webp">
+					<source srcset="/img/catalog/{{ img }}.jpg 1x, /img/catalog/{{ img }}@2x.jpg 2x">
 
-			</picture>
+					<img src="/img/catalog/{{ img }}.jpg" alt="Экстрим Стандарт" width="270" height="208" loading="lazy">
+
+				</picture>
+
+			</a>
 
 	{% if loop.index < 4 %}
 
