@@ -58,7 +58,6 @@
 
 		&__tab {
 
-			background-color: #F8F9FD;
 			width: 582px;
 			flex-shrink: 0;
 			position: relative;
@@ -69,107 +68,43 @@
 
 			}
 
+			.tabs__btn {
+
+				flex-grow: 1;
+
+				@media ($smWidth) {
+
+					text-align: left;
+
+					&-logo {
+
+						display: none;
+
+					}
+
+				}
+
+				@media ($xsWidth) {
+
+					&-arrow {
+
+						display: none;
+
+					}
+
+				}
+
+			}
+
 		}
 
 		&__body {
 
-			display: none;
-			padding: 90px 42px 82px;
+			padding: 20px 20px 60px;
 
 			@media ($smWidth) {
 
-				padding: 80px 20px 20px;
-
-			}
-
-		}
-
-		&__head.is-active + &__body {
-
-			display: block;
-
-		}
-
-		&__head {
-
-			position: absolute;
-			width: 50%;
-			top: 0;
-			left: 0;
-			cursor: pointer;
-
-			&:not(.is-active) {
-
-				background-color: #F0F2F9;
-
-			}
-
-			&-name {
-
-				display: block;
-				padding: 18px 0 18px 68px;
-				font-size: 17px;
-				line-height: 21px;
-				color: #849BD9;
-
-				@media ($smWidth) {
-
-					font-size: 14px;
-					padding: 20px 14px;
-					line-height: 20px;
-
-				}
-
-			}
-
-			&-logo {
-
-				position: absolute;
-				top: 9px;
-				left: 22px;
-
-				@media ($smWidth) {
-
-					display: none;
-
-				}
-
-			}
-
-			&-arrow {
-
-				position: absolute;
-				top: 0;
-				right: 13px;
-				bottom: 0;
-				margin: auto;
-				fill: #849BD9;
-
-			}
-
-			&.is-active &-arrow {
-
-				transform: rotate(90deg);
-
-			}
-
-			&--right {
-
-				left: auto;
-				right: 0;
-
-			}
-
-			&--right &-name {
-
-				color: var(--red);
-
-			}
-
-			&--right &-arrow {
-
-				fill: var(--red);
-				right: 24px;
+				padding: 0;
 
 			}
 
