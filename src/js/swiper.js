@@ -55,6 +55,8 @@
 			swipeBtns.classList.add('hide');
 			swipeControls.classList.add('hide');
 
+			swipe.parentNode.classList.remove('swiper-container-style');
+
 		}
 
 		resetSwipe();
@@ -64,6 +66,12 @@
 			toggleSwipe = () => {
 
 				resetSwipe();
+
+				if(count < 4 && window.innerWidth >= 1200) {
+
+					return;
+
+				}
 
 				swipe.parentNode.classList.add('swiper-container-style');
 
