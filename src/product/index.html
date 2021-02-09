@@ -4,6 +4,20 @@
 
 {% set breadcrumbs = ['Каталог', 'Для него', 'Экстрим Стандарт (подарочный набор)'] %}
 
+{% set ogImage = "Карточка товара " %}
+{% set ogImage236 = "Карточка товара " %}
+
+{% set preloadImage = [
+	{
+		media: "(max-width: 767px)",
+		img : "/img/product/big@2x.webp"
+	},
+	{
+		media: "(min-width: 1200px)",
+		img : "/img/product/big.webp"
+	}
+] %}
+
 {% extends "template/base.html" %}
 
 {% block content %}
@@ -12,13 +26,21 @@
 
 		<div class="product-main">
 
+			<div class="center">
+
+				<div class="product-main__flex">
+
+{% include "product/img.html" %}
+
+{% include "product/body.html" %}
+
+				</div>
+
+			</div>
 
 		</div>
 
-		<div class="product-desc">
-
-
-		</div>
+{% include "product/tab.html" %}
 
 	</article>
 
