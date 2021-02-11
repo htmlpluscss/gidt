@@ -189,19 +189,18 @@
 
 		});
 
-		// кнопка открыть
-
-		const btnItem = form.querySelector('.catalog-sort__item-btn');
-
-		btnItem.addEventListener("click", () => btnItem.classList.toggle('is-open'));
-
-		// закрыть
+		// открыть | закрыть
 
 		window.addEventListener("click", event => {
 
-			if(!event.target.closest('.catalog-sort__item')) {
+			if(event.target.closest('.catalog__btn-toggle-sort')) {
 
-				btnItem.classList.remove('is-open');
+				document.body.classList.toggle('open-catalog-sort');
+
+			}
+			else {
+
+				document.body.classList.remove('open-catalog-sort');
 
 			}
 
@@ -209,20 +208,15 @@
 
 		// радио кнопки сортировки
 
-		const btnGroup = form.querySelectorAll('.catalog-sort__radio-btn');
+		const btnCurrent = form.querySelector('.catalog-sort__btn-current'),
+			  btnGroup = form.querySelectorAll('.catalog-sort__radio-btn');
 
 		Array.from(btnGroup, el => {
 
 			const input = el.querySelector('.catalog-sort__radio-btn-input'),
 				  label = el.querySelector('.catalog-sort__radio-btn-label');
 
-			input.addEventListener("change", () => {
-
-				btnItem.textContent = label.textContent;
-
-				btnItem.classList.remove('is-open');
-
-			});
+			input.addEventListener("change", () => btnCurrent.textContent = label.textContent);
 
 		});
 
