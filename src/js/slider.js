@@ -66,13 +66,13 @@
 			minInput.value = min;
 			maxInput.value = max;
 
+			btnOpen.classList.remove('is-checked');
+
 			form.dispatchEvent(new CustomEvent("change"));
 
 		});
 
 		form.addEventListener("reset", () => {
-
-			console.log('reset');
 
 			track.noUiSlider.set([min,max]);
 
@@ -81,6 +81,8 @@
 
 			minInput.value = min;
 			maxInput.value = max;
+
+			form.dispatchEvent(new CustomEvent("change"));
 
 		});
 

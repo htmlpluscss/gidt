@@ -28,6 +28,11 @@
 
 }
 
+@media ($tablet) {
+
+
+}
+
 @media ($mdWidth) {
 
 	.hidden-md {

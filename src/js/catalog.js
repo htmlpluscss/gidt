@@ -30,17 +30,38 @@
 
 	if(form) {
 
+		const isReset = () => {
+
+			let reset = form.querySelectorAll('.catalog-filter__checkbox-input:checked').length ? false : true;
+
+			if(form.querySelector('.slider__input-min').value !== form.querySelector('.slider__track').getAttribute('data-min')) {
+
+				reset = false;
+
+			}
+
+			if(form.querySelector('.slider__input-max').value !== form.querySelector('.slider__track').getAttribute('data-max')) {
+
+				reset = false;
+
+			}
+
+			form.classList.toggle('is-reset', reset);
+
+		};
+
+		// head for mobile
+
+		const catalogName = form.querySelector('.catalog-filter__head-title'),
+			  catalogNameDefault = catalogName.textContent;
+
+
+		// handler
+
 		form.addEventListener("change", event => {
 
 			console.log('при необходимости отправляем форму ajax');
-
-		});
-
-		form.addEventListener("reset", () => {
-
-			console.log('reset');
-
-			Array.from(btnItem, btn => btn.classList.remove('is-open','is-checked'));
+			setTimeout( () => isReset(), 100);
 
 		});
 
@@ -67,7 +88,35 @@
 
 				});
 
+				// если открываем подуровень
+
+				if(form.querySelectorAll('.catalog-filter__item-btn.is-open').length){
+
+					form.classList.add('is-level-2');
+
+					catalogName.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24"><path d="M19 12.1H6.33l4.6-4.82L9.7 6 3 13l6.7 7 1.23-1.28-4.6-4.81H19v-1.82z"/></svg>';
+					catalogName.append(btn.textContent);
+
+				}
+				else {
+
+					form.classList.remove('is-level-2');
+
+					catalogName.textContent = catalogNameDefault;
+
+				}
+
 			});
+
+		});
+
+		form.addEventListener("reset", () => {
+
+			console.log('reset');
+
+			Array.from(btnItem, btn => btn.classList.remove('is-open','is-checked'));
+
+			setTimeout( () => isReset(), 100);
 
 		});
 
@@ -107,7 +156,8 @@
 
 			const input = group.querySelectorAll('.catalog-filter__checkbox-input'),
 				  btnOpen = group.querySelector('.catalog-filter__item-btn'),
-				  btnClear = group.querySelector('.catalog-filter__checkbox-clear'),
+				  btnClearAll = group.querySelector('.catalog-filter__item-clear-all'),
+				  btnCheckAll = group.querySelector('.catalog-filter__item-check-all'),
 				  totalCount = group.querySelector('.catalog-filter__checkbox-count-total'),
 				  concarValue = group.querySelector('.catalog-filter__checkbox-concat-value');
 
@@ -144,7 +194,24 @@
 
 			});
 
-			btnClear.addEventListener("click", () => {
+			// все отметить
+
+			btnCheckAll.addEventListener("click", () => {
+
+				Array.from(input, el => {
+
+					el.checked = true;
+					el.dispatchEvent(new CustomEvent("change"));
+
+				});
+
+				form.dispatchEvent(new CustomEvent("change"));
+
+			});
+
+			// все отжать
+
+			btnClearAll.addEventListener("click", () => {
 
 				Array.from(input, el => {
 
@@ -171,6 +238,35 @@
 				}, 100);
 
 			});
+
+		});
+
+	// mobile
+		// открыть | закрыть
+
+		window.addEventListener("click", event => {
+
+			if(event.target.closest('.catalog__btn-filter-show')) {
+
+				document.body.classList.add('open-catalog-filter');
+
+			}
+			else if(event.target.closest('.catalog__btn-filter-hide')) {
+
+				document.body.classList.remove('open-catalog-filter');
+
+			}
+
+		});
+
+		// назад уровень
+
+		catalogName.addEventListener("click", () => {
+
+			form.classList.remove('is-level-2');
+			catalogName.textContent = catalogNameDefault;
+
+			Array.from(btnItem, _btn => _btn.classList.remove('is-open'));
 
 		});
 

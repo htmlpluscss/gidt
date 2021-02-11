@@ -4,7 +4,16 @@
 		{{ title }}
 	</h1>
 
+{% if filter == "checked" %}
+
+{% include "catalog/filter--checked.html" %}
+
+{% else %}
+
 {% include "catalog/filter.html" %}
+
+{% endif %}
+
 {% include "catalog/sort.html" %}
 
 	<div class="catalog__btns-mobile">
@@ -20,7 +29,7 @@
 					</svg>
 				</button>
 
-				<button class="button catalog__btns-mobile-filter" type="button">
+				<button class="button catalog__btn-filter-show" type="button">
 					Фильтры
 					<svg width="16" height="16" viewBox="0 0 16 16">
 						<path d="M14.25 3h-1.1a.5.5 0 00-.38.2l-6.45 8.15-3.09-3.91a.5.5 0 00-.39-.2H1.75c-.1 0-.16.13-.1.2l4.28 5.43c.2.25.59.25.79 0l7.63-9.67c.06-.08 0-.2-.1-.2z"/>

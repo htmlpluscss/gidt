@@ -1,4 +1,4 @@
-	<form action="/" class="catalog-filter is-reset">
+	<form action="/" class="catalog-filter">
 
 		<div class="center">
 
@@ -16,7 +16,7 @@
 
 					<div class="catalog-filter__item catalog-filter__checkbox-group">
 
-						<button class="catalog-filter__item-btn button" type="button">
+						<button class="catalog-filter__item-btn button is-checked" type="button">
 							Кому
 						</button>
 
@@ -26,14 +26,16 @@
 
 								<div class="catalog-filter__item-label">
 
-									<span class="catalog-filter__checkbox-count-total">0</span>
+									<span class="catalog-filter__checkbox-count-total">2</span>
 									выбрано
 
 								</div>
 
 								<div class="catalog-filter__item-value">
 
-									<span class="catalog-filter__checkbox-concat-value"></span>
+									<span class="catalog-filter__checkbox-concat-value">
+										Для нее, Для него
+									</span>
 
 								</div>
 
@@ -55,7 +57,7 @@
 
 								<label class="catalog-filter__checkbox">
 
-									<input class="catalog-filter__checkbox-input" type="checkbox" data-value="Для нее">
+									<input class="catalog-filter__checkbox-input" type="checkbox" data-value="Для нее" checked="checked">
 
 									<span class="catalog-filter__checkbox-btn">
 										Для нее <span class="catalog-filter__checkbox-btn-suf">(5)</span>
@@ -65,7 +67,7 @@
 
 								<label class="catalog-filter__checkbox">
 
-									<input class="catalog-filter__checkbox-input" type="checkbox" data-value="Для него">
+									<input class="catalog-filter__checkbox-input" type="checkbox" data-value="Для него" checked="checked">
 
 									<span class="catalog-filter__checkbox-btn">
 										Для него <span class="catalog-filter__checkbox-btn-suf">(8)</span>
@@ -275,7 +277,7 @@
 
 					<div class="catalog-filter__item slider">
 
-						<button class="catalog-filter__item-btn button" type="button">
+						<button class="catalog-filter__item-btn button is-checked" type="button">
 							Цена
 						</button>
 
@@ -288,7 +290,7 @@
 								</div>
 
 								<div class="catalog-filter__item-value">
-									<span class="slider__value-min">390</span> руб. - <span class="slider__value-max">11 215</span> руб.
+									<span class="slider__value-min">390</span> руб. - <span class="slider__value-max">6 000</span> руб.
 								</div>
 
 								<div class="catalog-filter__item-btn-check-group">
@@ -306,7 +308,7 @@
 								<div class="catalog-filter__item-slider">
 
 									<input type="hidden" name="price-min" value="390" class="slider__input-min">
-									<input type="hidden" name="price-max" value="11215" class="slider__input-max">
+									<input type="hidden" name="price-max" value="6000" class="slider__input-max">
 
 									<div class="slider__extreme">
 
@@ -321,7 +323,7 @@
 										data-max="11215"
 										data-step="1"
 										data-begin="390"
-										data-end="11215"
+										data-end="6000"
 
 									></div>
 
