@@ -1,0 +1,66 @@
+{% set title = "FAQ" %}
+
+{% set description = "Вопросы до покупки" %}
+
+{% set breadcrumbs = [title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="page">
+
+	<div class="center">
+
+		<h1 class="page__title h1">
+			{{ title }}
+		</h1>
+
+		<div class="service-oferta">
+
+			<div class="accordion">
+
+{% set accordion = [
+
+	{
+		name : "Вопросы до покупки",
+		text : "<p>Подарочный сертификат с уникальным кодом упакованный в коробку. Также в коробке находятся карточки с описанием услуг и правилами активации</p><p>Электронный подарочный сертификат <br>Приходит на почту, указанную Вами при оформлении заказа. <br>В письме будет сам сертификат с уникальным кодом и правила активации. <br>Если покупаете электронный подарочный сертификат в подарок можно указать почту получателя подарка</p>"
+	},
+	{
+		name : "Воспользоваться можно одной любой услугой",
+		text : "<p>Сертификат действителен в течение 12 месяцев с момента покупки, в этот срок его необходимо использовать. Дата окончания срока действия указана на сертификате. Активация не влияет на срок действия сертификата.</p>"
+	}
+
+] %}
+
+{% for item in accordion %}
+
+				<div class="accordion__item">
+
+					<h2 class="accordion__head accordion__btn">
+						{{ item.name }}
+					</h2>
+
+					<div class="accordion__body">
+
+						<div class="accordion__column">
+
+							{{ item.text }}
+
+						</div>
+
+					</div>
+
+				</div>
+
+{% endfor %}
+
+			</div>
+
+		</div>
+
+	</div>
+
+</article>
+
+{% endblock %}

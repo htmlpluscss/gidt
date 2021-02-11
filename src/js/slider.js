@@ -12,74 +12,84 @@
 	// склеиваем тысячи
 	const strToNumber = n => parseInt(n.replace(/\s+/g,''), 10);
 
-	const track = slider.querySelector('.slider__track'),
-		  form = slider.closest('form'),
-		  minValue = slider.querySelector('.slider__value-min'),
-		  maxValue = slider.querySelector('.slider__value-max'),
-		  minInput = slider.querySelector('.slider__input-min'),
-		  maxInput = slider.querySelector('.slider__input-max'),
-		  btnReset = slider.querySelector('.slider__reset'),
-		  btnOpen = slider.querySelector('.catalog-filter__item-btn'),
-		  min   = parseInt(track.getAttribute('data-min')),
-		  max   = parseInt(track.getAttribute('data-max')),
-		  step  = parseInt(track.getAttribute('data-step')),
-		  begin = parseInt(track.getAttribute('data-begin')),
-		  end   = parseInt(track.getAttribute('data-end'));
+	const noUiSliderInit = () => {
 
-	noUiSlider.create(track, {
-		start: [begin,end],
-		step: step,
-		connect: true,
-		range: {
-			'min': min,
-			'max': max
-		}
-	});
+		const track = slider.querySelector('.slider__track'),
+			  form = slider.closest('form'),
+			  minValue = slider.querySelector('.slider__value-min'),
+			  maxValue = slider.querySelector('.slider__value-max'),
+			  minInput = slider.querySelector('.slider__input-min'),
+			  maxInput = slider.querySelector('.slider__input-max'),
+			  btnReset = slider.querySelector('.slider__reset'),
+			  btnOpen = slider.querySelector('.catalog-filter__item-btn'),
+			  min   = parseInt(track.getAttribute('data-min')),
+			  max   = parseInt(track.getAttribute('data-max')),
+			  step  = parseInt(track.getAttribute('data-step')),
+			  begin = parseInt(track.getAttribute('data-begin')),
+			  end   = parseInt(track.getAttribute('data-end'));
 
-	track.noUiSlider.on('slide', values => {
+		noUiSlider.create(track, {
+			start: [begin,end],
+			step: step,
+			connect: true,
+			range: {
+				'min': min,
+				'max': max
+			}
+		});
 
-		minValue.textContent = sepNumber(parseInt(values[0]));
-		maxValue.textContent = sepNumber(parseInt(values[1]));
+		track.noUiSlider.on('slide', values => {
 
-	});
+			minValue.textContent = sepNumber(parseInt(values[0]));
+			maxValue.textContent = sepNumber(parseInt(values[1]));
 
-	track.noUiSlider.on('end', values => {
+		});
 
-		minInput.value = parseInt(values[0]);
-		maxInput.value = parseInt(values[1]);
+		track.noUiSlider.on('end', values => {
 
-		btnOpen.classList.add('is-checked');
+			minInput.value = parseInt(values[0]);
+			maxInput.value = parseInt(values[1]);
 
-		form.dispatchEvent(new CustomEvent("change"));
+			btnOpen.classList.add('is-checked');
 
-	});
+			form.dispatchEvent(new CustomEvent("change"));
 
-	btnReset.addEventListener('click', () => {
+		});
 
-		track.noUiSlider.set([min,max]);
+		btnReset.addEventListener('click', () => {
 
-		minValue.textContent = sepNumber(min);
-		maxValue.textContent = sepNumber(max);
+			track.noUiSlider.set([min,max]);
 
-		minInput.value = min;
-		maxInput.value = max;
+			minValue.textContent = sepNumber(min);
+			maxValue.textContent = sepNumber(max);
 
-		form.dispatchEvent(new CustomEvent("change"));
+			minInput.value = min;
+			maxInput.value = max;
 
-	});
+			form.dispatchEvent(new CustomEvent("change"));
 
-	form.addEventListener("reset", () => {
+		});
 
-		console.log('reset');
+		form.addEventListener("reset", () => {
 
-		track.noUiSlider.set([min,max]);
+			console.log('reset');
 
-		minValue.textContent = sepNumber(min);
-		maxValue.textContent = sepNumber(max);
+			track.noUiSlider.set([min,max]);
 
-		minInput.value = min;
-		maxInput.value = max;
+			minValue.textContent = sepNumber(min);
+			maxValue.textContent = sepNumber(max);
 
-	});
+			minInput.value = min;
+			maxInput.value = max;
+
+		});
+
+	};
+
+	// load
+	const script = document.createElement('script');
+	script.src = '/js/nouislider.min.js';
+	script.onload = () => noUiSliderInit();
+	setTimeout( () => document.head.appendChild(script), window.pageYOffset > 0 ? 0 : 5000);
 
 })(document.querySelector('.slider'));
