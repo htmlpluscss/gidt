@@ -1,0 +1,146 @@
+{% if modalShow === "packing" %}
+
+			<form action="/" class="modal__item modal__item--packing modal-packing visuallyhidden">
+
+				<h3 class="modal__title">
+					Выберите дополнительную упаковку
+				</h3>
+
+				<div class="modal-packing__tags">
+
+					<div class="tags-btn">
+
+						<label class="tags-btn__item">
+
+							<input type="checkbox" name="tags" class="tags-btn__input" checked="checked">
+
+							<span class="tags-btn__label">
+								Все
+							</span>
+
+						</label>
+
+						<label class="tags-btn__item">
+
+							<input type="checkbox" name="tags" class="tags-btn__input">
+
+							<span class="tags-btn__label">
+								Новый год
+							</span>
+
+						</label>
+
+						<label class="tags-btn__item">
+
+							<input type="checkbox" name="tags" class="tags-btn__input">
+
+							<span class="tags-btn__label">
+								День рождение
+							</span>
+
+						</label>
+
+						<label class="tags-btn__item">
+
+							<input type="checkbox" name="tags" class="tags-btn__input">
+
+							<span class="tags-btn__label">
+								День свадьбы
+							</span>
+
+						</label>
+
+						<label class="tags-btn__item">
+
+							<input type="checkbox" name="tags" class="tags-btn__input">
+
+							<span class="tags-btn__label">
+								14 февраля
+							</span>
+
+						</label>
+
+						<label class="tags-btn__item">
+
+							<input type="checkbox" name="tags" class="tags-btn__input">
+
+							<span class="tags-btn__label">
+								23 февраля
+							</span>
+
+						</label>
+
+						<label class="tags-btn__item">
+
+							<input type="checkbox" name="tags" class="tags-btn__input">
+
+							<span class="tags-btn__label">
+								8 марта
+							</span>
+
+						</label>
+
+					</div>
+
+				</div>
+
+				<hr>
+
+				<div class="modal-packing__list">
+
+					<div class="packing-list">
+
+{% for row in [1,2] %}
+
+{% for img in [1,2,3,4,5] %}
+
+						<div class="packing-list__item">
+
+							<div class="packing-list__card">
+
+								<div class="packing-list__img">
+
+									<picture>
+
+										<source srcset="/img/packing/catalog/{{ img }}.webp 1x, /img/packing/catalog/{{ img }}@2x.webp 2x" type="image/webp">
+										<source srcset="/img/packing/catalog/{{ img }}.jpg 1x, /img/packing/catalog/{{ img }}@2x.jpg 2x">
+
+										<img src="/img/packing/catalog/{{ img }}.jpg" alt="" width="155" height="118" loading="lazy">
+
+									</picture>
+
+								</div>
+
+								<div class="packing-list__price">
+									120 ₽
+								</div>
+
+								<button class="btn btn--yellow">
+									В корзину
+								</button>
+
+							</div>
+
+						</div>
+
+{% endfor %}
+
+{% endfor %}
+
+					</div>
+
+				</div>
+
+				<div class="modal-packing__foot">
+
+{% include "_include/pagination.html" %}
+
+					<button type="button" class="modal__close btn btn--outline">
+						Закрыть
+					</button>
+
+				</div>
+
+			</form>
+
+{% endif %}

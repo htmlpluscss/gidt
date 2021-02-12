@@ -25,15 +25,19 @@ document.querySelector('.btn-menu-toggle').addEventListener('click', event => {
 
 			const target = event.target;
 
-			if(target.closest('.show-menu-catalog') || target.closest('.menu-catalog')) {
+			if(target) {
 
-				menu.classList.add('is-show');
+				if(target.closest('.show-menu-catalog') || target.closest('.menu-catalog')) {
 
-			}
+					menu.classList.add('is-show');
 
-			else if(target.closest('a') || target.closest('button') || target.closest('input') || target.closest('select')) {
+				}
 
-				menu.classList.remove('is-show');
+				else if(target.closest('a') || target.closest('button') || target.closest('.header') === null) {
+
+					menu.classList.remove('is-show');
+
+				}
 
 			}
 

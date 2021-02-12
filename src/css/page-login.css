@@ -1,0 +1,140 @@
+.page-login {
+
+	display: flex;
+	position: relative;
+	margin: 60px 0;
+
+	@media ($smWidth) {
+
+		flex-direction: column-reverse;
+		margin: 40px 0;
+
+	}
+
+	&__authorization {
+
+		width: 366px;
+
+		@media ($smWidth) {
+
+			width: 100%;
+			margin-top: 40px;
+
+		}
+
+	}
+
+	&__head {
+
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 133%;
+		letter-spacing: 0.05em;
+		margin-bottom: 26px;
+
+		@media ($mdWidth) {
+
+			font-size: 18px;
+
+		}
+
+		@media ($smWidth) {
+
+			margin-bottom: 14px;
+
+
+		}
+
+	}
+
+	&__btn {
+
+		width: 100%;
+
+	}
+
+	hr {
+
+		width: 1px;
+		height: auto;
+		margin: 0 160px;
+		flex-shrink: 0;
+		background-color: #dadada;
+
+		@media ($mdWidth) {
+
+			margin: 0 40px;
+
+		}
+
+	}
+
+	&__input-box {
+
+		margin: 26px 0;
+		position: relative;
+
+		&--flex {
+
+			display: flex;
+
+		}
+
+		&-btn-red-right {
+
+			position: absolute;
+			top: 0;
+			right: 0;
+			color: var(--red);
+			font-size: 11px;
+			line-height: 13px;
+			font-weight: 300;
+
+		}
+
+		&-new-password {
+
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 17px;
+			color: var(--blueText);
+			margin-top: 10px;
+
+		}
+
+		&-after-text {
+
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 17px;
+			color: #939393;
+			margin: 10px 0 30px;
+
+		}
+
+	}
+
+	&__text-rules {
+
+		margin: 20px 0;
+		font-size: 11px;
+		line-height: 13px;
+		font-weight: 300;
+
+	}
+
+	&__link-login {
+
+		margin: 30px 0;
+		font-weight: 300;
+		font-size: 14px;
+
+		a {
+
+			color: var(--blueText);
+
+		}
+
+	}
+
+}

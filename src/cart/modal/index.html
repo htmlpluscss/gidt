@@ -1,0 +1,71 @@
+{% set title = "Модальные окна" %}
+
+{% set modalShow = "packing" %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<div class="center">
+
+		<div style="margin: 50px 0;">
+
+			<p>
+				1. Дополнительная упаковка для сертификатов в коробке, <br> <b>код модалки .modal-packing выводится только на страницы оформления заказа!</b>
+			</p>
+
+			<button type="button" class="btn btn--outline" data-modal="packing">
+				Выбрать
+			</button>
+
+		</div>
+
+		<div style="margin: 50px 0;">
+
+			<p>
+				2. Информационнное сообщение любого характера <br> <b>дабы не плодить много однотипных модалок, сделал одно, в который можно передать любой текст:</b>
+			</p>
+
+			<br>
+
+			<b>Java Script</b>
+
+			<code style="border: 1px solid #ccc; background-color: #eee; padding: 20px; display: block; margin: 10px 0 20px; white-space: pre;">
+  // заголовок и текст
+window.modalInfo('title','text');
+
+  // только заголовок
+window.modalInfo('title');
+
+  // только текст
+window.modalInfo(false,'text');
+			</code>
+
+			<h4>
+				Модалки для корзины:
+			</h4>
+
+			<br>
+
+			<button type="button" class="btn btn--outline" onClick="window.modalInfo('Приведите все товары к одному типу или оформите 2 заказа','К сожалению, оформить общий заказ на сертификаты “в&nbsp;коробке” и “эклектронные” невозможно');">
+				Приведите все товары к одному типу или оформите 2 заказа
+			</button>
+
+			<br>
+
+			<button type="button" class="btn btn--outline" onClick="window.modalInfo('Ваш заказ оформлен','Уважаемый клиент, номер вашего заказа: 122433455 <br>В ближайшее время с вами свяжется наш специалист для подвтверждения заказа');">
+				Если не стоит галочка на “не подтверждать заказ по телефону”
+			</button>
+
+			<br>
+
+			<button type="button" class="btn btn--outline" onClick="window.modalInfo('Ваш заказ оформлен','Уважаемый клиент, номер вашего заказа: 122433455 <br>Ожидайте в SMS подтверждение заказа');">
+				Если стоит галочка на “не подтверждать заказ по телефону”
+			</button>
+
+		</div>
+
+
+	</div>
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{% set title = "Авторизация" %}
+
+{% set description = "Оформление заказа, Авторизация по номеру телефона или оформить заказ как гость" %}
+
+{% set breadcrumbs = ['Оформление заказа',title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="page">
+
+	<div class="center">
+
+		<h1 class="page__title h1">
+			Оформление заказа
+		</h1>
+
+		<div class="page-login">
+
+			<div class="page-login__authorization">
+
+				<form action="/" class="page-login__form">
+
+					<h2 class="page-login__head">
+						Авторизация
+					</h2>
+
+					<div class="page-login__input-box">
+
+						<label class="input-box">
+
+							<span class="input-box__label input-box__label--required">
+								По номеру телефона
+							</span>
+
+							<input type="tel" class="input inputmask inputmask--phone" required="required" placeholder="+7 (">
+
+						</label>
+
+					</div>
+
+					<button class="page-login__btn btn btn--blue">
+						Получить пароль по SMS
+					</button>
+
+					<p class="page-login__text-rules">
+						Нажимая кнопку, я подтверждаю свое согласие на обработку персональных данных и регистрацию в программе
+					</p>
+
+				</form>
+
+				<p class="page-login__link-login">
+
+					<a href="/cart/login/">
+						Войти с помощью пароля
+					</a>
+
+				</p>
+
+			</div>
+
+			<hr>
+
+			<div class="page-login__guest">
+
+				<h2 class="page-login__head">
+					Оформить заказ как гость
+				</h2>
+
+				<a href="/cart/unlogin/" class="page-login__btn btn btn--blue">
+					Продолжить без авторизации
+				</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</article>
+
+{% endblock %}

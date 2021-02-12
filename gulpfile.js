@@ -134,7 +134,7 @@ gulp.task('css', function () {
 
 gulp.task('js', function() {
 
-	return gulp.src(['src/js/*.min.js','src/js/js.js','src/js/*.js','!src/js/nouislider.min.js','!src/js/swiper.min.js'])
+	return gulp.src(['src/js/*.min.js','src/js/js.js','src/js/*.js','!src/js/inputmask.min.js','!src/js/nouislider.min.js','!src/js/swiper.min.js'])
 		.pipe(sourcemaps.init())
 		.pipe(concat('scripts.js'))
 		.pipe(babel({
@@ -155,6 +155,7 @@ gulp.task('serve', function() {
 
 	gulp.src([
 		'src/js/swiper.min.js',
+		'src/js/inputmask.min.js',
 		'src/js/nouislider.min.js'
 	]).pipe(gulp.dest('build/js'));
 

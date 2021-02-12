@@ -5,6 +5,7 @@
 	&__nav {
 
 		display: flex;
+		overflow: hidden;
 		background-color: #F0F2F9;
 
 	}

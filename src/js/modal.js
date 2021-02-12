@@ -67,4 +67,21 @@
 		el.addEventListener('click', () =>
 			modalShow(el.getAttribute('data-modal'))));
 
+	// инфо modal
+
+	window.modalInfo = (...param) => {
+
+		console.log(param);
+
+		if(document.querySelector('#modal-info')) {
+
+			document.querySelector('#modal-info .modal__text').innerHTML = param[1] ? param[1] : '';
+			document.querySelector('#modal-info .modal__title').innerHTML = param[0] ? param[0] : '';
+
+			modalShow('info');
+
+		}
+
+	};
+
 })(document.querySelector('.modal'));

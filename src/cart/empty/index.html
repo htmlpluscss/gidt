@@ -1,0 +1,55 @@
+{% set title = "Ваша корзина пуста" %}
+
+{% set description = "Войдите в учётную запись, чтобы посмотреть, есть ли сохранённые товары. Или продолжите покупки." %}
+
+{% set breadcrumbs = ['Корзина'] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="page">
+
+	<div class="center">
+
+		<h1 class="page__title h1">
+			{{ title }}
+		</h1>
+
+		<div class="cart-empty">
+
+			<p class="cart-empty__intro">
+				Войдите в учётную запись, чтобы посмотреть, есть ли сохранённые товары. Или продолжите покупки.
+			</p>
+
+			<div class="cart-empty__btns">
+
+				<a href="/cart/login/" class="btn btn--blue">
+					Войти
+				</a>
+
+				<a href="/catalog/set/" class="btn btn--blue">
+					Продолжить покупки
+				</a>
+
+			</div>
+
+			<div class="cart-foot">
+
+				<hr>
+
+{% include "_include/help-after.html" %}
+
+				<hr>
+
+			</div>
+
+		</div>
+
+{% include "_include/swiper-caterory.html" %}
+
+	</div>
+
+</article>
+
+{% endblock %}

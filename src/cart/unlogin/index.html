@@ -1,0 +1,55 @@
+{% set title = "Моя корзина" %}
+
+{% set description = "Войдите в учётную запись, чтобы посмотреть, есть ли сохранённые товары. Или продолжите покупки." %}
+
+{% set breadcrumbs = ['Корзина'] %}
+
+{% set modalShow = "packing" %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<form class="page">
+
+	<div class="center">
+
+		<h1 class="page__title h1">
+			{{ title }}
+		</h1>
+
+		<div class="cart-main">
+
+			<div class="cart-main__list">
+
+				<div class="cart-alert-dual-order">
+
+					<p>
+						Приведите все товары к одному типу или оформите 2 заказа. К сожалению, оформить общий заказ на сертификаты  “в коробке” и “эклектронные” невозможно
+					</p>
+
+					<button class="cart-alert-dual-order__close button" aria-label="Скрыть сообщение" type="button">
+						<svg width="21" height="21" viewBox="0 0 21 21">
+							<path d="M20.36 1.05L19.3 0l-9.13 9.13L1.05 0 0 1.05l9.13 9.13L0 19.3l1.05 1.05 9.13-9.13 9.13 9.13 1.05-1.05-9.13-9.13 9.13-9.13z"/>
+						</svg>
+					</button>
+
+				</div>
+
+{% include "cart/main.html" %}
+
+			</div>
+
+			<div class="cart-main__order">
+
+{% include "cart/bar.html" %}
+
+			</div>
+
+		</div>
+
+	</div>
+
+</form>
+
+{% endblock %}

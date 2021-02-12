@@ -1,0 +1,35 @@
+				<div class="cart-list">
+
+					<div class="cart-list__head">
+
+						<label class="checkbox cart-list__check-all">
+
+							<input type="checkbox" class="checkbox__input" checked="checked">
+
+							<span class="checkbox__label">
+								Выбрать все
+							</span>
+
+						</label>
+
+						<button type="button" class="cart-list__remove-check button">
+							Удалить выбранные
+						</button>
+
+					</div>
+
+{% include "cart/list.html" %}
+
+					<div class="cart-list__foot">
+
+						<p>
+							Дополнительная упаковка для сертификатов в коробке
+						</p>
+
+						<button type="button" class="btn btn--outline" data-modal="packing">
+							Выбрать
+						</button>
+
+					</div>
+
+				</div>

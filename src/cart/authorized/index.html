@@ -1,0 +1,65 @@
+{% set title = "Моя корзина" %}
+
+{% set description = "Войдите в учётную запись, чтобы посмотреть, есть ли сохранённые товары. Или продолжите покупки." %}
+
+{% set breadcrumbs = ['Корзина'] %}
+
+{% set modalShow = "packing" %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<form class="page">
+
+	<div class="center">
+
+		<h1 class="page__title h1">
+			{{ title }}
+		</h1>
+
+		<div class="cart-main">
+
+			<div class="cart-main__list">
+
+{% include "cart/main.html" %}
+
+			</div>
+
+			<div class="cart-main__order">
+
+{% include "cart/bar.html" %}
+
+			</div>
+
+		</div>
+
+		<h2 class="cart-main__title h1">
+			Оформление заказа
+		</h2>
+
+	</div>
+
+{% include "cart/address.html" %}
+
+</form>
+
+<div class="cart-foot">
+
+	<hr>
+
+{% include "_include/help-after.html" %}
+
+	<hr>
+
+	<div class="cart-foot__btn">
+
+		<a href="/catalog/set/" class="btn btn--grey">
+			Продолжить покупки
+		</a>
+
+	</div>
+
+</div>
+
+{% endblock %}

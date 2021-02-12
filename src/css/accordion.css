@@ -6,7 +6,7 @@
 
 		margin: 32px 0;
 		background-color: #fff;
-		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);;
+		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
 
 		@media ($smWidth) {
 
@@ -103,6 +103,34 @@
 			margin: 1em 0;
 			font-size: 17px;
 			line-height: 21px;
+
+		}
+
+		ol {
+
+			counter-reset: headings 0;
+
+			li {
+
+				padding-left: 24px;
+
+				& + li {
+
+					margin-top: 1em;
+
+				}
+
+				&::before {
+
+					counter-increment: headings 1;
+					content: counter(headings, decimal) '.';
+					position: absolute;
+					top: 0;
+					left: 0;
+
+				}
+
+			}
 
 		}
 

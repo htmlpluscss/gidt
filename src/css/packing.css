@@ -286,3 +286,50 @@
 	}
 
 }
+
+.packing-list {
+
+	display: flex;
+	flex-wrap: wrap;
+	margin: -20px -34px;
+
+	&__item {
+
+		width: calc(20% - 68px);
+		margin: 20px 34px;
+
+	}
+
+	&__card {
+
+		width: 155px;
+
+	}
+
+	&__img {
+
+		margin-bottom: 16px;
+
+	}
+
+	&__price {
+
+		font-weight: bold;
+		font-size: 17px;
+		line-height: 21px;
+		margin: 8px 0;
+
+	}
+
+	.btn {
+
+		width: 100%;
+		line-height: 32px;
+		height: 32px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+
+	}
+
+}
