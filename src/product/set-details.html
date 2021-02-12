@@ -5,7 +5,17 @@
 									<tr class="product-set-details__short">
 
 										<td>
-											{{ tr.name }}
+
+											<span class="product-set-details__name">
+												{{ tr.name }}
+											</span>
+
+											<button class="button product-set-details__btn-open product-set-details__btn-open-arrow" type="button" aria-label="Подробнее">
+												<svg width="5" height="8" viewBox="0 0 5 8">
+													<path d="M0 6.86L3.13 4 0 1.14.63 0 5 4 .62 8 0 6.86z"/>
+												</svg>
+											</button>
+
 										</td>
 
 										<td>
@@ -25,7 +35,7 @@
 										</td>
 
 										<td>
-											<button class="btn btn--outline product-set-details__btn-open" type="button" data-alt="Свернуть">
+											<button class="btn btn--outline product-set-details__btn-open product-set-details__btn-open-toggle" type="button" data-alt="Свернуть">
 												<span>Подробнее</span>
 											</button>
 										</td>

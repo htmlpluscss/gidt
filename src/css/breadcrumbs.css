@@ -2,12 +2,13 @@
 
 	background-color: #f8f8f8;
 	padding: 10px 0;
+	overflow: hidden;
 
 	ul {
 
 		display: flex;
-		flex-wrap: wrap;
 		font-size: 12px;
+		white-space: nowrap;
 
 	}
 

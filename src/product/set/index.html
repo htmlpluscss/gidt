@@ -1,0 +1,51 @@
+{% set title = "Экстрим Стандарт" %}
+
+{% set description = "Получатель сам выберет любое впечатление, Купить набор выгоднее чем 1 впечатление, Стоимость подарка нигде не указана, Получателю ничего доплачивать не нужно" %}
+
+{% set breadcrumbs = ['Каталог', 'Для него', 'Экстрим Стандарт (подарочный набор)'] %}
+
+{% set ogImage = "img/product/big@2x.jpg" %}
+{% set ogImage236 = "img/product/big.jpg" %}
+
+{% set preloadImage = [
+	{
+		media: "(max-width: 767px)",
+		img : "/img/product/big@2x.webp"
+	},
+	{
+		media: "(min-width: 1200px)",
+		img : "/img/product/big.webp"
+	}
+] %}
+
+{% set product = "set" %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+	<article class="product">
+
+		<div class="product-main">
+
+			<div class="center">
+
+				<div class="product-main__flex">
+
+{% include "product/img.html" %}
+
+{% include "product/body.html" %}
+
+				</div>
+
+			</div>
+
+		</div>
+
+{% include "product/tab.html" %}
+
+	</article>
+
+{% include "product/hit-offers.html" %}
+
+{% endblock %}

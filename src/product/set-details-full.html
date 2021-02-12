@@ -2,9 +2,64 @@
 
 					<div class="product-set-details__flex">
 
+						<dl class="product-set-details__desc-list">
+
+							<div class="product-set-details__desc-list-tr">
+
+								<dt class="product-set-details__desc-list-th">
+									Количество персон:
+								</dt>
+
+								<dd class="product-set-details__desc-list-td">
+									1
+								</dd>
+
+							</div>
+
+							<div class="product-set-details__desc-list-tr">
+
+								<dt class="product-set-details__desc-list-th">
+									Длительность:
+								</dt>
+
+								<dd class="product-set-details__desc-list-td">
+									30 мин
+								</dd>
+
+							</div>
+
+							<div class="product-set-details__desc-list-tr">
+
+								<dt class="product-set-details__desc-list-th">
+									Возрастное ограничение:
+								</dt>
+
+								<dd class="product-set-details__desc-list-td">
+									10+
+								</dd>
+
+							</div>
+
+							<div class="product-set-details__desc-list-tr">
+
+								<dt class="product-set-details__desc-list-th">
+									Сезон:
+								</dt>
+
+								<dd class="product-set-details__desc-list-td">
+									круглый год
+								</dd>
+
+							</div>
+
+						</dl>
+
 						<div class="product-set-details__img">
 
 							<picture>
+
+								<source srcset="/img/product/set-details@mobile.webp" type="image/webp" media="(max-width: 1199px)">
+								<source srcset="/img/product/set-details@mobile.jpg" media="(max-width: 1199px)">
 
 								<source srcset="/img/product/set-details.webp 1x, /img/product/set-details@2x.webp 2x" type="image/webp">
 								<source srcset="/img/product/set-details.jpg 1x, /img/product/set-details@2x.jpg 2x">
@@ -45,25 +100,73 @@
 								Место проведения:
 							</h3>
 
-							<p>
-								<svg width="11" height="14" viewBox="0 0 11 14">
-									<path d="M5.5 8a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0-4a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
-									<path d="M5.5 14L1.28 9.03a5.44 5.44 0 01.33-7.41A5.5 5.5 0 019.9 8.8l-.17.22L5.5 14zM1.9 8.2l.15.18 3.45 4.07 3.46-4.07.13-.18a4.45 4.45 0 00-.4-5.88A4.5 4.5 0 001.9 8.2z"/>
-								</svg>
+{% if loop.first %}
+
+							<p class="product-set-details__content-geo">
 								Москва, м.Крылатское, ул.Крылатская, д.5, Гребной канал
 							</p>
 
 							<hr>
 
-							<p>
-								Вы можете купить данную услугу отдельно
-								<a href="/">
-									перейти
-									<svg width="7" height="12" viewBox="0 0 7 12">
-										<path d="M0 10.29L4.38 6 0 1.71.88 0 7 6 .87 12 0 10.29z" fill="#4350F6"/>
-									</svg>
-								</a>
+{% else %}
+
+							<div class="tab-city">
+
+{% for city in ['Москва','Сант-Петербург','Новосибирск','Якутск'] %}
+
+								<div class="tab-city__item">
+
+									<h4 class="tab-city__btn">
+										{{ city }}
+									</h4>
+
+									<div class="tab-city__body">
+
+										<h5>
+											Салон тайского массажа "Тайландика"
+										</h5>
+
+										<p class="product-set-details__content-geo">
+											м.Крылатское, ул.Крылатская, д.5, Гребной канал
+										</p>
+
+										<p class="product-set-details__content-geo">
+											м.Крылатское, ул.Крылатская, д.5, Гребной канал
+										</p>
+
+										<h5>
+											Тайский спа-салон "Sensip"
+										</h5>
+
+										<p class="product-set-details__content-geo">
+											Московская Область, г. Одинцово, ул. Говорова, д.50
+										</p>
+
+										<p class="product-set-details__content-geo">
+											м.Пушкинская, Большой Палашевский переулок, д.14 "А"
+										</p>
+
+									</div>
+
+								</div>
+
+{% endfor %}
+
+							</div>
+
+{% endif %}
+
+							<p class="product-set-details__content-one-product">
+								Вы можете купить данную услугу отдельно <a href="/product/one.html">перейти</a>
 							</p>
+
+							<div class="visible-sm">
+
+								<button class="btn btn--blue product-set-details__btn-open product-set-details__btn-open-text" type="button">
+									Свернуть
+								</button>
+
+							</div>
 
 						</div>
 

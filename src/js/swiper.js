@@ -24,7 +24,8 @@
 			  group3 = swipe.classList.contains('swiper-container--group3'),
 			  customGift = swipe.classList.contains('swiper-container--custom-gift'),
 			  packing = swipe.classList.contains('swiper-container--packing'),
-			  packingCover = swipe.classList.contains('swiper-container--packing-cover');
+			  packingCover = swipe.classList.contains('swiper-container--packing-cover'),
+			  product = swipe.classList.contains('swiper-container--product');
 
 		swipeNav.className = 'swiper-pagination';
 		swipeControls.className = 'swiper-controls';
@@ -234,6 +235,35 @@
 						},
 						slidesPerView: 'auto',
 						centeredSlides: true
+					});
+
+				}
+
+			}
+
+		}
+
+		if (product) {
+
+			toggleSwipe = () => {
+
+				resetSwipe();
+
+				if (window.innerWidth < 1200) {
+
+					swipeNav.classList.remove('hide');
+					swipeControls.classList.remove('hide');
+					swipe.parentNode.classList.add('swiper-container-style');
+
+					mySwipe = new Swiper(swipe, {
+						loop: true,
+						autoHeight: false,
+						pagination: {
+							el: swipeNav,
+							clickable: true,
+							bulletClass: 'button',
+							bulletActiveClass: 'is-active'
+						}
 					});
 
 				}

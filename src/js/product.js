@@ -15,7 +15,7 @@
 				Array.from(items, (small,index) => {
 
 					small.classList.toggle('is-current', el === small);
-					bigs[index].classList.toggle('hide', el !== small);
+					bigs[index].classList.toggle('is-show', el === small);
 
 				});
 
