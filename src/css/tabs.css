@@ -114,4 +114,55 @@
 
 	}
 
+	@media ($smWidth) {
+
+		&--mobile-come-accordion &__item {
+
+			display: block;
+			padding-top: 0;
+			overflow: hidden;
+			max-height: 60px;
+			border-top: 3px solid #849BD9;
+			background-color: #F0F2F9;
+
+			&.is-active {
+
+				max-height: 3000px;
+				background-color: #F8F9FD;
+				border-top-color: var(--red);
+
+				&:last-child {
+
+					border-bottom-color: transparent;
+
+				}
+
+			}
+
+			&:last-child {
+
+				border-bottom: 3px solid #849BD9;
+
+			}
+
+		}
+
+		&--mobile-come-accordion &__btn {
+
+			margin: 0 -20px;
+			width: calc(100% + 40px);
+			padding: 0 16px;
+			height: 60px;
+			background-color: transparent;
+
+			&-arrow {
+
+				margin-left: 0;
+
+			}
+
+		}
+
+	}
+
 }

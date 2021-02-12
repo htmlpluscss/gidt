@@ -15,7 +15,7 @@
 			display: flex;
 			justify-content: space-between;
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				display: block;
 
@@ -30,7 +30,7 @@
 			margin-right: 50px;
 			position: relative;
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				margin: 0 0 20px;
 
@@ -51,7 +51,9 @@
 					display: none;
 					padding: 10px;
 
-					@media ($smWidth) {
+					@media ($mdWidth) {
+
+						justify-content: center;
 
 						.swiper-container-initialized & {
 
@@ -79,9 +81,14 @@
 
 				}
 
-				@media ($smWidth) {
+				@media ($mdWidth) {
 
 					width: 100%;
+
+				}
+
+				@media ($smWidth) {
+
 					height: 90vw;
 
 				}
@@ -93,7 +100,7 @@
 				width: 73px;
 				margin-right: 28px;
 
-				@media ($smWidth) {
+				@media ($mdWidth) {
 
 					display: none;
 
@@ -530,6 +537,13 @@
 		@media ($smWidth) {
 
 			padding-bottom: 0;
+			border: 0;
+
+			.center {
+
+				padding: 0;
+
+			}
 
 		}
 
@@ -656,7 +670,7 @@
 
 			width: 100%;
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				display: block;
 				margin-top: 20px;
@@ -667,7 +681,7 @@
 
 		thead {
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				display: none;
 
@@ -697,7 +711,7 @@
 
 		&__item {
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				display: block;
 				margin: 13px 0;
@@ -712,7 +726,7 @@
 			line-height: 17px;
 			box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				display: block;
 				position: relative;
@@ -732,7 +746,7 @@
 					padding-right: 40px;
 					width: 360px;
 
-					@media ($smWidth) {
+					@media ($mdWidth) {
 
 						display: flex;
 						align-items: center;
@@ -747,7 +761,7 @@
 
 				}
 
-				@media ($smWidth) {
+				@media ($mdWidth) {
 
 					display: none;
 
@@ -759,7 +773,7 @@
 
 		&__full {
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				display: block;
 				width: 100%;
@@ -789,7 +803,7 @@
 				margin-bottom: 14px;
 				transition: var(--transitionDefault);
 
-				@media ($smWidth) {
+				@media ($mdWidth) {
 
 					padding: 0;
 					margin: 0;
@@ -814,7 +828,7 @@
 			padding: 30px 0;
 			display: flex;
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				padding: 15px;
 				display: block;
@@ -829,7 +843,7 @@
 			margin-right: 40px;
 			flex-shrink: 0;
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				width: 100%;
 				margin: 20px 0;
@@ -948,7 +962,7 @@
 
 			&-text {
 
-				@media ($smWidth) {
+				@media ($mdWidth) {
 
 					margin: 20px auto 0;
 					font-size: 12px;
@@ -1007,7 +1021,7 @@
 
 				display: none;
 
-				@media ($smWidth) {
+				@media ($mdWidth) {
 
 					width: 5px;
 					height: 8px;
@@ -1048,7 +1062,7 @@
 
 			display: none;
 
-			@media ($smWidth) {
+			@media ($mdWidth) {
 
 				display: table;
 
