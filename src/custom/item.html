@@ -1,0 +1,102 @@
+	<article class="catalog-item catalog-item--column{% if loop.index <= 2 %} is-custom-set{% endif %}">
+
+{% include "catalog/img-column.html" %}
+
+		<form action="/" class="catalog-item__body">
+
+			<h2 class="catalog-item__title">
+				<a href="/product/">
+					Экстрим Стандарт
+				</a>
+			</h2>
+
+{% if loop.index > 4 %}
+
+			<p class="catalog-item__label catalog-item__label--yellow">
+
+				<span class="catalog-item__label-inner">
+					1 впечатление
+				</span>
+
+			</p>
+
+{% include "catalog/one-desc.html" %}
+
+{% else %}
+
+			<p class="catalog-item__label catalog-item__label--green">
+
+				<span class="catalog-item__label-inner">
+					Подарочный набор
+				</span>
+
+			</p>
+
+{% include "catalog/set-count.html" %}
+
+{% include "catalog/set-count-btn.html" %}
+
+{% endif %}
+
+			<div class="catalog-item__buy">
+
+				<div class="catalog-item__buy-delivery">
+
+					<label class="radio-input__item">
+
+						<input class="radio-input__input" type="radio" name="delivery" value="В коробке">
+
+						<span class="radio-input__label">
+
+							<span class="catalog-item__buy-delivery-label">
+								В коробке
+							</span>
+
+							<span class="catalog-item__buy-delivery-price">
+								2 525 ₽
+							</span>
+
+						</span>
+
+					</label>
+
+				</div>
+
+				<div class="catalog-item__buy-delivery">
+
+					<label class="radio-input__item">
+
+						<input class="radio-input__input" type="radio" name="delivery" value="Электронный" checked="checked">
+
+						<span class="radio-input__label">
+
+							<span class="catalog-item__buy-delivery-label">
+								Электронный
+							</span>
+
+							<span class="catalog-item__buy-delivery-price">
+								1 976,25 ₽
+								<span class="catalog-item__buy-delivery-price-old">
+									2 325 ₽
+								</span>
+							</span>
+
+						</span>
+
+					</label>
+
+				</div>
+
+				<button class="catalog-item__buy-submit btn btn--buy">
+					В набор
+				</button>
+
+			</div>
+
+			<button class="catalog-item__remove-submit btn btn--blue">
+				Удалить из набора
+			</button>
+
+		</form>
+
+	</article>

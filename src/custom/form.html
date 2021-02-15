@@ -1,0 +1,148 @@
+		<form action="/" class="page-custom-form">
+
+			<div class="center">
+
+				<div class="page-custom-form__box">
+
+					<div class="page-custom-form__preview">
+
+						<div class="page-custom-form__preview-title">
+							Ваш набор
+						</div>
+
+						<div class="page-custom-form__preview-img">
+
+							<picture>
+
+								<source srcset="/img/custom/preview.webp 1x, /img/custom/preview@2x.webp 2x" type="image/webp">
+								<source srcset="/img/custom/preview.jpg 1x, /img/custom/preview@2x.jpg 2x">
+
+								<img src="/img/custom/preview.jpg" alt="" width="182" height="125" loading="lazy">
+
+							</picture>
+
+						</div>
+
+						<div class="page-custom-form__preview-delivery">
+
+							<div class="radio-input">
+
+								<label class="radio-input__item">
+
+									<input class="radio-input__input" type="radio" name="delivery" value="В коробке">
+
+									<span class="radio-input__label">
+										В коробке
+									</span>
+
+								</label>
+
+								<label class="radio-input__item">
+
+									<input class="radio-input__input" type="radio" name="delivery" value="Электронный" checked="checked">
+
+									<span class="radio-input__label">
+										Электронный
+									</span>
+
+								</label>
+
+							</div>
+
+						</div>
+
+						<div class="page-custom-form__preview-total">
+							Итого
+						</div>
+
+						<div class="page-custom-form__preview-price page-custom-form__preview-price--sale">
+
+							1 976,25 ₽
+
+							<s>2 325 ₽</s>
+
+						</div>
+
+						<button class="page-custom-form__preview-btn btn btn--buy" type="button">
+							В корзину
+						</button>
+
+					</div>
+
+					<div class="page-custom-form__selected">
+
+						<p class="page-custom-form__selected-total">
+							Вы выбрали 2 / 20 возможных впечатлений
+						</p>
+
+						<div class="page-custom-form__selected-list">
+
+							<div class="page-custom-form__selected-item page-custom-form__selected-item--active">
+
+								<div class="page-custom-form__selected-img">
+
+									<picture>
+
+										<source srcset="/img/custom/1.webp 1x, /img/custom/1@2x.webp 2x" type="image/webp">
+										<source srcset="/img/custom/1.jpg 1x, /img/custom/1@2x.jpg 2x">
+
+										<img src="/img/custom/1.jpg" alt="" width="70" height="70" loading="lazy">
+
+									</picture>
+
+								</div>
+
+								<button class="page-custom-form__selected-remove button" type="button" aria-label="Удалить"></button>
+
+							</div>
+
+							<div class="page-custom-form__selected-item page-custom-form__selected-item--active">
+
+								<div class="page-custom-form__selected-img">
+
+									<picture>
+
+										<source srcset="/img/custom/2.webp 1x, /img/custom/2@2x.webp 2x" type="image/webp">
+										<source srcset="/img/custom/2.jpg 1x, /img/custom/2@2x.jpg 2x">
+
+										<img src="/img/custom/2.jpg" alt="" width="70" height="70" loading="lazy">
+
+									</picture>
+
+								</div>
+
+								<button class="page-custom-form__selected-remove button" type="button" aria-label="Удалить"></button>
+
+							</div>
+
+{% for img in [1,2,3] %}
+
+{% for img in [1,2,3,4,5,6] %}
+
+							<div class="page-custom-form__selected-item">
+
+								<div class="page-custom-form__selected-img">
+
+									<img src="/img/custom/add.svg" alt="" width="22" height="22" loading="lazy">
+
+								</div>
+
+							</div>
+
+{% endfor %}
+
+{% endfor %}
+
+						</div>
+
+						<button class="page-custom-form__selected-reset btn btn--outline" type="reset">
+							Очистить все
+						</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</form>

@@ -1,0 +1,26 @@
+{% set title = "Собери свой набор впечатлений сам!" %}
+
+{% set description = "Выбирайте впечатления и нажимайте «В набор». Так вы сможете положить в 1 набор до 20 впечатлений.
+Стоимость подарка будет равна стоимости самого дорогого впечатления." %}
+
+{% set breadcrumbs = ['Собрать подарок'] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="page">
+
+	<div class="page-custom">
+
+{% include "custom/head.html" %}
+{% include "custom/form.html" %}
+{% include "custom/filter.html" %}
+{% include "custom/sort.html" %}
+{% include "custom/list.html" %}
+
+	</div>
+
+</article>
+
+{% endblock %}
