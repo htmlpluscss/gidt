@@ -29,6 +29,6 @@
 
 	};
 
-	document.head.appendChild(script);
+	setTimeout( () => document.head.appendChild(script), Cookies.get('fastLoadScript') ? 0 : 10000);
 
 })(document.querySelectorAll('.inputmask'));

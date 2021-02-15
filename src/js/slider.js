@@ -92,6 +92,6 @@
 	const script = document.createElement('script');
 	script.src = '/js/nouislider.min.js';
 	script.onload = () => noUiSliderInit();
-	setTimeout( () => document.head.appendChild(script), window.pageYOffset > 0 ? 0 : 5000);
+	setTimeout( () => document.head.appendChild(script), Cookies.get('fastLoadScript') ? 0 : 10000);
 
 })(document.querySelector('.slider'));

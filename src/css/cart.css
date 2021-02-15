@@ -536,6 +536,8 @@
 			text-align: center;
 			line-height: 30px;
 			height: 30px;
+			border: 0;
+			text-decoration: underline;
 
 		}
 
@@ -546,18 +548,21 @@
 			width: 20px;
 			top: 0;
 			bottom: 0;
-			font-size: 0;
-			color: transparent;
 			z-index: 1;
-			display: flex;
-			justify-content: center;
-			align-items: center;
 
+			&::after,
 			&::before {
 
 				content: '';
-				border: 5px solid transparent;
-				border-right-color: #a7a7a7;
+				width: 10px;
+				height: 2px;
+				background-color: var(--border);
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
 
 			}
 
@@ -565,7 +570,13 @@
 
 				left: auto;
 				right: 0;
-				transform: rotate(180deg);
+
+				&::after {
+
+					width: 2px;
+					height: 10px;
+
+				}
 
 			}
 

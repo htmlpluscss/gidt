@@ -1,0 +1,24 @@
+{% set title = "Корпоративным клиентам" %}
+
+{% set description = "Подарите своим коллегам, клиентам, партнерам  бесценное – незабываемые эмоции и удивительные приключения" %}
+
+{% set breadcrumbs = [title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="page">
+
+{% include "office/head.html" %}
+{% include "office/set.html" %}
+{% include "office/step.html" %}
+{% include "office/form-column.html" %}
+{% include "office/catalog.html" %}
+{% include "office/clients.html" %}
+{% include "office/faq.html" %}
+{% include "office/form-row.html" %}
+
+</article>
+
+{% endblock %}

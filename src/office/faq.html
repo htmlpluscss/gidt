@@ -1,0 +1,67 @@
+<section class="office-faq">
+
+	<div class="center">
+
+		<h2 class="office-faq__title h1">
+			Часто задаваемые вопросы
+		</h2>
+
+		<p class="office-faq__intro">
+			Есть вопросы? У нас есть ответы. Если у вас есть другие вопросы, не стесняйтесь звоните и мы ответим
+		</p>
+
+		<div class="accordion">
+
+{% set accordion = [
+
+	{
+		name : "Когда я получу заказ?",
+		text : ""
+	},
+	{
+		name : "Какие закрывающие документы?",
+		text : ""
+	},
+	{
+		name : "Как давно вы работаете?",
+		text : ""
+	},
+	{
+		name : "Какой срок действия сертификатов?",
+		text : ""
+	},
+	{
+		name : "Как воспользоваться сертификатом?",
+		text : ""
+	}
+
+] %}
+
+{% for item in accordion %}
+
+			<div class="accordion__item">
+
+				<h3 class="accordion__head accordion__btn">
+					{{ item.name }}
+				</h3>
+
+				<div class="accordion__body">
+
+					{{ item.text | safe }}
+
+				</div>
+
+			</div>
+
+{% endfor %}
+
+
+		</div>
+
+		<p class="office-faq__after">
+			Мы подбираем набор впечатлений таким образом, чтобы получатель мог воспользоваться подарком в любом городе РФ
+		</p>
+
+	</div>
+
+</section>

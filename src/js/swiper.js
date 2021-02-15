@@ -314,9 +314,7 @@
 
 			script.onload = () => PubSub.publish('swiperJsLoad');
 
-			document.head.appendChild(script);
-
-//			setTimeout( () => document.head.appendChild(script), window.pageYOffset > 0 ? 0 : 5000);
+			setTimeout( () => document.head.appendChild(script), Cookies.get('fastLoadScript') ? 0 : 10000);
 
 		}
 

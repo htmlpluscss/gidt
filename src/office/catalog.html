@@ -1,0 +1,42 @@
+	<div class="office-catalog">
+
+		<div class="center">
+
+			<h2 class="office-catalog__title h1">
+				Популярные корпоративные наборы
+			</h2>
+
+			<div class="office-catalog__list office-catalog__list--readme catalog">
+
+				<div class="catalog__rows">
+
+{% set name = 'Экстрим Стандарт' %}
+{% set img = 22 %}
+{% include "catalog/item.html" %}
+
+{% set name = 'Экстрим Стандарт (подарочный набор)' %}
+{% set img = 23 %}
+{% set param = 10 %}
+{% set favourites = true %}
+{% include "catalog/item.html" %}
+
+{% set name = 'Экстрим Стандарт (подарочный набор)' %}
+{% set img = 22 %}
+{% set param = 20 %}
+{% include "catalog/item.html" %}
+
+				</div>
+
+			</div>
+
+			<div class="office-catalog__foot">
+
+				<a href="/" class="btn btn--outline">
+					Смотреть еще
+				</a>
+
+			</div>
+
+		</div>
+
+	</div>
