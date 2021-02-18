@@ -67,8 +67,8 @@
 
 		background-color: #E5E5E5;
 		font-weight: 300;
-		font-size: 16px;
-		line-height: 20px;
+		font-size: 14px;
+		line-height: 17px;
 		position: relative;
 		padding: 10px 40px 10px 20px;
 		overflow: hidden;
@@ -100,6 +100,13 @@
 		display: flex;
 		margin-bottom: 72px;
 
+		@media ($mdWidth) {
+
+			display: block;
+			margin-bottom: 36px;
+
+		}
+
 		&__title {
 
 			text-align: center;
@@ -117,6 +124,13 @@
 			width: 270px;
 			margin-left: 30px;
 			flex-shrink: 0;
+
+			@media ($mdWidth) {
+
+				margin: 30px 0;
+				width: auto;
+
+			}
 
 		}
 
@@ -168,6 +182,13 @@
 		box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
 
+		@media ($mdWidth) {
+
+			padding: 20px;
+			margin-bottom: 30px;
+
+		}
+
 		&__next-step {
 
 			width: 100%;
@@ -183,8 +204,8 @@
 		&__text {
 
 			margin: 14px 0;
-			font-size: 12px;
-			line-height: 15px;
+			font-size: 14px;
+			line-height: 17px;
 			color: var(--text);
 
 		}
@@ -192,7 +213,7 @@
 		&__table {
 
 			width: 100%;
-			margin: 18px 0 10px;
+			margin: 10px 0;
 
 			&-sale {
 
@@ -202,8 +223,7 @@
 
 			th, td {
 
-				font-size: 14px;
-				line-height: 17px;
+				font-size: 16px;
 				padding: 4px 0;
 
 			}
@@ -240,8 +260,7 @@
 				td {
 
 					font-weight: 700;
-					font-size: 17px;
-					line-height: 21px;
+					font-size: 20px;
 
 				}
 
@@ -252,27 +271,6 @@
 		&__select-shipping {
 
 			margin-bottom: 20px;
-
-			@media ($desktop) {
-
-				select {
-
-					font-size: 12px;
-					padding: 0 8px;
-					width: 100%;
-					color: var(--text);
-
-				}
-
-				&::after {
-
-					right: 8px;
-					box-shadow: 0 0 0 6px #fff;
-					border-top-width: 4px;
-
-				}
-
-			}
 
 		}
 
@@ -296,7 +294,7 @@
 			height: 20px;
 			line-height: 20px;
 			font-weight: 300;
-			font-size: 12px;
+			font-size: 14px;
 			color: var(--red);
 			margin-left: 52px;
 
@@ -305,6 +303,7 @@
 		&__foot {
 
 			display: flex;
+			flex-wrap: wrap;
 			align-items: center;
 			padding: 14px 17px;
 			color: #fff;
@@ -313,10 +312,22 @@
 			line-height: 17px;
 			letter-spacing: 0.04em;
 
+			@media ($smWidth) {
+
+				padding: 14px;
+
+			}
+
 			p {
 
 				margin-right: 40px;
 				margin-left: 20px;
+
+				@media ($smWidth) {
+
+					margin: 0 0 10px;
+
+				}
 
 			}
 
@@ -327,6 +338,12 @@
 				height: 40px;
 				line-height: 40px;
 				box-shadow: inset 0 0 0 1px #fff;
+
+				@media ($smWidth) {
+
+					width: 100%;
+
+				}
 
 			}
 
@@ -345,6 +362,12 @@
 		display: flex;
 		min-height: 100px;
 		padding: 30px 0;
+
+		@media ($mdWidth) {
+
+			flex-wrap: wrap;
+
+		}
 
 		& + & {
 
@@ -380,6 +403,14 @@
 			justify-content: flex-end;
 			align-items: center;
 
+			@media ($smWidth) {
+
+				width: calc(100% - 60px);
+				margin: 0 0 20px;
+				justify-content: center;
+
+			}
+
 		}
 
 		&__body {
@@ -387,6 +418,12 @@
 			flex-grow: 1;
 			display: flex;
 			flex-direction: column;
+
+			@media ($mdWidth) {
+
+				margin-bottom: 20px;
+
+			}
 
 		}
 
@@ -397,6 +434,18 @@
 			flex-shrink: 0;
 			margin-left: 20px;
 
+			@media ($mdWidth) {
+
+				margin-left: 200px;
+
+			}
+
+			@media ($smWidth) {
+
+				margin: 0;
+
+			}
+
 		}
 
 		&__price {
@@ -406,16 +455,29 @@
 			flex-shrink: 0;
 			white-space: nowrap;
 			font-weight: bold;
-			font-size: 17px;
-			line-height: 21px;
+			font-size: 20px;
+
+			@media ($mdWidth) {
+
+				display: flex;
+				align-items: baseline;
+				width: auto;
+				margin-left: auto;
+
+			}
 
 			&-old {
 
 				display: block;
 				font-weight: normal;
-				font-size: 15px;
-				line-height: 18px;
+				font-size: 16px;
 				color: var(--red);
+
+				@media ($mdWidth) {
+
+					margin-left: 14px;
+
+				}
 
 			}
 
@@ -424,12 +486,12 @@
 		&__label {
 
 			display: flex;
-			margin-bottom: 6px;
+			margin-bottom: 10px;
 
 			&-inner {
 
-				font-size: 12px;
-				line-height: 21px;
+				font-size: 14px;
+				line-height: 22px;
 				border-radius: 4px;
 				padding: 0 14px;
 				min-width: 152px;
@@ -462,8 +524,8 @@
 		&__desc {
 
 			margin: 10px 0;
-			font-size: 12px;
-			line-height: 15px;
+			font-size: 14px;
+			line-height: 17px;
 
 		}
 
@@ -472,27 +534,34 @@
 			margin: 0 -5px 10px;
 			display: flex;
 
+			@media ($smWidth) {
+
+				display: block;
+				margin: 0 0 10px;
+
+				.select {
+
+					margin: 10px 0;
+
+					select {
+
+						width: 100%;
+
+					}
+
+				}
+
+			}
+
 			@media ($desktop) {
 
 				.select {
 
-					width: 167px;
 					margin: 5px;
 
 					select {
 
-						font-size: 12px;
-						padding: 0 8px;
 						width: 100%;
-						color: var(--text);
-
-					}
-
-					&::after {
-
-						right: 8px;
-						box-shadow: 0 0 0 6px #fff;
-						border-top-width: 4px;
 
 					}
 
@@ -593,6 +662,7 @@
 			@media ($smWidth) {
 
 				text-align: center;
+				padding: 30px 0;
 
 			}
 
@@ -600,13 +670,18 @@
 
 		&__btn {
 
-			display: flex;
-			justify-content: center;
 			margin: 40px 0;
+
+			@media ($smWidth) {
+
+				margin: 30px 0;
+
+			}
 
 			.btn {
 
 				width: 270px;
+				margin: auto;
 
 				@media ($smWidth) {
 
@@ -629,7 +704,7 @@
 
 		@media ($mdWidth) {
 
-			margin: 0;
+			margin-top: 20px;
 
 		}
 
@@ -731,6 +806,12 @@
 			display: flex;
 			align-items: center;
 
+			@media ($smWidth) {
+
+				flex-wrap: wrap;
+
+			}
+
 			&-label {
 
 				font-weight: bold;
@@ -738,6 +819,13 @@
 				line-height: 17px;
 				letter-spacing: 0.04em;
 				flex-grow: 1;
+
+				@media ($smWidth) {
+
+					width: 100%;
+					margin-bottom: 8px;
+
+				}
 
 			}
 
@@ -747,6 +835,12 @@
 				flex-shrink: 0;
 				height: 40px;
 				border: 0;
+
+				@media ($smWidth) {
+
+					width: calc(100% - 136px);
+
+				}
 
 			}
 
@@ -775,6 +869,7 @@
 			@media ($smWidth) {
 
 				margin: 0;
+				width: 100%;
 
 			}
 
@@ -783,11 +878,23 @@
 				display: flex;
 				justify-content: space-between;
 
+				@media ($smWidth) {
+
+					display: block;
+
+				}
+
 			}
 
 			&-col {
 
 				width: 236px;
+
+				@media ($smWidth) {
+
+					width: 100%;
+
+				}
 
 			}
 
@@ -802,6 +909,12 @@
 					.input {
 
 						width: 110px;
+
+						@media ($smWidth) {
+
+							width: calc(50% - 10px);
+
+						}
 
 					}
 
@@ -840,12 +953,6 @@
 
 				margin: 5px 0 20px;
 
-				.checkbox {
-
-					font-size: 14px;
-
-				}
-
 			}
 
 			hr {
@@ -864,6 +971,19 @@
 				font-size: 14px;
 				line-height: 17px;
 				text-transform: uppercase;
+
+				@media ($smWidth) {
+
+					margin: 10px 0;
+					justify-content: space-between;
+
+					br {
+
+						display: none;
+
+					}
+
+				}
 
 				&-label {
 

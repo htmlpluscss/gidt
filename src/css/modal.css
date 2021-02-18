@@ -185,6 +185,18 @@
 
 	width: 1170px;
 
+	@media ($mdWidth) {
+
+		width: 680px;
+
+	}
+
+	@media ($smWidth) {
+
+		width: 380px;
+
+	}
+
 	&__tags {
 
 		margin: 32px 0;
@@ -205,6 +217,12 @@
 		justify-content: space-between;
 		margin: 40px 0 10px;
 
+		@media ($smWidth) {
+
+			display: block;
+
+		}
+
 		.pagination {
 
 			flex-grow: 1;
@@ -216,6 +234,13 @@
 
 			flex-shrink: 0;
 			margin-left: 30px;
+
+			@media ($smWidth) {
+
+				margin: 20px 0 0;
+				width: 100%;
+
+			}
 
 		}
 

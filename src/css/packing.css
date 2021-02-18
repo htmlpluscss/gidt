@@ -293,10 +293,36 @@
 	flex-wrap: wrap;
 	margin: -20px -34px;
 
+	@media ($mdWidth) {
+
+		margin: -20px;
+
+	}
+
+	@media ($smWidth) {
+
+		margin: -10px;
+
+	}
+
 	&__item {
 
 		width: calc(20% - 68px);
 		margin: 20px 34px;
+
+		@media ($mdWidth) {
+
+			width: calc(100% / 3 - 40px);
+			margin: 20px;
+
+		}
+
+		@media ($smWidth) {
+
+			width: calc(50% - 20px);
+			margin: 10px;
+
+		}
 
 	}
 
@@ -304,11 +330,28 @@
 
 		width: 155px;
 
+		@media ($smWidth) {
+
+			max-width: 100%;
+
+		}
+
 	}
 
 	&__img {
 
 		margin-bottom: 16px;
+
+		@media ($smWidth) {
+
+			img {
+
+				max-width: 100%;
+				height: auto;
+
+			}
+
+		}
 
 	}
 
