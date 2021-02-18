@@ -1,13 +1,53 @@
-		<form action="/" class="page-custom-sort">
+	<form action="/" class="catalog-sort">
 
-			<div class="center">
+		<div class="center">
 
-				<select class="page-custom-sort__btn">
-					<option value="1">Цена по убыванию</option>
-					<option value="2">Популярные</option>
-					<option value="3">Цена по возрастанию</option>
-				</select>
+			<div class="catalog-sort__box">
+
+				<div class="catalog-sort__fieldset hidden-sm">
+
+					<button class="catalog-sort__btn-current button catalog__btn-toggle-sort" type="button">
+						Цена по убыванию
+					</button>
+
+				</div>
+
+				<div class="catalog-sort__list-order">
+
+					<label class="catalog-sort__radio-btn">
+
+						<input class="catalog-sort__radio-btn-input" type="radio" name="order" checked="checked">
+
+						<span class="catalog-sort__radio-btn-label">
+							Цена по убыванию
+						</span>
+
+					</label>
+
+					<label class="catalog-sort__radio-btn">
+
+						<input class="catalog-sort__radio-btn-input" type="radio" name="order">
+
+						<span class="catalog-sort__radio-btn-label">
+							Популярные
+						</span>
+
+					</label>
+
+					<label class="catalog-sort__radio-btn">
+
+						<input class="catalog-sort__radio-btn-input" type="radio" name="order">
+
+						<span class="catalog-sort__radio-btn-label">
+							Цена по возрастанию
+						</span>
+
+					</label>
+
+				</div>
 
 			</div>
 
-		</form>
+		</div>
+
+	</form>

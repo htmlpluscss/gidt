@@ -10,8 +10,6 @@
 				</a>
 			</h2>
 
-{% if loop.index > 4 %}
-
 			<p class="catalog-item__label catalog-item__label--yellow">
 
 				<span class="catalog-item__label-inner">
@@ -21,22 +19,6 @@
 			</p>
 
 {% include "catalog/one-desc.html" %}
-
-{% else %}
-
-			<p class="catalog-item__label catalog-item__label--green">
-
-				<span class="catalog-item__label-inner">
-					Подарочный набор
-				</span>
-
-			</p>
-
-{% include "catalog/set-count.html" %}
-
-{% include "catalog/set-count-btn.html" %}
-
-{% endif %}
 
 			<div class="catalog-item__buy">
 
