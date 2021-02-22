@@ -462,6 +462,7 @@
 		max-width: 100%;
 		border: solid 1px var(--border);
 		appearance: none;
+		border-radius: 0;
 		line-height: 20px;
 
 		@media ($desktop) {
