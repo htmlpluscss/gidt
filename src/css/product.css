@@ -803,6 +803,13 @@
 				font-size: 16px;
 				line-height: 20px;
 
+				@media ($smWidth) {
+
+					font-size: 14px;
+					line-height: 17px;
+
+				}
+
 				b {
 
 					text-transform: uppercase;
