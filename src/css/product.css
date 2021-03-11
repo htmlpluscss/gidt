@@ -523,6 +523,60 @@
 				border-top-color: var(--red);
 
 			}
+
+		}
+
+		&__select-box {
+
+			display: flex;
+			align-items: center;
+			margin: 17px 0;
+
+			&-label {
+
+				width: 170px;
+				margin-right: 12px;
+				flex-shrink: 0;
+				font-size: 14px;
+				line-height: 17px;
+				color: var(--grey);
+
+			}
+
+			.select {
+
+				@media ($desktop) {
+
+
+					select {
+
+						text-align: center;
+						font-size: 12px;
+
+						.catalog-item--column & {
+
+							min-width: 88px;
+							padding-left: 6px;
+							text-align: left;
+
+						}
+
+					}
+
+				}
+
+				@media ($mdWidth) {
+
+					select {
+
+						padding: 2px 10px;
+
+					}
+
+				}
+
+			}
+
 		}
 
 	}
@@ -552,7 +606,7 @@
 			display: flex;
 			font-size: 14px;
 			line-height: 17px;
-			padding: 20px 0;
+			padding: 12px 0;
 
 			@media ($smWidth) {
 
@@ -641,30 +695,128 @@
 
 		}
 
-	}
+		&__content {
 
-	&-set-details {
+			font-size: 14px;
+			line-height: 17px;
 
-		&__head {
+			@media ($smWidth) {
+
+				font-size: 12px;
+				line-height: 15px;
+
+			}
+
+			&--head {
+
+				h3, p {
+
+					margin: 10px 0;
+
+				}
+
+			}
 
 			h3 {
 
 				font-weight: bold;
 				font-size: 14px;
 				line-height: 17px;
-				margin: 12px 0;
+
+				& ~ h3 {
+
+					margin-top: 20px;
+
+				}
 
 			}
 
-			p {
+			ul {
 
-				font-size: 14px;
-				line-height: 17px;
-				margin: 12px 0;
+				li {
+
+					padding-left: 20px;
+					margin: 10px 0;
+
+					a {
+
+						color: var(--blueText);
+						font-weight: 700;
+
+					}
+
+					&::before {
+
+						position: absolute;
+						width: 7px;
+						height: 7px;
+						top: 5px;
+						left: 0;
+						content: '';
+						border-radius: 50%;
+						background-color: var(--blueText);
+
+					}
+
+				}
+
+			}
+
+			&-geo {
+
+				padding-left: 20px;
+				position: relative;
+				margin: 10px 0;
+				background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='14' viewBox='0 0 11 14'%3E%3Cpath d='M5.5 8a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0-4a1.5 1.5 0 100 3 1.5 1.5 0 000-3z'/%3E%3Cpath d='M5.5 14L1.28 9.03a5.44 5.44 0 01.33-7.41A5.5 5.5 0 019.9 8.8l-.17.22L5.5 14zM1.9 8.2l.15.18 3.45 4.07 3.46-4.07.13-.18a4.45 4.45 0 00-.4-5.88A4.5 4.5 0 001.9 8.2z'/%3E%3C/svg%3E");
+				background-repeat: no-repeat;
+
+			}
+
+			hr {
+
+				margin: 20px 0;
+				background-color: #e7e7e7;
+
+			}
+
+			&-one-product {
+
+				color: var(--grey);
+				margin-top: 20px;
+
+				a {
+
+					color: var(--blueText);
+					font-weight: 700;
+					padding-right: 15px;
+					background-position: right;
+					background-repeat: no-repeat;
+					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12'%3E%3Cpath d='M0 10.29L4.38 6 0 1.71.88 0 7 6 .87 12 0 10.29z' fill='%234350F6'/%3E%3C/svg%3E");
+
+				}
+
+			}
+
+			&-achtung {
+
+				font-weight: 300;
+				font-size: 16px;
+				line-height: 20px;
+
+				b {
+
+					text-transform: uppercase;
+					font-weight: 700;
+
+				}
 
 			}
 
 		}
+
+	}
+
+	&-set-details {
 
 		table {
 
@@ -859,100 +1011,6 @@
 
 		}
 
-		&__content {
-
-			font-size: 14px;
-			line-height: 17px;
-
-			@media ($smWidth) {
-
-				font-size: 12px;
-				line-height: 15px;
-
-			}
-
-			h3 {
-
-				font-weight: bold;
-				font-size: 14px;
-				line-height: 17px;
-
-				& ~ h3 {
-
-					margin-top: 20px;
-
-				}
-
-			}
-
-			ul {
-
-				li {
-
-					padding-left: 20px;
-					margin: 10px 0;
-
-					a {
-
-						color: var(--blueText);
-						font-weight: 700;
-
-					}
-
-					&::before {
-
-						position: absolute;
-						width: 7px;
-						height: 7px;
-						top: 5px;
-						left: 0;
-						content: '';
-						border-radius: 50%;
-						background-color: var(--blueText);
-
-					}
-
-				}
-
-			}
-
-			&-geo {
-
-				padding-left: 20px;
-				position: relative;
-				margin: 10px 0;
-				background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='14' viewBox='0 0 11 14'%3E%3Cpath d='M5.5 8a2.5 2.5 0 110-5 2.5 2.5 0 010 5zm0-4a1.5 1.5 0 100 3 1.5 1.5 0 000-3z'/%3E%3Cpath d='M5.5 14L1.28 9.03a5.44 5.44 0 01.33-7.41A5.5 5.5 0 019.9 8.8l-.17.22L5.5 14zM1.9 8.2l.15.18 3.45 4.07 3.46-4.07.13-.18a4.45 4.45 0 00-.4-5.88A4.5 4.5 0 001.9 8.2z'/%3E%3C/svg%3E");
-				background-repeat: no-repeat;
-
-			}
-
-			hr {
-
-				margin: 20px 0;
-				background-color: #e7e7e7;
-
-			}
-
-			&-one-product {
-
-				color: var(--grey);
-				margin-top: 20px;
-
-				a {
-
-					color: var(--blueText);
-					font-weight: 700;
-					padding-right: 15px;
-					background-position: right;
-					background-repeat: no-repeat;
-					background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12'%3E%3Cpath d='M0 10.29L4.38 6 0 1.71.88 0 7 6 .87 12 0 10.29z' fill='%234350F6'/%3E%3C/svg%3E");
-
-				}
-
-			}
-
-		}
-
 		&__btn-open {
 
 			height: 32px;
@@ -1106,7 +1164,7 @@
 		transition: var(--transitionDefault);
 		background-color: color(#f8f8f8 a(0%));
 
-		&.is-open {
+		.product-set-details &.is-open {
 
 			background-color: color(#f8f8f8 a(100%));
 

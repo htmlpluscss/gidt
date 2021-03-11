@@ -26,51 +26,17 @@
 
 						</h2>
 
-						<div class="product-tab__info">
+{% if product === "set" %}
 
-							<div class="product-tab__info-item">
+{% include "product/set/info.html" %}
 
-								<ul>
+{% else %}
 
-									<li><b>Срок действия</b> до 15.01.2022 (больше года!)</li>
-									<li>Полное сопровождение получателя подарка при активации</li>
-									<li>Гарантия качества</li>
-									<li>Быстрая доставка</li>
-									<li>Вы можете заказать упаковку, которая больше понравится при оформлении заказа</li>
+{% include "product/one/info.html" %}
 
-								</ul>
-
-							</div>
-
-							<div class="product-tab__info-item">
-
-								<h3>
-									Для оформления заказа:
-								</h3>
-
-								<ol>
-									<li>Выберите подарок</li>
-									<li>Оформите заказ</li>
-									<li>Получите заказ</li>
-								</ol>
-
-								<h3>
-									Тот кому подарите:
-								</h3>
-
-								<ol>
-									<li>Выбирает впечатление</li>
-									<li>Акстивирует сертификат на нашем сайте или по телефону</li>
-									<li>Получает впечатление</li>
-								</ol>
-
-							</div>
-
-						</div>
+{% endif %}
 
 					</div>
-
-{% if product === "set" %}
 
 					<div class="tabs__item is-active">
 
@@ -90,90 +56,17 @@
 
 						</h2>
 
-						<div class="product-set-details">
+{% if product === "set" %}
 
-							<div class="product-set-details__head">
+{% include "product/set/tab.html" %}
 
-								<h3>
-									Впечатления на выбор получателя:
-								</h3>
+{% else %}
 
-								<p>
-									Получатель подарка сам выберет одно любое впечатление из всего набора.
-								</p>
-
-							</div>
-
-							<table>
-
-								<thead>
-
-									<tr>
-										<th>
-											Вид впечатления
-										</th>
-
-										<th>
-											Количество <br>персон
-										</th>
-
-										<th>
-											Длительность
-										</th>
-
-										<th>
-											Возрастное <br>ограничение
-										</th>
-
-										<th>
-											Сезон
-										</th>
-
-										<th>
-
-										</th>
-									</tr>
-
-								</thead>
-
-{% set table = [
-
-	{
-		name : "Театр \"На Страстном\"",
-		people : "1 персона"
-	},
-	{
-		name : "Мастер-класс езды на мотоцикле",
-		people : "2 персоны"
-	},
-	{
-		name : "Картинг для двоих",
-		people : "1 персона"
-	},
-	{
-		name : "Полёт на авиатренажёре СУ-27 Курсант",
-		people : "1 персона"
-	},
-	{
-		name : "Планетарий для двоих",
-		people : "2 персоны"
-	},
-	{
-		name : "Океанариум для двоих",
-		people : "1 персона"
-	}
-
-] %}
-
-{% include "product/set-details.html" %}
-
-							</table>
-
-						</div>
-
-					</div>
+{% include "product/one/tab.html" %}
 
 {% endif %}
+
+					</div>
 
 				</div>
 

@@ -6,6 +6,8 @@
 				{{ title }}
 			</h1>
 
+{% if product === "set" %}
+
 			<p class="product-main__label product-main__label--green">
 
 				<span class="product-main__label-inner">
@@ -23,6 +25,63 @@
 				Впечатлений в наборе: <b>20</b>
 
 			</p>
+
+{% else %}
+
+			<p class="product-main__label product-main__label--yellow">
+
+				<span class="product-main__label-inner">
+					1 впечатление
+				</span>
+
+			</p>
+
+			<label class="product-main__select-box">
+
+				<span class="product-main__select-box-label">
+					Количество персон:
+				</span>
+
+				<span class="select">
+
+					<select name="count">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+
+				</span>
+
+			</label>
+
+			<label class="product-main__select-box">
+
+				<span class="product-main__select-box-label">
+					Продолжительность:
+				</span>
+
+				<span class="select">
+
+					<select name="time">
+						<option value="30">30 мин</option>
+						<option value="60">1 час</option>
+						<option value="90">1 час 30 мин</option>
+						<option value="120">2 часа</option>
+						<option value="180">3 часа</option>
+					</select>
+
+				</span>
+
+			</label>
+
+{% endif %}
 
 			<div class="product-main__delivery">
 
@@ -96,6 +155,8 @@
 
 			<ul class="product-main__list">
 
+{% if product === "set" %}
+
 				<li>
 					Получатель сам выберет любое впечатление
 				</li>
@@ -108,6 +169,23 @@
 				<li>
 					Получателю ничего доплачивать не нужно
 				</li>
+
+{% else %}
+
+				<li>
+					12 месяцев на использование подарочного сертификата
+				</li>
+				<li>
+					Полное сопровождение получателя подарка при активации
+				</li>
+				<li>
+					Гарантия качества
+				</li>
+				<li>
+					Быстрая доставка
+				</li>
+
+{% endif %}
 
 			</ul>
 
