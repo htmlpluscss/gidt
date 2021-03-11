@@ -283,11 +283,29 @@
 
 .service-oferta {
 
-	margin: 72px 0 96px;
+	margin: 60px 0 96px;
 
 	@media ($smWidth) {
 
 		margin: 36px 0;
+
+	}
+
+	&__head {
+
+		margin: 100px 0 42px;
+
+		@media ($smWidth) {
+
+			margin: 0 0 20px;
+
+		}
+
+		&:first-child {
+
+			margin-top: 0;
+
+		}
 
 	}
 
