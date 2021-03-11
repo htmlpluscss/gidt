@@ -1,0 +1,20 @@
+{% set title = "Поставщикам услуг" %}
+
+{% set description = "Оказываете услуги на высшем уровне? Будем рады знакомству! Ждем ваше предложение" %}
+
+{% set breadcrumbs = [title] %}
+
+{% extends "template/base.html" %}
+
+{% block content %}
+
+<article class="page">
+
+{% include "gift/distributor/head.html" %}
+{% include "gift/distributor/advantages.html" %}
+{% include "_include/clients.html" %}
+{% include "gift/distributor/form.html" %}
+
+</article>
+
+{% endblock %}

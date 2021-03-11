@@ -18,47 +18,7 @@
 
 				<div class="office-form-row__form">
 
-					<form action="/" class="form">
-
-						<label class="form__input-box">
-
-							<span class="form__label">
-								Ваше имя
-							</span>
-
-							<input class="form__input input">
-
-						</label>
-
-						<label class="form__input-box">
-
-							<span class="form__label">
-								Ваш телефон
-							</span>
-
-							<input class="form__input input inputmask inputmask--phone" type="tel">
-
-						</label>
-
-						<label class="form__input-box">
-
-							<span class="form__label">
-								Ваш e-mail
-							</span>
-
-							<input class="form__input input" type="email">
-
-						</label>
-
-						<button class="form__btn btn btn--outline">
-							Отправить
-						</button>
-
-						<p class="form__rule">
-							Нажимая на кнопку «Отправить», я даю согласие на обработку персональных данных и соглашаюсь <a target="_blank" href="/">с политикой конфиденциальности</a>
-						</p>
-
-					</form>
+{% include "_include/form.html" %}
 
 				</div>
 
