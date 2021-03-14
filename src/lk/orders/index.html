@@ -1,0 +1,21 @@
+{% set title = "Мои заказы" %}
+
+{% extends "template/lk.html" %}
+
+{% block content %}
+
+	<h1 class="lk__title">
+
+		<span class="lk__title-ico">
+			<svg width="34" height="34" viewBox="0 0 34 34"><path d="M9.03 5.31l-.33.43-3.39 4.52v18.43H28.7V10.26L25.3 5.74l-.33-.43H9.03zm1.06 2.13h5.85v2.12H8.5l1.6-2.12zm7.97 0h5.85l1.59 2.12h-7.44V7.44zM7.44 11.69h19.12v14.87H7.44V11.7zm6.17 2.12a1.07 1.07 0 00.2 2.13h6.38a1.07 1.07 0 001.07-1.06c0-.2-.04-.38-.14-.54-.2-.33-.55-.53-.93-.53H13.6z"/></svg>
+		</span>
+
+		{{ title }}
+
+	</h1>
+
+	<p class="lk__intro">
+		Заказы не найдены.
+	</p>
+
+{% endblock %}

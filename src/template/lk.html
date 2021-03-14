@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+
+	<title>{{ title }}</title>
+
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=1200">
+	<meta name="theme-color" content="#f0f0f0">
+
+	<link href="/css/styles.css" rel="stylesheet">
+	<script defer src="/js/scripts.js"></script>
+
+	<link href="/css/lk.css" rel="stylesheet">
+	<script defer src="/js/lk.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+{% include "template/header.html" %}
+
+{% include "template/menu-catalog.html" %}
+
+{% include "template/menu-mobile.html" %}
+
+	<main class="lk">
+
+		<div class="center">
+
+			<p class="h1">
+				Личный кабинет
+			</p>
+
+			<div class="lk__wrap">
+
+				<div class="lk__left">
+
+{% include "template/lk-left.html" %}
+
+				</div>
+
+				<div class="lk__content">
+
+{% block content %}{% endblock %}
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+{% include "template/footer.html" %}
+
+</div>
+
+{% include "template/modal.html" %}
+
+</body>
+</html>
