@@ -33,3 +33,65 @@
 	font-size: 14px;
 
 }
+
+.lk-form {
+
+	max-width: 413px;
+
+	&__inputbox {
+
+		margin: 35px 0;
+		display: block;
+
+	}
+
+	&__label {
+
+		color: var(--grey);
+		text-transform: uppercase;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 17px;
+		margin-bottom: 8px;
+		display: block;
+
+	}
+
+	&__checkbox {
+
+		display: block;
+		margin: 15px 0;
+
+	}
+
+	&__submit {
+
+		margin-top: 40px;
+
+	}
+
+	&__input {
+
+		&--col {
+
+			display: flex;
+
+		}
+
+		&--date {
+
+			width: 18%;
+
+		}
+
+		&--month,
+		&--year {
+
+			width: 41%;
+			padding-left: 10px;
+
+		}
+
+	}
+
+}
