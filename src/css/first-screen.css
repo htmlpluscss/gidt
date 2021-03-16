@@ -269,6 +269,14 @@
 
 		}
 
+		&-anim {
+
+			position: absolute;
+			top: -120px;
+			left: -164px;
+
+		}
+
 	}
 
 }

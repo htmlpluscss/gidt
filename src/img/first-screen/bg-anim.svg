@@ -1,0 +1,247 @@
+<svg width="1489" height="700" viewBox="0 0 1489 700" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g>
+
+	<g id="a-1-path">
+		<path d="M18.22 14.87c3.89 6.4-16.55 10.29-13.35 17.1L.7 23.21C-2.5 16.41 11.82 7.23 8.76.7l9.46 14.18z" fill="url(#paint0_linear)" id="a-1-rorate"/>
+	</g>
+
+	<path d="M1288.1 509.262C1278.14 523.088 1261.84 531.774 1241.79 536.223C1221.74 540.672 1198.04 540.864 1173.45 537.782C1124.27 531.615 1071.77 512.373 1038.26 488.25C1004.89 464.237 993.678 432.002 995.81 398.734C997.946 365.408 1013.49 331.027 1033.71 302.936C1038.69 296.018 1044.36 291.506 1050.59 288.952C1056.82 286.396 1063.67 285.774 1071.05 286.741C1085.84 288.68 1102.61 296.99 1120.34 308.663C1138.06 320.323 1156.62 335.261 1174.99 350.339C1177.37 352.292 1179.75 354.248 1182.12 356.199C1198.03 369.296 1213.7 382.187 1228.38 392.755C1235.65 397.985 1242.5 402.791 1248.9 407.28C1257.37 413.221 1265.05 418.609 1271.85 423.69C1283.79 432.604 1292.87 440.463 1298.6 448.511C1304.28 456.513 1306.64 464.686 1305.14 474.303C1303.64 483.982 1298.21 495.215 1288.1 509.262Z" id="path-1"/>
+
+	<animateMotion dur="20s" repeatCount="indefinite" fill="freeze" xlink:href="#a-1-path" rotate="0">
+		<mpath xlink:href="#path-1"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-1-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 10 16"
+	   to="360 10 16"
+	   dur="10s"
+	   repeatCount="indefinite"
+	   />
+</g>
+
+<g>
+	<g id="a-2-path">
+		<path d="M11.9 25.32C6.9 23.93 5.92.44.36.3l11.4.41c11.12.98-1.94 24.2 9.32 27.25l-9.18-2.64z" fill="url(#paint1_linear)" id="a-2-rorate"/>
+	</g>
+
+	<path d="M1388.93 294.392L1388.74 294.508L1388.62 294.689C1366.76 328.048 1348.95 351.798 1333.48 367.917C1318.01 384.041 1304.98 392.443 1292.68 395.254C1280.42 398.057 1268.72 395.337 1255.83 388.835C1243.64 382.686 1230.49 373.211 1214.87 361.963C1213.94 361.29 1213 360.612 1212.04 359.927C1178.61 335.863 1150.81 289.185 1136.44 241.414C1129.27 217.545 1125.46 193.458 1125.96 171.854C1126.47 150.239 1131.29 131.195 1141.27 117.323C1151.2 103.522 1168.9 94.7742 1191.12 90.2421C1213.32 85.7142 1239.87 85.4257 1267.31 88.4123C1322.22 94.3883 1380.39 113.445 1413.87 137.549C1447.51 161.758 1465.21 185.709 1462.78 211.008C1460.35 236.375 1437.66 263.654 1388.93 294.392Z" id="path-2"/>
+
+	<animateMotion dur="24s" repeatCount="indefinite" fill="freeze" xlink:href="#a-2-path" rotate="0">
+		<mpath xlink:href="#path-2"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-2-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 11 14"
+	   to="360 11 14"
+	   dur="12s"
+	   repeatCount="indefinite"
+	   />
+
+</g>
+
+<g>
+	<g id="a-3-path">
+		<g id="a-3-rorate">
+			<path d="M12.54 28.32c-.28 5-9.6 5.7-10.57 10.28L.45 34.15c.97-4.72 11.95-11.53 12.92-16.26l-.83 10.43z" fill="url(#paint2_linear)"/>
+			<path d="M2.53 13.86c-.97 4.72 11.12 8.62 10.15 13.2l.7-9.03c.27-4.87-9.18-6.81-8.2-11.54l-2.65 7.37z" fill="url(#paint3_linear)"/>
+			<path d="M17.4 8.3c-.69 4.72-13.2.83-14.87 5.42l2.78-7.37c1.67-4.73 12.65-.97 13.35-5.7L17.4 8.3z" fill="url(#paint4_linear)"/>
+		</g>
+	</g>
+
+	<path d="M1343 476.759C1343 501.059 1331.35 524.662 1311.9 546.445C1292.45 568.224 1265.26 588.11 1234.36 604.947C1172.53 638.628 1096.02 660 1037.33 660C978.818 660 939.039 632.098 913.841 591.926C888.613 551.705 878 499.163 878 450.022C878 437.866 880.811 427.892 885.916 419.715C891.022 411.535 898.463 405.094 907.813 400.068C926.545 390 952.836 385.669 982.961 384.412C1013.06 383.157 1046.85 384.974 1080.52 387.109C1084.88 387.386 1089.24 387.668 1093.59 387.95C1122.79 389.839 1151.51 391.697 1177.18 391.697C1189.87 391.697 1201.75 391.553 1212.84 391.418C1227.54 391.239 1240.86 391.078 1252.92 391.289C1274.07 391.66 1291.1 393.182 1304.44 397.728C1317.72 402.256 1327.3 409.776 1333.61 422.199C1339.94 434.678 1343 452.186 1343 476.759Z" id="path-3"/>
+
+	<animateMotion dur="26s" repeatCount="indefinite" fill="freeze" xlink:href="#a-3-path" rotate="0">
+		<mpath xlink:href="#path-3"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-3-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 10 20"
+	   to="360 10 20"
+	   dur="8s"
+	   repeatCount="indefinite"
+	   />
+
+</g>
+
+<g>
+	<g id="a-4-path">
+		<g id="a-4-rorate">
+			<path d="M21.37 31.8c-9.85-.25-9.4-23.03-18.63-21.61l14.94-2.4c9.37-1.53 9.55 24.11 19.11 24.6l-15.42-.59z" fill="url(#paint5_linear)"/>
+			<path d="M36.23 32.6c9.85.26 9.4 23.03 18.64 21.62l-14.94 2.4c-9.38 1.53-9.56-24.12-19.12-24.6l15.42.58z" fill="url(#paint6_linear)"/>
+		</g>
+	</g>
+
+	<path d="M1071.02 316.275C1041.14 357.788 995.925 384.217 952.773 396.384C931.2 402.466 910.174 404.975 891.874 404.035C873.558 403.094 858.059 398.704 847.459 391.074C836.99 383.539 832.259 371.403 832.081 355.929C831.903 340.439 836.298 321.731 843.949 301.307C859.245 260.471 887.446 213.058 917.457 171.362C932.411 150.586 946.197 140.229 959.048 136.697C971.864 133.173 983.951 136.385 995.651 143.209C1007.38 150.046 1018.61 160.451 1029.68 171.163C1031.11 172.547 1032.54 173.937 1033.96 175.325C1043.52 184.637 1052.99 193.85 1062.46 200.671C1067.13 204.027 1071.58 207.05 1075.74 209.868C1076.42 210.327 1077.09 210.781 1077.75 211.229C1082.47 214.438 1086.76 217.395 1090.5 220.325C1097.99 226.193 1103.17 231.857 1105.23 239.012C1107.28 246.159 1106.29 255.002 1100.97 267.348C1095.64 279.696 1086.03 295.426 1071.02 316.275Z" id="path-4"/>
+
+	<animateMotion dur="26s" repeatCount="indefinite" fill="freeze" xlink:href="#a-4-path" rotate="0">
+		<mpath xlink:href="#path-4"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-4-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 28 32"
+	   to="360 28 32"
+	   dur="16s"
+	   repeatCount="indefinite"
+	   />
+
+</g>
+
+<g>
+	<g id="a-5-path">
+		<g id="a-5-rorate">
+			<path d="M17.52.33C2.66-.47 15 38.76.12 39.43l19.04-.89c14.89-.67 17.7-34.27 31.9-34.88L17.53.33z" fill="url(#paint7_linear)"/>
+		</g>
+	</g>
+
+	<path d="M1048 636 655 305Z" id="path-5"/>
+
+	<animateMotion dur="26s" repeatCount="indefinite" fill="freeze" xlink:href="#a-5-path" rotate="0">
+		<mpath xlink:href="#path-5"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-5-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 26 20"
+	   to="360 26 20"
+	   dur="20s"
+	   repeatCount="indefinite"
+	   />
+
+</g>
+
+<g>
+	<g id="a-6-path">
+		<g id="a-6-rorate">
+			<path d="M9.5 5.7C8.9 9.4.4 7.9.5 11.5L.4 5.8C.4 2.2 9.9 3.5 10.6 0L9.5 5.7z" fill="url(#paint8_linear)"/>
+		</g>
+	</g>
+
+	<path d="M92 510 707 596Z" id="path-6"/>
+
+	<animateMotion dur="18s" repeatCount="indefinite" fill="freeze" xlink:href="#a-6-path" rotate="0">
+		<mpath xlink:href="#path-6"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-6-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 6 6"
+	   to="-360 6 6"
+	   dur="5s"
+	   repeatCount="indefinite"
+	   />
+
+</g>
+
+<g>
+	<g id="a-7-path">
+		<g id="a-7-rorate">
+			<path d="M11.1 3.3C13.5 5.8 2.3 14.6 4.6 17L.8 13.1c-2.4-2.5 10.3-9.7 8-12.2l2.3 2.4z" fill="url(#paint9_linear)"/>
+		</g>
+	</g>
+
+	<path d="M192.623 495.751C188.197 496.151 181.967 495.156 174.368 492.945C166.794 490.74 157.951 487.353 148.338 483.047C129.113 474.436 106.873 462.176 85.6524 448.432C64.4292 434.686 44.2585 419.476 29.158 404.974C21.6072 397.723 15.3448 390.668 10.8533 384.079C6.35206 377.476 3.68477 371.421 3.20941 366.158C2.71872 360.725 3.45702 357.353 4.9293 355.413C6.34659 353.545 8.63154 352.776 11.9054 353.032C15.1968 353.288 19.2983 354.575 24.0344 356.594C28.7552 358.607 34.0296 361.315 39.6498 364.355C42.7788 366.047 46.0159 367.844 49.3191 369.677C57.8486 374.41 66.8197 379.388 75.5137 383.458C87.5469 389.09 99.2837 393.103 108.806 392.243C118.194 391.395 128.02 387.987 137.473 384.1C141.143 382.591 144.742 381.017 148.245 379.485C153.831 377.041 159.17 374.706 164.156 372.915C168.191 371.466 171.925 370.401 175.282 369.945C178.642 369.489 181.561 369.651 184.008 370.592C188.788 372.43 192.234 377.458 193.217 388.337C194.219 399.435 196.947 411.58 199.878 423.557C200.476 426 201.082 428.434 201.683 430.852C204.04 440.321 206.332 449.533 207.817 457.943C209.686 468.529 210.234 477.645 208.131 484.281C207.088 487.57 205.404 490.217 202.927 492.146C200.446 494.078 197.095 495.348 192.623 495.751Z" id="path-7"/>
+
+	<animateMotion dur="18s" repeatCount="indefinite" fill="freeze" xlink:href="#a-7-path" rotate="0">
+		<mpath xlink:href="#path-7"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-7-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 6 8"
+	   to="-360 6 8"
+	   dur="5s"
+	   repeatCount="indefinite"
+	   />
+
+</g>
+
+<g>
+	<g id="a-8-path">
+		<g id="a-8-rorate">
+			<path d="M.6 11.9c0 6.2 19.2-6.7 23.7 5.9l-.7-14.6C23-5.6 3.1 9.2 1.2.8L.6 11.9z" fill="url(#paint10_linear)"/>
+		</g>
+	</g>
+
+	<path d="M121.757 665.135C110.349 666.165 98.7281 661.712 87.5742 653.444C76.4239 645.178 65.8197 633.154 56.4912 619.212C37.8262 591.316 24.3948 555.934 21.8828 528.123C19.3877 500.497 30.8772 480.545 48.8102 466.929C66.7887 453.277 91.2635 445.989 114.617 443.88C120.325 443.365 125.099 444.261 129.115 446.287C133.136 448.315 136.46 451.506 139.217 455.677C144.751 464.05 147.932 476.268 149.822 490.522C151.71 504.753 152.295 520.876 152.724 536.981C152.779 539.066 152.832 541.151 152.885 543.232C153.239 557.197 153.588 570.957 154.692 583.18C155.238 589.233 155.818 594.879 156.358 600.149C157.074 607.12 157.722 613.435 158.138 619.174C158.87 629.241 158.869 637.339 157.297 643.79C155.738 650.186 152.638 654.946 147.12 658.397C141.549 661.881 133.435 664.08 121.757 665.135Z" id="path-8"/>
+
+	<animateMotion dur="22s" repeatCount="indefinite" fill="freeze" xlink:href="#a-8-path" rotate="0">
+		<mpath xlink:href="#path-8"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-8-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 12 9"
+	   to="-360 12 9"
+	   dur="10s"
+	   repeatCount="indefinite"
+	   />
+
+</g>
+
+<g>
+	<g id="a-9-path">
+		<g id="a-9-rorate">
+			<path d="M11.5 19c2.8-2-6.5-5.9-4.5-8.7l-2.6 3.5c-2 2.7 3.6 8 1.7 10.6l5.4-5.4z" fill="url(#paint11_linear)"/>
+			<path d="M8.8 7.9C10.7 5 1.5 3 3.1 0l-2 3.9c-1.6 3 4.7 7.4 3.2 10.3l4.5-6.3z" fill="url(#paint12_linear)"/>
+		</g>
+	</g>
+
+	<path d="M107.757 588.135C96.3495 589.165 84.7281 584.712 73.5742 576.444C62.4239 568.178 51.8197 556.154 42.4912 542.212C23.8262 514.316 10.3948 478.934 7.88284 451.123C5.38767 423.497 16.8772 403.545 34.8102 389.929C52.7887 376.277 77.2635 368.989 100.617 366.88C106.325 366.365 111.099 367.261 115.115 369.287C119.136 371.315 122.46 374.506 125.217 378.677C130.751 387.05 133.932 399.268 135.822 413.522C137.71 427.753 138.295 443.876 138.724 459.981C138.779 462.066 138.832 464.151 138.885 466.232C139.239 480.197 139.588 493.957 140.692 506.18C141.238 512.233 141.818 517.879 142.358 523.149C143.074 530.12 143.722 536.435 144.138 542.174C144.87 552.241 144.869 560.339 143.297 566.79C141.738 573.186 138.638 577.946 133.12 581.397C127.549 584.881 119.435 587.08 107.757 588.135Z" id="path-9"/>
+
+	<animateMotion dur="10s" repeatCount="indefinite" fill="freeze" xlink:href="#a-9-path" rotate="0">
+		<mpath xlink:href="#path-9"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-9-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 7 13"
+	   to="360 7 13"
+	   dur="4s"
+	   repeatCount="indefinite"
+	   />
+
+</g>
+
+<defs>
+	<linearGradient id="paint0_linear" x1="8.62" y1="31.77" x2="10.42" y2="1.84" gradientUnits="userSpaceOnUse"><stop stop-color="#3E29A6"/><stop offset=".09" stop-color="#344ABA"/><stop offset=".29" stop-color="#56A3C9"/><stop offset=".81" stop-color="#0FA"/><stop offset="1" stop-color="#CCFFD5"/></linearGradient>
+
+	<linearGradient id="paint1_linear" x1="11.75" y1="27.15" x2="9.79" y2="1.96" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#6134BA"/><stop offset=".29" stop-color="#B23CC9"/><stop offset=".81" stop-color="#FF4D6A"/><stop offset="1" stop-color="#FFA6B5"/></linearGradient>
+
+	<linearGradient id="paint2_linear" x1=".57" y1="40.19" x2="17.37" y2="15.04" gradientUnits="userSpaceOnUse"><stop stop-color="#3E29A6"/><stop offset=".09" stop-color="#344ABA"/><stop offset=".29" stop-color="#56A3C9"/><stop offset=".81" stop-color="#0FA"/><stop offset="1" stop-color="#CCFFD5"/></linearGradient><linearGradient id="paint3_linear" x1="11.53" y1="23.19" x2="4.29" y2="8.96" gradientUnits="userSpaceOnUse"><stop stop-color="#3E29A6"/><stop offset=".09" stop-color="#344ABA"/><stop offset=".29" stop-color="#56A3C9"/><stop offset=".81" stop-color="#0FA"/><stop offset="1" stop-color="#CCFFD5"/></linearGradient><linearGradient id="paint4_linear" x1="-1.01" y1="15.99" x2="17.51" y2="3.05" gradientUnits="userSpaceOnUse"><stop stop-color="#3E29A6"/><stop offset=".09" stop-color="#344ABA"/><stop offset=".29" stop-color="#56A3C9"/><stop offset=".81" stop-color="#0FA"/><stop offset="1" stop-color="#CCFFD5"/></linearGradient>
+
+	<linearGradient id="paint5_linear" x1="27.98" y1="42.89" x2="14.56" y2="7.77" gradientUnits="userSpaceOnUse"><stop stop-color="#3E29A6"/><stop offset=".09" stop-color="#344ABA"/><stop offset=".29" stop-color="#56A3C9"/><stop offset=".81" stop-color="#0FA"/><stop offset="1" stop-color="#CCFFD5"/></linearGradient><linearGradient id="paint6_linear" x1="25.82" y1="34.03" x2="58.64" y2="62.88" gradientUnits="userSpaceOnUse"><stop stop-color="#3E29A6"/><stop offset=".09" stop-color="#344ABA"/><stop offset=".29" stop-color="#56A3C9"/><stop offset=".81" stop-color="#0FA"/><stop offset="1" stop-color="#CCFFD5"/></linearGradient>
+
+	<linearGradient id="paint7_linear" x1="25.88" y1="37.42" x2="25.56" y2="-.18" gradientUnits="userSpaceOnUse"><stop stop-color="#3E29A6"/><stop offset=".09" stop-color="#344ABA"/><stop offset=".29" stop-color="#56A3C9"/><stop offset=".81" stop-color="#0FA"/><stop offset="1" stop-color="#CCFFD5"/></linearGradient>
+
+	<linearGradient id="paint8_linear" x1=".24" y1="11.44" x2="9.8" y2="-.41" gradientUnits="userSpaceOnUse"><stop stop-color="#3E29A6"/><stop offset=".09" stop-color="#344ABA"/><stop offset=".29" stop-color="#56A3C9"/><stop offset=".81" stop-color="#0FA"/><stop offset="1" stop-color="#CCFFD5"/></linearGradient>
+
+	<linearGradient id="paint9_linear" x1="2.66" y1="16.49" x2="8.66" y2="1.78" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#6134BA"/><stop offset=".29" stop-color="#B23CC9"/><stop offset=".81" stop-color="#FF4D6A"/><stop offset="1" stop-color="#FFA6B5"/></linearGradient>
+
+	<linearGradient id="paint10_linear" x1="5.54" y1="15.97" x2="21.13" y2="1.5" gradientUnits="userSpaceOnUse"><stop stop-color="#A629A6"/><stop offset=".09" stop-color="#BA34A2"/><stop offset=".29" stop-color="#C9567E"/><stop offset=".81" stop-color="#FFCE00"/><stop offset="1" stop-color="#FFEA90"/></linearGradient>
+
+	<linearGradient id="paint11_linear" x1="8.9" y1="23.86" x2="7.4" y2="12.15" gradientUnits="userSpaceOnUse"><stop stop-color="#A629A6"/><stop offset=".09" stop-color="#BA34A2"/><stop offset=".29" stop-color="#C9567E"/><stop offset=".81" stop-color="#FFCE00"/><stop offset="1" stop-color="#FFEA90"/></linearGradient><linearGradient id="paint12_linear" x1="7.25" y1="10.09" x2=".55" y2="4.35" gradientUnits="userSpaceOnUse"><stop stop-color="#A629A6"/><stop offset=".09" stop-color="#BA34A2"/><stop offset=".29" stop-color="#C9567E"/><stop offset=".81" stop-color="#FFCE00"/><stop offset="1" stop-color="#FFEA90"/></linearGradient>
+
+</defs>
+</svg>
