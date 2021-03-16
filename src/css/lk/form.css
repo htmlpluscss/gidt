@@ -23,3 +23,13 @@
 	}
 
 }
+
+.btn-submit {
+
+	margin-top: 30px;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 50px;
+	font-size: 14px;
+
+}

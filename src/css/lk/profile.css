@@ -52,18 +52,4 @@
 
 	}
 
-	&__submit {
-
-		margin-top: 40px;
-
-		.btn {
-
-			height: 40px;
-			line-height: 40px;
-			padding: 0 50px;
-
-		}
-
-	}
-
 }

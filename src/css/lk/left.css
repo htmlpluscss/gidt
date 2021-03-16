@@ -60,7 +60,7 @@
 
 				background-color: #F8F9FD;
 
-				&::before {
+				&::after {
 
 					position: absolute;
 					width: 3px;
@@ -69,6 +69,7 @@
 					bottom: 0;
 					content: '';
 					background-color: var(--blueText);
+
 				}
 
 			}
