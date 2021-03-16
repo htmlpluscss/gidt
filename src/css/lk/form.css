@@ -1,4 +1,25 @@
-.btn {
+.input {
 
+	height: 45px;
+	line-height: 25px;
+	padding: 10px 17px;
+
+	@media ($desktop) {
+
+		font-size: 14px;
+
+	}
+
+}
+
+.select {
+
+	select {
+
+		padding: 9px 16px;
+		min-width: 0;
+		line-height: 25px;
+
+	}
 
 }

@@ -60,6 +60,17 @@
 
 				background-color: #F8F9FD;
 
+				&::before {
+
+					position: absolute;
+					width: 3px;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					content: '';
+					background-color: var(--blueText);
+				}
+
 			}
 
 			& + & {
