@@ -1,0 +1,17 @@
+.lk-certificates {
+
+	margin: 40px 0;
+
+	&__btn {
+
+		display: flex;
+
+		.btn {
+
+			margin: 0;
+
+		}
+
+	}
+
+}
