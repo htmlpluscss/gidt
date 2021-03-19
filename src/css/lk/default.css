@@ -12,6 +12,7 @@
 		line-height: 49px;
 		text-transform: uppercase;
 		margin-bottom: 29px;
+		max-width: 600px;
 
 		&-ico {
 

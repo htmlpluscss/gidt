@@ -15,7 +15,43 @@
 	</h1>
 
 	<p class="lk__intro">
-		Воспользоваться услугой необходимо до истечения срока действия, указанного на сертификате.
+		Воспользоваться услугой необходимо до истечения <br>срока действия, указанного на сертификате.
 	</p>
+
+	<form action="/" class="lk-activation">
+
+		<div class="lk-activation__inputbox">
+
+			<label class="lk-activation__label" for="lk-activation-number">
+				Введите уникальный номер
+			</label>
+
+			<input type="tel" class="input" id="lk-activation-number">
+
+		</div>
+
+		<div class="lk-activation__inputbox">
+
+			<label class="lk-activation__label" for="lk-activation-captcha">
+				Введите код с картинки
+			</label>
+
+			<div class="lk-activation__captcha">
+
+				<button type="button" class="btn lk-activation__captcha-btn">
+					<img src="/img/activation/captcha.png" srcset="/img/activation/captcha@2x.png 2x" alt="captcha">
+				</button>
+
+				<input class="input" id="lk-activation-captcha" placeholder="Код с картинки">
+
+			</div>
+
+		</div>
+
+		<button class="btn-submit btn btn--outline">
+			Активировать
+		</button>
+
+	</form>
 
 {% endblock %}
