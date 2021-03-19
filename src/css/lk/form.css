@@ -34,6 +34,15 @@
 
 }
 
+.lk-btn-loading {
+
+	background-color: #f0f0f0;
+	display: flex;
+	margin: 0 -52px -32px;
+	justify-content: center;
+
+}
+
 .lk-form {
 
 	max-width: 413px;

@@ -15,7 +15,82 @@
 	</h1>
 
 	<p class="lk__intro">
-		Заказы не найдены.
+		Спасибо за заказы!
 	</p>
+
+{% for i in [1,2,3] %}
+
+	<div class="lk-card">
+
+		<div class="lk-card__head">
+
+			<div class="lk-card__number">
+				Заказ №: 0052656
+			</div>
+
+			<div class="lk-card__status">
+				Доставлено!
+			</div>
+
+		</div>
+
+		<div class="lk-card__body">
+
+			<a href="/" target="_blank" class="lk-card__img">
+
+				<picture>
+
+					<source srcset="/img/product/mobile.webp" type="image/webp" media="(max-width: 1199px)">
+					<source srcset="/img/product/mobile.jpg" media="(max-width: 1199px)">
+
+					<source srcset="/img/product/big.webp 1x, /img/product/big@2x.webp 2x" type="image/webp">
+					<source srcset="/img/product/big.jpg 1x, /img/product/big@2x.jpg 2x">
+
+					<img src="/img/product/big.jpg" alt="Экстрим Стандарт" width="170" height="126">
+
+				</picture>
+
+			</a>
+
+			<div class="lk-card__data">
+
+				<div class="lk-card__name">
+					Экстрим Стандарт
+				</div>
+
+				<table class="lk-card__table">
+
+					<tr>
+						<th>Дата заказа:</th>
+						<td>12.02.2020</td>
+					</tr>
+
+					<tr>
+						<th>Дата получения:</th>
+						<td>18.02.2020</td>
+					</tr>
+
+					<tr class="color-red">
+						<th>Сумма:</th>
+						<td>5 858 руб.</td>
+					</tr>
+
+				</table>
+
+			</div>
+
+		</div>
+
+	</div>
+
+{% endfor %}
+
+	<div class="lk-btn-loading">
+
+		<button class="btn-submit btn btn--outline">
+			Показать еще
+		</button>
+
+	</div>
 
 {% endblock %}

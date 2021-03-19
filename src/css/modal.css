@@ -77,6 +77,12 @@
 		font-size: 14px;
 		line-height: 17px;
 
+		p {
+
+			margin: 1em 0;
+
+		}
+
 		@media ($smWidth) {
 
 			font-size: 12px;

@@ -1,0 +1,88 @@
+.lk-card {
+
+	border-top: 12px solid #f0f0f0;
+	margin: 0 -52px;
+	padding: 30px 52px 40px;
+
+	&__head {
+
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		margin-bottom: 24px;
+
+	}
+
+	&__number {
+
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 22px;
+
+	}
+
+	&__status {
+
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		color: var(--grey);
+		text-transform: uppercase;
+
+		&--not-activated {
+
+			color: var(--red);
+
+		}
+
+		&--activated {
+
+			color: var(--blueText);
+
+
+		}
+
+	}
+
+	&__body {
+
+		display: flex;
+
+	}
+
+	&__img {
+
+		width: 170px;
+		margin-right: 40px;
+		flex-shrink: 0;
+
+	}
+
+	&__name {
+
+		margin-bottom: 18px;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+
+	}
+
+	&__table {
+
+		margin: -8px;
+		width: 360px;
+
+		th, td {
+
+			font-weight: 300;
+			font-size: 18px;
+			line-height: 22px;
+			padding: 8px;
+			text-align: left;
+			white-space: nowrap;
+
+		}
+
+	}
+
+}
