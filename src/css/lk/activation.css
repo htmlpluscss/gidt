@@ -3,6 +3,13 @@
 	margin: 40px 0;
 	max-width: 366px;
 
+	@media ($smWidth) {
+
+		max-width: none;
+		margin: 35px 0 0;
+
+	}
+
 	&__inputbox {
 
 		margin-bottom: 28px;

@@ -8,12 +8,25 @@
 		margin: 0 -52px;
 		padding: 45px 52px;
 
+		@media ($mdWidth) {
+
+			margin: 0 -20px;
+			padding: 40px 20px;
+
+		}
+
 	}
 
 	&__form {
 
 		display: flex;
 		align-items: center;
+
+		@media ($smWidth) {
+
+			flex-wrap: wrap;
+
+		}
 
 	}
 
@@ -38,6 +51,22 @@
 		width: 180px;
 		flex-shrink: 0;
 
+		@media ($smWidth) {
+
+			width: 100%;
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+
+			.btn {
+
+				width: 280px;
+				max-width: 100%;
+
+			}
+
+		}
+
 		.btn {
 
 			width: 100%;
@@ -51,6 +80,13 @@
 	&__connect {
 
 		margin-left: 80px;
+
+		@media ($smWidth) {
+
+			margin-left: 0;
+			text-align: center;
+
+		}
 
 		hr {
 

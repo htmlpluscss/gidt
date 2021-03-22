@@ -5,6 +5,12 @@
 	border-top: 1px solid #fff;
 	padding: 60px 0;
 
+	@media ($mdWidth) {
+
+		padding: 30px 0;
+
+	}
+
 	&__title {
 
 		font-weight: 500;
@@ -19,6 +25,25 @@
 			height: 40px;
 			display: block;
 
+			@media ($mdWidth) {
+
+				height: auto;
+				margin-right: 6px;
+
+			}
+
+		}
+
+		@media ($mdWidth) {
+
+			display: flex;
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 22px;
+			justify-content: center;
+			align-items: center;
+			padding: 0 20px 0 30px;
+
 		}
 
 	}
@@ -29,6 +54,13 @@
 		font-weight: 300;
 		font-size: 16px;
 		line-height: 20px;
+
+		@media ($mdWidth) {
+
+			font-size: 14px;
+			line-height: 17px;
+
+		}
 
 		b {
 
@@ -45,19 +77,75 @@
 		justify-content: space-between;
 		margin: 40px 0;
 
+		@media ($mdWidth) {
+
+			display: block;
+			margin: 20px 0;
+
+		}
+
 	}
 
 	&__left {
 
-		width: 340px;
+		@media ($desktop) {
+
+			width: 340px;
+
+		}
+
+		@media ($mdWidth) {
+
+			display: none;
+
+			.left-menu-open & {
+
+				display: block;
+
+			}
+
+		}
 
 	}
 
 	&__content {
 
-		width: 800px;
-		padding: 32px 52px;
 		background-color: #fff;
+		position: relative;
+
+		@media ($desktop) {
+
+			width: 800px;
+			padding: 32px 52px;
+
+		}
+
+		@media ($mdWidth) {
+
+			padding: 20px;
+
+			.left-menu-open & {
+
+				display: none;
+
+			}
+
+		}
+
+	}
+
+	&__btn-to-menu {
+
+		display: none;
+
+		@media ($mdWidth) {
+
+			display: block;
+			position: absolute;
+			top: 24px;
+			left: 20px;
+
+		}
 
 	}
 

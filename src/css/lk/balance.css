@@ -45,6 +45,13 @@
 		margin: 35px 0;
 		max-width: 468px;
 
+		@media ($mdWidth) {
+
+			max-width: none;
+			margin-bottom: 0;
+
+		}
+
 		p {
 
 			font-weight: 500;

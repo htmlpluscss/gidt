@@ -20,6 +20,12 @@
 		min-width: 0;
 		line-height: 25px;
 
+		@media ($smWidth) {
+
+			padding: 9px;
+
+		}
+
 	}
 
 }
@@ -32,6 +38,12 @@
 	padding: 0 50px;
 	font-size: 14px;
 
+	@media ($mdWidth) {
+
+		margin: 30px auto 0;
+
+	}
+
 }
 
 .lk-btn-loading {
@@ -41,11 +53,23 @@
 	margin: 0 -52px -32px;
 	justify-content: center;
 
+	@media ($mdWidth) {
+
+		margin: 0 -20px -20px;
+
+	}
+
 }
 
 .lk-form {
 
 	max-width: 413px;
+
+	@media ($mdWidth) {
+
+		max-width: none;
+
+	}
 
 	&__inputbox {
 
@@ -68,7 +92,7 @@
 
 	&__checkbox {
 
-		display: block;
+		display: flex;
 		margin: 15px 0;
 
 	}
@@ -76,6 +100,12 @@
 	&__submit {
 
 		margin-top: 40px;
+
+		@media ($mdWidth) {
+
+			margin-top: 30px;
+
+		}
 
 	}
 
@@ -91,6 +121,12 @@
 
 			width: 18%;
 
+			@media ($mdWidth) {
+
+				width: 24%;
+
+			}
+
 		}
 
 		&--month,
@@ -98,6 +134,12 @@
 
 			width: 41%;
 			padding-left: 10px;
+
+			@media ($mdWidth) {
+
+				width: 38%;
+
+			}
 
 		}
 

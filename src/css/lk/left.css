@@ -10,6 +10,28 @@
 		height: 145px;
 		margin-bottom: 12px;
 
+		@media ($mdWidth) {
+
+			display: block;
+			text-align: center;
+			padding: 0;
+			height: auto;
+			border-top: 66px solid #F6F7FF;
+
+		}
+
+		&__text {
+
+			@media ($mdWidth) {
+
+				border-top: 2px solid var(--blue);
+				padding: 40px 20px 30px;
+				display: block;
+
+			}
+
+		}
+
 		&__avatar {
 
 			position: absolute;
@@ -24,6 +46,19 @@
 			font-size: 36px;
 			line-height: 92px;
 			text-align: center;
+
+			@media ($mdWidth) {
+
+				width: 66px;
+				height: 66px;
+				left: 50%;
+				top: -35px;
+				margin-left: -35px;
+				font-size: 24px;
+				line-height: 66px;
+				border: 2px solid #fff;
+
+			}
 
 		}
 
@@ -57,17 +92,21 @@
 
 			&.is-current {
 
-				background-color: #F8F9FD;
+				@media ($desktop) {
 
-				&::after {
+					background-color: #F8F9FD;
 
-					position: absolute;
-					width: 3px;
-					top: 0;
-					left: 0;
-					bottom: 0;
-					content: '';
-					background-color: var(--blueText);
+					&::after {
+
+						position: absolute;
+						width: 3px;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						content: '';
+						background-color: var(--blueText);
+
+					}
 
 				}
 
