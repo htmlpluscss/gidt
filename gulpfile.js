@@ -320,6 +320,8 @@ gulp.task('lk', gulp.series(
 gulp.task('bitrix', function () {
 
 	return gulp.src([
+		'build/js/lk.min.js',
+		'build/css/lk.min.css',
 		'build/js/scripts.min.js',
 		'build/css/styles.min.css'
 		])
