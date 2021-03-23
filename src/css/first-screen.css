@@ -228,14 +228,6 @@
 
 		}
 
-		&-24 {
-
-			position: absolute;
-			top: 240px;
-			left: -306px;
-
-		}
-
 		&-25 {
 
 			position: absolute;
@@ -252,14 +244,6 @@
 
 		}
 
-		&-27 {
-
-			position: absolute;
-			top: 240px;
-			right: -120px;
-
-		}
-
 		&-28 {
 
 			position: absolute;
@@ -273,7 +257,7 @@
 
 			position: absolute;
 			top: -120px;
-			left: -164px;
+			left: -388px;
 
 		}
 
