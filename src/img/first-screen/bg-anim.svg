@@ -224,6 +224,31 @@
 
 </g>
 
+<g>
+	<g id="a-10-path">
+		<g id="a-10-rorate">
+			<path d="M17.6 11.69c2.22 6.11-15.72.83-15.44 16.12L.91 17.94C.21 10.3 16.21 7.8 13.56.56L17.6 11.7z" fill="url(#paint13_linear)"/>
+		</g>
+	</g>
+
+	<path d="M1431.02 609.275C1416.23 629.827 1389.62 641.645 1357.11 647.235C1324.63 652.821 1286.44 652.157 1248.72 647.91C1211.01 643.663 1173.82 635.84 1143.36 627.138C1112.86 618.422 1089.24 608.86 1078.58 601.189C1073.3 597.382 1070.24 593.391 1068.93 589.205C1067.62 585.023 1068.02 580.508 1069.9 575.569C1073.68 565.621 1083.37 554.244 1096.46 541.08C1102.9 534.604 1110.14 527.717 1117.84 520.387C1141.33 498.04 1169.15 471.573 1191.81 440.084C1206.65 419.474 1225.67 410.57 1246.58 409.246C1267.55 407.918 1290.45 414.21 1312.93 424.121C1351.08 440.94 1387.72 468.039 1411.2 485.402C1415.4 488.508 1419.17 491.303 1422.46 493.671C1427.13 497.026 1431.58 500.049 1435.74 502.868C1436.42 503.327 1437.09 503.78 1437.75 504.229C1442.47 507.438 1446.76 510.394 1450.5 513.325C1457.99 519.193 1463.17 524.857 1465.23 532.011C1467.28 539.158 1466.29 548.001 1460.97 560.348C1455.64 572.696 1446.03 588.426 1431.02 609.275Z" id="path-10"/>
+
+	<animateMotion dur="50s" repeatCount="indefinite" fill="freeze" xlink:href="#a-10-path" rotate="0">
+		<mpath xlink:href="#path-10"/>
+	</animateMotion>
+
+	<animateTransform
+	   xlink:href="#a-10-rorate"
+	   attributeName="transform"
+	   type="rotate"
+	   from="0 9 14"
+	   to="-360 9 14"
+	   dur="3s"
+	   repeatCount="indefinite"
+	   />
+
+</g>
+
 <defs>
 	<linearGradient id="paint0_linear" x1="8.62" y1="31.77" x2="10.42" y2="1.84" gradientUnits="userSpaceOnUse"><stop stop-color="#3E29A6"/><stop offset=".09" stop-color="#344ABA"/><stop offset=".29" stop-color="#56A3C9"/><stop offset=".81" stop-color="#0FA"/><stop offset="1" stop-color="#CCFFD5"/></linearGradient>
 
@@ -242,6 +267,8 @@
 	<linearGradient id="paint10_linear" x1="5.54" y1="15.97" x2="21.13" y2="1.5" gradientUnits="userSpaceOnUse"><stop stop-color="#A629A6"/><stop offset=".09" stop-color="#BA34A2"/><stop offset=".29" stop-color="#C9567E"/><stop offset=".81" stop-color="#FFCE00"/><stop offset="1" stop-color="#FFEA90"/></linearGradient>
 
 	<linearGradient id="paint11_linear" x1="8.9" y1="23.86" x2="7.4" y2="12.15" gradientUnits="userSpaceOnUse"><stop stop-color="#A629A6"/><stop offset=".09" stop-color="#BA34A2"/><stop offset=".29" stop-color="#C9567E"/><stop offset=".81" stop-color="#FFCE00"/><stop offset="1" stop-color="#FFEA90"/></linearGradient><linearGradient id="paint12_linear" x1="7.25" y1="10.09" x2=".55" y2="4.35" gradientUnits="userSpaceOnUse"><stop stop-color="#A629A6"/><stop offset=".09" stop-color="#BA34A2"/><stop offset=".29" stop-color="#C9567E"/><stop offset=".81" stop-color="#FFCE00"/><stop offset="1" stop-color="#FFEA90"/></linearGradient>
+
+	<linearGradient id="paint13_linear" x1="4.44" y1="28.93" x2="12.95" y2="4.56" gradientUnits="userSpaceOnUse"><stop offset=".09" stop-color="#6134BA"/><stop offset=".29" stop-color="#B23CC9"/><stop offset=".81" stop-color="#FF4D6A"/><stop offset="1" stop-color="#FFA6B5"/></linearGradient>
 
 </defs>
 </svg>
