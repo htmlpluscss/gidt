@@ -2,9 +2,21 @@
 
 	margin: 40px 0;
 
+	@media ($smWidth) {
+
+		margin: 35px 0;
+
+	}
+
 	&__btn {
 
 		display: flex;
+
+		@media ($mdWidth) {
+
+			justify-content: center;
+
+		}
 
 		.btn {
 

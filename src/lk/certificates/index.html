@@ -34,26 +34,32 @@
 
 		<div class="lk-card__body">
 
-			<a href="/" target="_blank" class="lk-card__img">
+			<div class="lk-card__left">
 
-				<picture>
+				<a href="/product/set/" target="_blank" class="lk-card__img">
 
-					<source srcset="/img/product/mobile.webp" type="image/webp" media="(max-width: 1199px)">
-					<source srcset="/img/product/mobile.jpg" media="(max-width: 1199px)">
+{% include "lk/card__img.html" %}
 
-					<source srcset="/img/product/big.webp 1x, /img/product/big@2x.webp 2x" type="image/webp">
-					<source srcset="/img/product/big.jpg 1x, /img/product/big@2x.jpg 2x">
+				</a>
 
-					<img src="/img/product/big.jpg" alt="Экстрим Стандарт" width="170" height="126">
+{% include "lk/card__btn-show-param.html" %}
 
-				</picture>
-
-			</a>
+			</div>
 
 			<div class="lk-card__data">
 
 				<div class="lk-card__name">
-					Экстрим Стандарт
+
+					<a href="/product/set/" target="_blank">
+						Экстрим Стандарт
+					</a>
+
+				</div>
+
+				<div class="visible-md">
+
+{% include "lk/card__param-set.html" %}
+
 				</div>
 
 				<table class="lk-card__table">
@@ -76,6 +82,12 @@
 				</table>
 
 			</div>
+
+		</div>
+
+		<div class="hidden-md">
+
+{% include "lk/card__param-set.html" %}
 
 		</div>
 
@@ -97,26 +109,55 @@
 
 		<div class="lk-card__body">
 
-			<a href="/" target="_blank" class="lk-card__img">
+			<div class="lk-card__left">
 
-				<picture>
+				<a href="/product/one/" target="_blank" class="lk-card__img">
 
-					<source srcset="/img/product/mobile.webp" type="image/webp" media="(max-width: 1199px)">
-					<source srcset="/img/product/mobile.jpg" media="(max-width: 1199px)">
+{% include "lk/card__img.html" %}
 
-					<source srcset="/img/product/big.webp 1x, /img/product/big@2x.webp 2x" type="image/webp">
-					<source srcset="/img/product/big.jpg 1x, /img/product/big@2x.jpg 2x">
+				</a>
 
-					<img src="/img/product/big.jpg" alt="Экстрим Стандарт" width="170" height="126">
+{% include "lk/card__btn-show-param.html" %}
 
-				</picture>
-
-			</a>
+			</div>
 
 			<div class="lk-card__data">
 
 				<div class="lk-card__name">
-					СПА посещение
+
+					<a href="/product/one/" target="_blank">
+						СПА посещение
+					</a>
+
+				</div>
+
+				<div class="visible-md">
+
+					<div class="lk-card__param hide">
+
+						<h3>
+							В подарочный сертификат входит:
+						</h3>
+
+						<p>
+							Привыкание к мотоциклу и выполнение знакомых упражнений/элементов, выявление ошибок и слабых сторон в маневрировании. Модель мотоцикла: Yamaha YBR 125
+						</p>
+
+						<h3>
+							Рекомендации:
+						</h3>
+
+						<ul>
+							<li>
+								Проходит только в летний сезон.
+							</li>
+							<li>
+								Необходимо водительское удостоверение категории "А"
+							</li>
+						</ul>
+
+					</div>
+
 				</div>
 
 				<table class="lk-card__table">
@@ -137,6 +178,35 @@
 					</tr>
 
 				</table>
+
+			</div>
+
+		</div>
+
+		<div class="hidden-md">
+
+			<div class="lk-card__param hide">
+
+				<h3>
+					В подарочный сертификат входит:
+				</h3>
+
+				<p>
+					Привыкание к мотоциклу и выполнение знакомых упражнений/элементов, выявление ошибок и слабых сторон в маневрировании. Модель мотоцикла: Yamaha YBR 125
+				</p>
+
+				<h3>
+					Рекомендации:
+				</h3>
+
+				<ul>
+					<li>
+						Проходит только в летний сезон.
+					</li>
+					<li>
+						Необходимо водительское удостоверение категории "А"
+					</li>
+				</ul>
 
 			</div>
 

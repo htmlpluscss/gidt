@@ -75,7 +75,7 @@
 
 	}
 
-	&__img {
+	&__left {
 
 		width: 170px;
 		margin-right: 40px;
@@ -83,9 +83,18 @@
 
 		@media ($smWidth) {
 
-			display: block;
 			margin: 0 0 20px;
 			width: 100%;
+
+		}
+
+	}
+
+	&__img {
+
+		@media ($smWidth) {
+
+			display: block;
 
 			img {
 
@@ -105,6 +114,12 @@
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 22px;
+
+		a:hover {
+
+			color: var(--blue);
+
+		}
 
 	}
 
@@ -136,6 +151,107 @@
 			padding: 8px;
 			text-align: left;
 			white-space: nowrap;
+
+		}
+
+	}
+
+	&__param {
+
+		font-size: 14px;
+		line-height: 17px;
+
+		&::after,
+		&::before {
+
+			height: 1px;
+			display: block;
+			background-color: #c4c4c4;
+			margin: 20px 0;
+			content: '';
+
+		}
+
+		@media ($desktop) {
+
+			&::after {
+
+				display: none;
+
+			}
+
+		}
+
+		h3 {
+
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 17px;
+
+			& ~ h3 {
+
+				margin-top: 20px;
+
+			}
+
+		}
+
+		p {
+
+			margin-top: 4px;
+
+			& + p {
+
+				margin-top: 20px;
+
+			}
+
+		}
+
+		ul {
+
+			li {
+
+				padding-left: 20px;
+				margin: 10px 0;
+
+				&::before {
+
+					position: absolute;
+					width: 7px;
+					height: 7px;
+					top: 5px;
+					left: 0;
+					content: '';
+					border-radius: 50%;
+					background-color: var(--blueText);
+
+				}
+
+			}
+
+		}
+
+	}
+
+	&__show-param {
+
+		margin-top: 10px;
+
+		&-inner {
+
+			display: flex;
+			align-items: center;
+			color: var(--blue);
+			font-size: 14px;
+			line-height: 17px;
+
+			svg {
+
+				fill: var(--blue);
+				margin-left: 6px;
+
+			}
 
 		}
 
